@@ -18,6 +18,8 @@ class Response extends JsonResource
         return [
           'id' => $this->response_id,
           'formId' => $this->typeform_id,
+          'calculated' => $this->calculated,
+          'scores' => $this->scores,
           'questions' => $this->questions,
           'answers' => $this->answers,
           'createdDate' => $this->created_at
@@ -27,7 +29,7 @@ class Response extends JsonResource
     public function with($request) {
       return [
         'version' => '1.0.0',
-        'author_url' => url('http://audit.tp-demo.co.uk')
+        'author_url' => url('http://audit.tmrwppl.com')
       ];
     }
 }

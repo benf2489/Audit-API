@@ -44,6 +44,8 @@ class ResponseController extends Controller
     {
 
         $response_id = $request->form_response["hidden"]["response_id"];
+        $scores = $request->form_response["hidden"]["scores"];
+        $calculated = $request->form_response["calculated"];
         $questions = $request->form_response["definition"]["fields"];
         $formId = $request->form_response["form_id"];
         $answers = $request->form_response["answers"];
@@ -54,10 +56,10 @@ class ResponseController extends Controller
 
 
 
-          $response->response_id = $response_id;
-         $response->typeform_id = $formId;
-         $response->questions = json_encode($questions);
-         $response->answers     = json_encode($answers);
+        $response->response_id = $response_id;
+        $response->typeform_id = $formId;
+        $response->questions = json_encode($questions);
+        $response->answers     = json_encode($answers);
 
         if($response->save()) {
           return new ResponseResource($response);
