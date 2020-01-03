@@ -85,6 +85,21 @@ class ResponseController extends Controller
     }
 
     /**
+     * Display the specified resource.
+     *
+     * @param  int  $formId
+     * @return \Illuminate\Http\Response
+     */
+     public function formShow($formId)
+     {
+         // Get responses
+         $responses = Response::where('typeform_id', '=', $formId)->paginate(15);
+
+         // Return collection of responses as a resource
+         return ResponseResource::collection($responses);
+     }
+
+    /**
      * Show the form for editing the specified resource.
      *
      * @param  int  $id

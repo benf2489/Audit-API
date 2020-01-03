@@ -17,8 +17,11 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-// Display responses from audit
+// Display responses from all audits
 Route::get('responses','ResponseController@index');
+
+// Display responses from audit
+Route::get('responses/{typeform_id}','ResponseController@formShow');
 
 // Display single response from audit
 Route::get('response/{response_id}','ResponseController@show');
