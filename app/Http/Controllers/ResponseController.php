@@ -138,4 +138,59 @@ class ResponseController extends Controller
         return new ResponseResource($response);
       }
     }
+    
+    public function pdf($response_id,$lang=null){
+         $response = Response::where('response_id','=', $response_id)->firstOrFail();
+         
+        if(isset($response))
+        {
+        
+        $res = json_decode($response->answers);
+
+        $full = (float)$res[0]->number+(float)$res[1]->number+(float)$res[2]->number;
+        $wf = (float)$res[3]->number+(float)$res[4]->number+(float)$res[5]->number;
+        $rev = (float)$res[6]->number+(float)$res[7]->number+(float)$res[8]->number;
+        $adv = (float)$res[9]->number+(float)$res[10]->number+(float)$res[11]->number;
+        
+        $res_data= [
+            'chart1' => $res[0]->number.",".$res[1]->number.",".$res[2]->number,
+            'chart2' => $res[3]->number.",".$res[4]->number.",".$res[5]->number,
+            'chart3' => $res[6]->number.",".$res[7]->number.",".$res[8]->number,
+            'chart4' => $res[9]->number.",".$res[10]->number.",".$res[11]->number,
+            'full'=>$full,
+            'wf'=>$wf,
+            'rev'=>$rev,
+            'adv'=>$adv,
+        ];
+
+        // echo "<pre>";
+        // print_r($res_data);
+        // die;
+        
+        $filename= "chartjs";
+        if($lang == 'nl'){
+            $filename= "chartjs-nl";
+        }else{
+            $filename = $filename;
+        }
+
+        $pdf = \PDF::loadView($filename,$res_data);
+        $pdf->setOption('enable-javascript',true);
+        $pdf->setOption('javascript-delay',20000);
+        $pdf->setOption('enable-smart-shrinking', true);
+        $pdf->setOption('no-stop-slow-scripts', true)                  
+        ->setOption('footer-spacing', 20 )
+        ->setPaper('a4')
+        ->setOption('margin-top', 2)
+        ->setOption('margin-bottom',1)
+        ->setOption('margin-left', 0)
+        ->setOption('margin-right',0);
+        return $pdf->inline();
+
+        // return view('chartjs',$res_data);
+
+      }
+      
+      die;
+    }
 }

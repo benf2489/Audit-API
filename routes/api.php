@@ -25,6 +25,7 @@ Route::get('responses/{typeform_id}','ResponseController@formShow');
 
 // Display single response from audit
 Route::get('response/{response_id}','ResponseController@show');
+Route::get('response/pdf/{response_id}/{lang}','ResponseController@pdf');
 
 
 // Store new response
