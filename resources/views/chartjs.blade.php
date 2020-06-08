@@ -130,7 +130,15 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
             <tr>
                 <td class="left-right-space" style="padding-top: 80px; padding-bottom: 100px; text-align: left;">
                     <h1 style="color: #ffffff; font-size: 24px; line-height: 40px; padding-bottom: 15px; font-family: 'Cera Pro'; letter-spacing: -0.5px; letter-spacing: 0; font-weight: normal;">Your connected accountant result</h1>
-                    <h2 style="color: #ffffff; font-family: 'Cera Pro';  font-weight: 900; font-size: 48px; letter-spacing: 0.5px; line-height: 52px;">You’re on the <br>right track</h2>
+                    <h2 style="color: #ffffff; font-family: 'Cera Pro';  font-weight: 900; font-size: 48px; letter-spacing: 0.5px; line-height: 52px;">
+                    <?php if ( $total > 47 ) {
+                        echo "Congratulations <br>you’re connected";
+                    } elseif ( $total > 21 ) {
+                        echo "Time to make a change";
+                    } else {
+                        echo "You’re on the <br>right track";
+                    }?>
+                    </h2>
                 </td>
             </tr>           
         </table>
@@ -143,13 +151,31 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
             </td>
         </tr>
         <tr>
-            <td style="padding: 0; margin: 0; width: 48%; padding-right: 4%;">
-                <p style="padding-bottom: 0; color: #012e44; padding-top: 10px; margin-top: 0; font-size: 19px; line-height: 28px; margin-bottom: 0; font-weight: 500;">Your use of technology is helping you streamline a lot of your day-to-day work.</p>
-                <p style="padding-bottom: 0; padding-top: 20px; margin-top: 0; font-size: 18px; line-height: 28px; margin-bottom: 0;"> For example, you have access to some real-time data, but probably not across your whole client portfolio; or you can integrate with a number of bookkeeping solutions, but not all. As a result, there may be inconsistencies in service delivery between</p>
-            </td>
-            <td style="padding: 0; margin: 0; width: 48%;">
-                <p style="padding-bottom: 0; padding-top: 10px; margin-top: 0; font-size: 18px; line-height: 28px; margin-bottom: 0; padding-right: 10px;">clients, which makes standardising and automating processes difficult to achieve. And without consolidated data, and consistency across the firm, you’re unable to identify trends in your client portfolio or see where advisory services are needed. You still have some steps to take to make the full transition from compliance reporter to trusted advisor.</p>
-            </td>
+            <?php if( $total > 47 ) : ?>
+                <td style="padding: 0; margin: 0; width: 48%; padding-right: 4%;">
+                    <p style="padding-bottom: 0; color: #012e44; padding-top: 10px; margin-top: 0; font-size: 19px; line-height: 28px; margin-bottom: 0; font-weight: 500;">Congratulations, our research shows that you’re ahead of the competition when it comes to your use of cloud technology.</p>
+                    <p style="padding-bottom: 0; padding-top: 20px; margin-top: 0; font-size: 18px; line-height: 28px; margin-bottom: 0;">Being a connected accountant gives you and your clients access to one version of the truth, whenever you need it, from any connected device.</p>
+                </td>
+                <td style="padding: 0; margin: 0; width: 48%;">
+                    <p style="padding-bottom: 0; padding-top: 10px; margin-top: 0; font-size: 18px; line-height: 28px; margin-bottom: 0; padding-right: 10px;">By automating compliance work you’re in the perfect position to recover time and use your data to deliver value-added advisory services and future-proof your firm. But with technology changing at a rapid pace, standing still isn’t an option. You need to keep on top of the latest advances to keep ahead.</p>
+                </td>
+            <?php elseif( $total < 21 ) : ?>
+                <td style="padding: 0; margin: 0; width: 48%; padding-right: 4%;">
+                    <p style="padding-bottom: 0; color: #012e44; padding-top: 10px; margin-top: 0; font-size: 19px; line-height: 28px; margin-bottom: 0; font-weight: 500;">You risk being left behind by your clients and competitors.</p>
+                    <p style="padding-bottom: 0; padding-top: 20px; margin-top: 0; font-size: 18px; line-height: 28px; margin-bottom: 0;">You lack real-time access to all the financial data you need to do your job, rely on too many manual processes and systems, and core reporting and compliance tasks are time-consuming. Inconsistency across the firm may also be increasing the risk of mistakes being made.</p>
+                </td>
+                <td style="padding: 0; margin: 0; width: 48%;">
+                    <p style="padding-bottom: 0; padding-top: 10px; margin-top: 0; font-size: 18px; line-height: 28px; margin-bottom: 0; padding-right: 10px;">The future is connected accounting, but in many ways you must feel as though you’re working on your own. You find it difficult to collaborate with colleagues, client communication is ineffective and hard, and there are no (or few) standardised working processes across your firm for you to follow.</p>
+                </td>
+            <?php else : ?>
+                <td style="padding: 0; margin: 0; width: 48%; padding-right: 4%;">
+                    <p style="padding-bottom: 0; color: #012e44; padding-top: 10px; margin-top: 0; font-size: 19px; line-height: 28px; margin-bottom: 0; font-weight: 500;">Your use of technology is helping you streamline a lot of your day-to-day work.</p>
+                    <p style="padding-bottom: 0; padding-top: 20px; margin-top: 0; font-size: 18px; line-height: 28px; margin-bottom: 0;"> For example, you have access to some real-time data, but probably not across your whole client portfolio; or you can integrate with a number of bookkeeping solutions, but not all. As a result, there may be inconsistencies in service delivery between</p>
+                </td>
+                <td style="padding: 0; margin: 0; width: 48%;">
+                    <p style="padding-bottom: 0; padding-top: 10px; margin-top: 0; font-size: 18px; line-height: 28px; margin-bottom: 0; padding-right: 10px;">clients, which makes standardising and automating processes difficult to achieve. And without consolidated data, and consistency across the firm, you’re unable to identify trends in your client portfolio or see where advisory services are needed. You still have some steps to take to make the full transition from compliance reporter to trusted advisor.</p>
+                </td>
+            <?php endif; ?>
         </tr>
     </table>    
 </div>
@@ -431,8 +457,16 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                                             </tr>
                                         </table>            
                                     </div>
-                                    <p style="text-align: left; font-size: 16px">Congratulations, you’re on top of your data strategy. Your adoption of technology at key points means you’re capable of providing a fast, efficient service to your clients. Most importantly, you’ve given yourself every chance of success in today’s competitive accountancy sector.</p>
-                                    <p style="text-align: left; font-size: 16px; padding-top: 10px;">In our recent research, the two biggest threats to future success cited by respondents were access to the right technology and the skills of the team. Your challenge now is to keep up with industry trends and ensure you’re anticipating new technologies, not reacting to them. As your clients’ businesses evolve, you need to evolve with them and ensure that you can always provide the timely and insightful information they need.</p>
+                                    <?php if( $full > 11 ) : ?>
+                                        <p style="text-align: left; font-size: 16px">Congratulations, you’re on top of your data strategy. Your adoption of technology at key points means you’re capable of providing a fast, efficient service to your clients. Most importantly, you’ve given yourself every chance of success in today’s competitive accountancy sector.</p>
+                                        <p style="text-align: left; font-size: 16px; padding-top: 10px;">In our recent research, the two biggest threats to future success cited by respondents were access to the right technology and the skills of the team. Your challenge now is to keep up with industry trends and ensure you’re anticipating new technologies, not reacting to them. As your clients’ businesses evolve, you need to evolve with them and ensure that you can always provide the timely and insightful information they need.</p>
+                                    <?php elseif( $full < 5 ) : ?>
+                                        <p style="text-align: left; font-size: 16px">You’re part of the 24% of accounting professionals who told us that their data is not yet consolidated in one central hub. Your financial information doesn’t update automatically, which means that your reports are often out of date as soon as they’re complete. While you are not alone, the bad news is that over a third of respondents in our recent research survey told us they do have access to live data. While your competitors are making progress, you still have work to do.</p>
+                                        <p style="text-align: left; font-size: 16px; padding-top: 10px;">Success in accounting today depends on a joined-up data strategy, allowing you to see your clients’ entire financial performance at a glance and provide insightful advice based on what you see. By bringing your data onto a single platform, you can guarantee consistency of delivery across your team and ensure no crucial information slips out of sight.</p>
+                                    <?php else : ?>
+                                        <p style="text-align: left; font-size: 16px">You’ve taken steps to modernise your data strategy and you’ve got some crucial information available in real time, allowing you to provide a limited amount of up-to-date analysis to your clients. But your strategy remains incomplete, which means your service delivery will remain inconsistent and you won’t always have the necessary information to hand.</p>
+                                        <p style="text-align: left; font-size: 16px; padding-top: 10px;">In our recent research, 37% of accounting professionals told us that not keeping up with changes in client demands is the main threat to their future success. Today’s practitioners need to provide proactive advice when it’s most needed to keep clients happy. It’s vital to create a connected data strategy in which all key information updates instantly, without any manual effort required.</p>
+                                    <?php endif; ?>
                                 </td>
                             </tr>
                         </table>
@@ -475,8 +509,16 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                                             </tr>
                                         </table>            
                                     </div>
-                                    <p style="text-align: left; font-size: 16px">Well done, you’ve adopted standardised and automated workflows, which will already be streamlining your everyday tasks, significantly reducing the reporting burden, and providing more accurate results for your clients.</p>
-                                    <p style="padding-top: 10px; text-align: left; font-size: 16px">By adopting a consistent approach to workflows you’ve given yourself a great chance of future success. Now you need to keep moving forward, harnessing new technologies to keep optimising these workflows and automating new ones.</p>
+                                    <?php if( $wf > 11 ) : ?>
+                                        <p style="text-align: left; font-size: 16px">Well done, you’ve adopted standardised and automated workflows, which will already be streamlining your everyday tasks, significantly reducing the reporting burden, and providing more accurate results for your clients.</p>
+                                        <p style="padding-top: 10px; text-align: left; font-size: 16px">By adopting a consistent approach to workflows you’ve given yourself a great chance of future success. Now you need to keep moving forward, harnessing new technologies to keep optimising these workflows and automating new ones.</p>
+                                    <?php elseif( $wf < 5 ) : ?>
+                                        <p style="text-align: left; font-size: 16px">You don’t have consistent workflows and processes across your firm, which means routine tasks take up too much time and may be prone to mistakes. Each team member has a different way of working, so your clients are likely to receive inconsistent levels of delivery. This should be an immediate concern for you, as over two-thirds of respondents in our recent survey told us they already had a standardised way of working across their firm.</p>
+                                        <p style="padding-top: 10px; text-align: left; font-size: 16px">Standardising your workflows will allow you to create templates for everyday reporting and compliance work, freeing your team up for more rewarding (not to mention commercially valuable) tasks. As your business grows, it’s also vital to ensure that all your team are working to the same high standards.</p>
+                                    <?php else : ?>
+                                        <p style="text-align: left; font-size: 16px">The good news is that you’ve taken important steps to address standardising and automating your workflows, which can only help your firm grow. Your day-to-day working practices are sound and your teams are capable of collaboration.</p>
+                                        <p style="padding-top: 10px; text-align: left; font-size: 16px">However, it’s important you keep improving to meet the challenges posed by your competitors as well as your clients. In our recent survey of accounting professionals, 21% told us that they can develop their own workflows, reports and services using their technology platform. By following their lead, you’ll be able to optimise your services and guarantee best practice at all times.</p>
+                                    <?php endif; ?>
                                 </td>
                             </tr>
                         </table>
@@ -501,8 +543,16 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                                             </tr>
                                         </table>            
                                     </div>
-                                    <p style="text-align: left; font-size: 16px">Your data analysis and reporting capabilities are impressive. You’re consolidating data in an efficient way, enabling you to extract key insights and provide forward-thinking business advice to your clients. The steps you’ve taken make you one of the innovative minority – only 7% of our research respondents strongly agreed with the statement that they can gain insight into their client base by benchmarking data across their portfolio.</p>
-                                    <p style="text-align: left; font-size: 16px; padding-top: 10px;">As new technology emerges, you’ll be able to keep improving your services and make your data analysis even more powerful. This will allow you to effortlessly share data with your clients, collaborating with them to solve key problems and helping them make better decisions based on what you see behind the numbers – which in turn will lead to happier clients and new advisory service revenue opportunities. </p>
+                                    <?php if( $rev > 11 ) : ?>
+                                        <p style="text-align: left; font-size: 16px">Your data analysis and reporting capabilities are impressive. You’re consolidating data in an efficient way, enabling you to extract key insights and provide forward-thinking business advice to your clients. The steps you’ve taken make you one of the innovative minority – only 7% of our research respondents strongly agreed with the statement that they can gain insight into their client base by benchmarking data across their portfolio.</p>
+                                        <p style="text-align: left; font-size: 16px; padding-top: 10px;">As new technology emerges, you’ll be able to keep improving your services and make your data analysis even more powerful. This will allow you to effortlessly share data with your clients, collaborating with them to solve key problems and helping them make better decisions based on what you see behind the numbers – which in turn will lead to happier clients and new advisory service revenue opportunities. </p>
+                                    <?php elseif( $rev < 5 ) : ?>
+                                        <p style="text-align: left; font-size: 16px">At the moment you’re failing to maximise the value of your clients’ data. The data you do have is not in one place and there’s no easy way of extracting the hidden insights that lie beneath. You’ve got plenty of numbers, but little value. The good news is that you’re not alone – only 9% of our survey respondents said that they can use their systems to complete a detailed analysis of each account or their whole client portfolio.</p>
+                                        <p style="text-align: left; font-size: 16px; padding-top: 10px;">It’s time to start improving your company’s analytical capabilities by bringing your data together in a clear, easily understandable form. This will help you see where you can advise clients on industry trends and help them reach key milestones.</p>
+                                    <?php else : ?>
+                                        <p style="text-align: left; font-size: 16px">You’ve certainly taken strides to improve your company’s analytical capabilities. By benchmarking data against best practice and improving client collaboration tools, you’ve built a solid foundation for the firm to develop on.</p>
+                                        <p style="text-align: left; font-size: 16px; padding-top: 10px;">Now you’re ready to push on and build world-class advisory services founded on strong data analysis. Where you can look beyond the numbers to find the insights that help your clients and fundamentally change the nature of your relationship with them.</p>
+                                    <?php endif; ?>
                                 </td>
                             </tr>
                         </table>
@@ -545,8 +595,16 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                                             </tr>
                                         </table>            
                                     </div>
-                                    <p style="text-align: left; font-size: 16px; padding-top:0;">You’ve taken steps to consolidate your client data, even automate your accounting workflows. You’re well on the way to transforming your compliance services. But there’s still work to do before you turn this data into new advisory services and revenue.</p>
-                                    <p style="padding-top: 10px; text-align: left; font-size: 16px">Armed with the right analytics, reporting tools, and consolidated client data, you will put yourself in the best position to see trends as they emerge and be able to respond with real-time advice that has a positive impact on your clients’ businesses. This transformation from providing largely compliance services to leading with advisory is something that only 13% of our survey’s respondents say they’ve successfully achieved, so it is all to play for. Changes you make today to your services, skills, and technology investments, will put you in the best position to extend your service offering into advisory services before your competitors do. </p>
+                                    <?php if( $adv > 11 ) : ?>
+                                        <p style="text-align: left; font-size: 16px; padding-top:0;">The transformation of your business is already well underway. You’ve moved beyond core accounting practices and embraced the role of trusted partner, using your clients’ data to provide a range of value-added services.</p>
+                                        <p style="padding-top: 10px; text-align: left; font-size: 16px">But the pace of technological change is only increasing, and each new innovation will increase your ability to provide world-class advisory services. Or increase the ability of your competitors. So keep an eye out for new developments and be sure to react to them.</p>
+                                    <?php elseif( $adv < 5 ) : ?>
+                                        <p style="text-align: left; font-size: 16px; padding-top:0;">You seem rooted in traditional accounting practices and the provision of compliance services. You probably haven’t made significant progress building a consistent – and significant – revenue stream from advisory services. While you’re not alone in this respect – for example, just 14% of our research respondents identified advisory services as their main source of income – developing these services quickly, and using technology to help, is quickly becoming a pressing issue. 76% of our respondents see advisory as their biggest revenue contributor in the next five years.</p>
+                                        <p style="padding-top: 10px; text-align: left; font-size: 16px">You can quickly improve the situation by making better use of your client data. Pull it all together into one data store and make it accessible to your team. Then give them the analytics tools to look across your client portfolio for trends and issues that provoke an advisory discussion. But that’s not all. Armed with up-to-date data, and the tools to analyse it easily, your team can give clients insight and advice that transforms their businesses.</p>
+                                    <?php else : ?>
+                                        <p style="text-align: left; font-size: 16px; padding-top:0;">You’ve taken steps to consolidate your client data, even automate your accounting workflows. You’re well on the way to transforming your compliance services. But there’s still work to do before you turn this data into new advisory services and revenue.</p>
+                                        <p style="padding-top: 10px; text-align: left; font-size: 16px">Armed with the right analytics, reporting tools, and consolidated client data, you will put yourself in the best position to see trends as they emerge and be able to respond with real-time advice that has a positive impact on your clients’ businesses. This transformation from providing largely compliance services to leading with advisory is something that only 13% of our survey’s respondents say they’ve successfully achieved, so it is all to play for. Changes you make today to your services, skills, and technology investments, will put you in the best position to extend your service offering into advisory services before your competitors do. </p>
+                                    <?php endif; ?>
                                 </td>
                             </tr>
                         </table>
@@ -570,12 +628,28 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                         <td>
                             <table class="chart-title" cellpadding="0" cellpadding="0" style="padding: 0; margin: 0;">
                                 <tr>
+                                <?php if( $total > 47 ) : ?>
+                                    <td style="width: 48%; padding-right: 4%;">
+                                        <p style="color: #012e44; padding-bottom: 19px; font-size: 20px; line-height: 28px; font-weight: 500;">You’ve reached this high level of digital maturity by being smart about your technology strategy, adoption and investments.</p>
+                                        <p style="color: #708ea8; padding-bottom: 10px; font-size: 18px; line-height: 28px; font-weight: normal;">It’s allowed you to stay ahead of your competition and unlock revenue from the advisory services that so many firms are seeking.</p></td>
+                                    <td style="width: 48%;">
+                                        <p style="color: #708ea8; padding-bottom: 0px; font-size: 18px; line-height: 28px; padding-left: 10px; font-weight: normal;">So why stand still now and let the rest catch you up? That’s where Silverfin can help. Our award-winning cloud platform powers connected accounting at some of the world’s leading firms. And our powerful analytics and reporting tools give you the data and insight you need to be your clients’ most trusted advisor.</p>
+                                    </td>
+                                <?php elseif( $total < 21 ) : ?>
+                                    <td style="width: 48%; padding-right: 4%;">
+                                        <p style="color: #012e44; padding-bottom: 19px; font-size: 20px; line-height: 28px; font-weight: 500;">Being a connected accountant gives you access to the data, tools and people you need to work quickly, efficiently, and accurately – and to transform your compliance work.</p>
+                                        <p style="color: #708ea8; padding-bottom: 10px; font-size: 18px; line-height: 28px; font-weight: normal;">That means no more financial data stored in silos or inconsistent processes across your firm. Your success as a connected accountant depends on the technology you use.</p></td>
+                                    <td style="width: 48%;">
+                                        <p style="color: #708ea8; padding-bottom: 0px; font-size: 18px; line-height: 28px; padding-left: 10px; font-weight: normal;">Silverfin’s cloud platform integrates with all your clients’ accounting and finance systems to pull in critical data, no matter what the source. With Silverfin you’re always working from a single version of the truth, sharing real-time data with clients and colleagues. Once you standardise your data and processes you can automate reporting and workflows, and begin your journey to becoming a connected accountant.</p>
+                                    </td>
+                                <?php else : ?>
                                     <td style="width: 48%; padding-right: 4%;">
                                         <p style="color: #012e44; padding-bottom: 19px; font-size: 20px; line-height: 28px; font-weight: 500;">Your clients’ demands are changing. Offering just compliance services isn’t enough.</p>
                                         <p style="color: #708ea8; padding-bottom: 10px; font-size: 18px; line-height: 28px; font-weight: normal;"> Increasingly, your clients are demanding value-added advisory services. While you demonstrate a reasonable degree of digital maturity, the bad news is that your competitors are currently better placed to serve your clients’ evolving requirements.</p></td>
                                     <td style="width: 48%;">
                                         <p style="color: #708ea8; padding-bottom: 0px; font-size: 18px; line-height: 28px; padding-left: 10px; font-weight: normal;">Silverfin’s cloud-based platform connects with your clients’ bookkeeping and financial systems to bring you all the data you need – whatever the source. We automate your compliance accounting workflows, improving your speed, accuracy and profitability. Then our powerful analytics and reporting tools give you the data and insight you need to be your clients’ most trusted advisor.</p>
                                     </td>
+                                <?php endif; ?>
                                 </tr>
                             </table>
                         </td>
@@ -593,7 +667,13 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                     <tr>
                         <td>
                             <div class="chart-title">
-                                <h2 style="color: #fff; padding-top: 0px; margin-top: 20px; font-size: 46px; line-height: 55px; text-align: center;"> <strong style="color: #fff; margin-top: 20px; letter-spacing: 0.5px !important; margin-bottom: 20px; font-weight: 900;"> Book a free connected accounting <br>workshop and build your own <br>plan for change today</strong></h2>
+                                <h2 style="color: #fff; padding-top: 0px; margin-top: 20px; font-size: 46px; line-height: 55px; text-align: center;"> <strong style="color: #fff; margin-top: 20px; letter-spacing: 0.5px !important; margin-bottom: 20px; font-weight: 900;">
+                                <?php if ( $total > 47 ) {
+                                    echo "Book a free connected accounting <br>workshop and identify new opportunities <br>to capitalise on your technology investment";
+                                } else {
+                                    echo "Book a free connected accounting <br>workshop and build your own <br>plan for change today";
+                                }?>
+                                </strong></h2>
                             </div>
                         </td>
                     </tr>
