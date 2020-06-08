@@ -151,6 +151,7 @@ class ResponseController extends Controller
         $wf = (float)$res[3]->number+(float)$res[4]->number+(float)$res[5]->number;
         $rev = (float)$res[6]->number+(float)$res[7]->number+(float)$res[8]->number;
         $adv = (float)$res[9]->number+(float)$res[10]->number+(float)$res[11]->number;
+        $total = (float)$res[0]->number+(float)$res[1]->number+(float)$res[2]->number+(float)$res[3]->number+(float)$res[4]->number+(float)$res[5]->number+(float)$res[6]->number+(float)$res[7]->number+(float)$res[8]->number+(float)$res[9]->number+(float)$res[10]->number+(float)$res[11]->number;
         
         $res_data= [
             'chart1' => $res[0]->number.",".$res[1]->number.",".$res[2]->number,
