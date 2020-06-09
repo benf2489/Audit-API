@@ -44,7 +44,7 @@ class ResponseController extends Controller
     {
 
         $response_id = $request->form_response["hidden"]["response_id"];
-        $scores = $request->form_response["hidden"]["scores"];
+        $scores = $request->form_response["calculated"]["score"];
         $calculated = $request->form_response["calculated"];
         $questions = $request->form_response["definition"]["fields"];
         $formId = $request->form_response["form_id"];
@@ -162,17 +162,27 @@ class ResponseController extends Controller
             'wf'=>$wf,
             'rev'=>$rev,
             'adv'=>$adv,
+            'total'=>$total
         ];
+
+        // echo $lang;
 
         // echo "<pre>";
         // print_r($res_data);
         // die;
         
         $filename= "chartjs";
+
         if($lang == 'nl'){
-            $filename= "chartjs-nl";
-        }else{
-            $filename = $filename;
+          $filename= "chartjs-nl-nl";
+        } else if ($lang == 'nl-be'){
+          $filename = "chartjs-nl-be";
+        } else if ($lang == 'fr'){
+          $filename = "chartjs-fr";
+        }  else if ($lang == 'us'){
+            $filename = "chartjs";
+        } else{
+            $filename = "chartjs";
         }
 
         $pdf = \PDF::loadView($filename,$res_data);
@@ -186,9 +196,17 @@ class ResponseController extends Controller
         ->setOption('margin-bottom',1)
         ->setOption('margin-left', 0)
         ->setOption('margin-right',0);
-        return $pdf->inline();
+        // return $pdf->inline();
 
-        // return view('chartjs',$res_data);
+        if($lang == 'nl-nl'){
+          return view('chartjs-nl-nl',$res_data);
+        } else if ($lang == 'nl-be'){
+          return view('chartjs-nl-be',$res_data);
+        } else if ($lang == 'fr'){
+          return view('chartjs-fr',$res_data);
+        } else{
+          return view('chartjs',$res_data);
+        }
 
       }
       
