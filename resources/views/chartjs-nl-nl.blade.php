@@ -43,11 +43,11 @@ else if ( $full > 9 && $wf > 9 && $rev > 9 && $adv > 9) {
 <head>
 <meta charset="UTF-8">
 <style type="text/css">
-@font-face {font-family: 'Cera Pro'; src: url('{{asset('public/fonts/CeraPro-Light.ttf')}}') format('truetype'); font-weight: 300; font-style: normal; }
-@font-face {font-family: 'Cera Pro'; src: url('{{asset('public/fonts/CeraPro-Regular.ttf')}}') format('truetype'); font-weight: normal; font-style: normal; }
-@font-face {font-family: 'Cera Pro'; src: url('{{asset('public/fonts/CeraPro-Medium.ttf')}}') format('truetype'); font-weight: 500; font-style: normal; }
-@font-face {font-family: 'Cera Pro'; src: url('{{asset('public/fonts/CeraPro-Black.ttf')}}') format('truetype'); font-weight: 900; font-style: normal; }
-@font-face {font-family: 'Cera Pro'; src: url('{{asset('public/fonts/CeraPro-Bold.ttf')}}') format('truetype'); font-weight: bold; font-style: normal; }
+@font-face {font-family: 'Cera Pro'; src: url('{{asset('/fonts/CeraPro-Light.ttf')}}') format('truetype'); font-weight: 300; font-style: normal; }
+@font-face {font-family: 'Cera Pro'; src: url('{{asset('/fonts/CeraPro-Regular.ttf')}}') format('truetype'); font-weight: normal; font-style: normal; }
+@font-face {font-family: 'Cera Pro'; src: url('{{asset('/fonts/CeraPro-Medium.ttf')}}') format('truetype'); font-weight: 500; font-style: normal; }
+@font-face {font-family: 'Cera Pro'; src: url('{{asset('/fonts/CeraPro-Black.ttf')}}') format('truetype'); font-weight: 900; font-style: normal; }
+@font-face {font-family: 'Cera Pro'; src: url('{{asset('/fonts/CeraPro-Bold.ttf')}}') format('truetype'); font-weight: bold; font-style: normal; }
 body { font-family: 'Cera Pro'; font-weight: normal; }
 @page {padding: 0; margin: 0; padding-top: 0px; padding-bottom: 0px; border: none; border-collapse: collapse; font-family: 'Cera Pro'; font-weight: normal;  page-break-after: always;
         page-break-inside: avoid; }
@@ -115,13 +115,13 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
 </head>
 <body>
-<div class="banner-box" style="background-color: #01355c; background-size: contain; background-repeat: repeat; background-position: bottom right; margin: 0; padding: 0; position: relative; margin-top: -10px; background-image: url({{asset('public/icons/bookbg-image.jpg')}});">
+<div class="banner-box" style="background-color: #01355c; background-size: contain; background-repeat: repeat; background-position: bottom right; margin: 0; padding: 0; position: relative; margin-top: -10px; background-image: url({{asset('/icons/bookbg-image.jpg')}});">
     <!-- Top Banner Background image size width:1340px and height:650px -->
      <div class="header left-right-space" style="padding-top: 50px; padding-bottom: 0; margin: 0;">
         <table  cellpadding="0" cellpadding="0" style="padding-top: 30px; padding-bottom: 20px; margin: 0;">
             <tr>
                 <td class="logo" style="width: 100%; padding-top: 0; margin-top: 0; ">
-                    <img style="width: 190px; display: block;" src="{{asset('public/icons/white-logo.svg')}}" />
+                    <img style="width: 190px; display: block;" src="{{asset('/icons/white-logo.svg')}}" />
                 </td>
             </tr>
         </table>
@@ -154,18 +154,18 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
             <?php if( $total > 47 ) : ?>
                 <td style="padding: 0; margin: 0; width: 48%; padding-right: 4%;">
                     <p style="padding-bottom: 0; color: #012e44; padding-top: 10px; margin-top: 0; font-size: 19px; line-height: 28px; margin-bottom: 0; font-weight: 500;">Proficiat, ons onderzoek toont aan dat je de concurrentie voor bent als het gaat om je gebruik van cloud technologie.</p>
-                    <p style="padding-bottom: 0; padding-top: 20px; margin-top: 0; font-size: 18px; line-height: 28px; margin-bottom: 0;">Als connected accountant hebben jij en je cliënten toegang tot de ‘single version of the truth’, op elk moment, vanaf elk device.</p>
+                    <p style="padding-bottom: 0; padding-top: 20px; margin-top: 0; font-size: 18px; line-height: 28px; margin-bottom: 0;">Als connected accountant hebben jij en je cliënten toegang tot de ‘single version of the truth’, op elk moment, vanaf elk device. Door het automatiseren van compliance werkzaamheden verkeer</p>
                 </td>
                 <td style="padding: 0; margin: 0; width: 48%;">
-                    <p style="padding-bottom: 0; padding-top: 10px; margin-top: 0; font-size: 18px; line-height: 28px; margin-bottom: 0; padding-right: 10px;">Door het automatiseren van compliance werkzaamheden verkeer je in de perfecte positie om tijd te winnen en je data te gebruiken om waardevol te kunnen adviseren en je bedrijf toekomstbestendig te maken. Nu technologie in een razend tempo verandert, is stilstaan geen optie. Je moet steeds op de hoogte blijven van de laatste ontwikkelingen om deze voorsprong te blijven uitbouwen.</p>
+                    <p style="padding-bottom: 0; padding-top: 10px; margin-top: 0; font-size: 18px; line-height: 28px; margin-bottom: 0; padding-right: 10px;">je in de perfecte positie om tijd te winnen en je data te gebruiken om waardevol te kunnen adviseren en je bedrijf toekomstbestendig te maken. Nu technologie in een razend tempo verandert, is stilstaan geen optie. Je moet steeds op de hoogte blijven van de laatste ontwikkelingen om deze voorsprong te blijven uitbouwen.</p>
                 </td>
             <?php elseif( $total < 21 ) : ?>
                 <td style="padding: 0; margin: 0; width: 48%; padding-right: 4%;">
                     <p style="padding-bottom: 0; color: #012e44; padding-top: 10px; margin-top: 0; font-size: 19px; line-height: 28px; margin-bottom: 0; font-weight: 500;">Je loopt het risico ingehaald te worden door jouw cliënten en je concurrenten.</p>
-                    <p style="padding-bottom: 0; padding-top: 20px; margin-top: 0; font-size: 18px; line-height: 28px; margin-bottom: 0;">Je hebt geen realtime toegang tot alle financiële gegevens die je nodig hebt om je werk te doen. Op dit moment vertrouw je te veel op handmatige processen en systemen, en de belangrijkste reporting en compliance taken zijn nog steeds tijdrovend. Inconsistentie binnen het bedrijf kan ook de kans op fouten vergroten.</p>
+                    <p style="padding-bottom: 0; padding-top: 20px; margin-top: 0; font-size: 18px; line-height: 28px; margin-bottom: 0;">Je hebt geen realtime toegang tot alle financiële gegevens die je nodig hebt om je werk te doen. Op dit moment vertrouw je te veel op handmatige processen en systemen, en de belangrijkste reporting en compliance taken zijn nog steeds tijdrovend.</p>
                 </td>
                 <td style="padding: 0; margin: 0; width: 48%;">
-                    <p style="padding-bottom: 0; padding-top: 10px; margin-top: 0; font-size: 18px; line-height: 28px; margin-bottom: 0; padding-right: 10px;">De toekomst is connected accounting, maar in veel opzichten zul je nu wellicht nog het gevoel hebben dat je ‘op jezelf’ werkt en niet connected. Het is moeilijk om samen te werken met collega’s, communicatie met de cliënt is ondoeltreffend en je processen zijn weinig tot niet gestandaardiseerd.</p>
+                    <p style="padding-bottom: 0; padding-top: 10px; margin-top: 0; font-size: 18px; line-height: 28px; margin-bottom: 0; padding-right: 10px;">Inconsistentie binnen het bedrijf kan ook de kans op fouten vergroten. De toekomst is connected accounting, maar in veel opzichten zul je nu wellicht nog het gevoel hebben dat je ‘op jezelf’ werkt en niet connected. Het is moeilijk om samen te werken met collega’s, communicatie met de cliënt is ondoeltreffend en je processen zijn weinig tot niet gestandaardiseerd.</p>
                 </td>
             <?php else : ?>
                 <td style="padding: 0; margin: 0; width: 48%; padding-right: 4%;">
@@ -197,7 +197,7 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                                 <tr>
                                     <td style="width: 100%; text-align: center; padding-top: 6px; padding-bottom: 5px;">
                                         <span class="down-arrow" style="width: 100%; text-align: center; margin: 0 auto;">
-                                            <img src="{{ asset('public/icons/down-arrow.svg')}}" />             
+                                            <img src="{{ asset('/icons/down-arrow.svg')}}" />             
                                         </span>                         
                                     </td>
                                 </tr>
@@ -221,7 +221,7 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                                 <tr>
                                     <td style="width: 100%; text-align: center; padding-top: 6px; padding-bottom: 5px;">
                                         <span class="down-arrow" style="width: 100%; text-align: center; margin: 0 auto;">
-                                            <img src="{{ asset('public/icons/down-arrow.svg')}}" />             
+                                            <img src="{{ asset('/icons/down-arrow.svg')}}" />             
                                         </span>                         
                                     </td>
                                 </tr>
@@ -246,7 +246,7 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                                 <tr>
                                     <td style="width: 100%; text-align: center; padding-top: 6px; padding-bottom: 5px;">
                                         <span class="down-arrow" style="width: 100%; text-align: center; margin: 0 auto;">
-                                            <img src="{{ asset('public/icons/down-arrow.svg')}}" />
+                                            <img src="{{ asset('/icons/down-arrow.svg')}}" />
                                         </span>
                                     </td>
                                 </tr>
@@ -270,7 +270,7 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                                 <tr>
                                     <td style="width: 100%; text-align: center; padding-top: 6px; padding-bottom: 5px;">
                                         <span class="down-arrow" style="width: 100%; text-align: center; margin: 0 auto;">
-                                            <img src="{{ asset('public/icons/down-arrow.svg')}}" />             
+                                            <img src="{{ asset('/icons/down-arrow.svg')}}" />             
                                         </span>                         
                                     </td>
                                 </tr>
@@ -283,7 +283,7 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
     </table>
     <table class="service-box" style="padding-left: 66px; padding-right: 66px; padding-top: 0;">
         <tr>
-            <td style="width: 25%; border: 2px solid #fff; padding: 20px 20px 0 20px; {{ $fullclass }}  background-repeat: no-repeat; background-size: contain; background-position: bottom left; background-image: url({{asset('public/icons/shape-1.png')}});">
+            <td style="width: 25%; border: 2px solid #fff; padding: 20px 20px 0 20px; {{ $fullclass }}  background-repeat: no-repeat; background-size: contain; background-position: bottom left; background-image: url({{asset('/icons/shape-1.png')}});">
                 <table cellpadding="0" cellpadding="0" align="top">
                     <tr>
                         <td style="padding: 0;">
@@ -294,9 +294,9 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                                             <tr>
                                                 <td class="lefticon" style="width: 30px; padding: 0;">
                                                     <?php if($fullstatus ==1){ ?>
-                                                        <img src="{{ asset('public/icons/fullsight-active.svg')}}" />
+                                                        <img src="{{ asset('/icons/fullsight-active.svg')}}" />
                                                     <?php } else { ?>
-                                                        <img src="{{ asset('public/icons/fullsight.svg')}}" />
+                                                        <img src="{{ asset('/icons/fullsight.svg')}}" />
                                                     <?php } ?>                                                    
                                                 </td><td style="width: 0px;"></td>
                                                 <td><h2 style="{{ $fullclassh2 }}">fullsight</h2></td>
@@ -320,7 +320,7 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                     </tr>
                 </table>
             </td>
-            <td style="width: 25%; border: 2px solid #fff; padding: 20px 20px 0 20px; {{ $wfclass }} background-size: contain; background-repeat: no-repeat; background-position: bottom left; background-image: url({{asset('public/icons/shape-2.png')}});">
+            <td style="width: 25%; border: 2px solid #fff; padding: 20px 20px 0 20px; {{ $wfclass }} background-size: contain; background-repeat: no-repeat; background-position: bottom left; background-image: url({{asset('/icons/shape-2.png')}});">
                 <table cellpadding="0" cellpadding="0" align="top">
                     <tr>
                         <td style="padding: 0;">
@@ -331,9 +331,9 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                                             <tr>
                                                 <td class="lefticon" style="width: 30px; padding: 0;">
                                                     <?php if($wfstatus == 1){?>
-                                                        <img src="{{ asset('public/icons/hindsight-active.svg')}}" />
+                                                        <img src="{{ asset('/icons/hindsight-active.svg')}}" />
                                                     <?php } else { ?>
-                                                        <img src="{{ asset('public/icons/hindsight.svg')}}" />
+                                                        <img src="{{ asset('/icons/hindsight.svg')}}" />
                                                     <?php } ?>
                                                 </td><td style="width: 0px;"></td>
                                                 <td><h2 style="{{ $wfclassh2 }}">hindsight</h2></td>
@@ -357,7 +357,7 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                     </tr>
                 </table>
             </td>
-            <td style="width: 25%; border: 2px solid #fff; padding: 20px 20px 0 20px; {{ $revclass }}  background-size: contain;  background-repeat: no-repeat; background-position: bottom left; background-image: url({{asset('public/icons/shape-3.png')}});">
+            <td style="width: 25%; border: 2px solid #fff; padding: 20px 20px 0 20px; {{ $revclass }}  background-size: contain;  background-repeat: no-repeat; background-position: bottom left; background-image: url({{asset('/icons/shape-3.png')}});">
                 <table cellpadding="0" cellpadding="0" align="top">
                     <tr>
                         <td style="padding: 0;">
@@ -368,11 +368,11 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                                             <tr>
                                                 <td class="lefticon" style="width: 30px; padding: 0;">
                                                     <?php if($revstatus == 1){?>
-                                                        <img src="{{ asset('public/icons/insight-active.svg')}}" />
+                                                        <img src="{{ asset('/icons/insight-active.svg')}}" />
                                                     <?php } else { ?>
-                                                        <img src="{{ asset('public/icons/insight-regular.svg')}}" />
+                                                        <img src="{{ asset('/icons/insight-regular.svg')}}" />
                                                     <?php } ?>
-                                                    <!-- <img src="{{ asset('public/icons/insight-regular.svg')}}" /> -->
+                                                    <!-- <img src="{{ asset('/icons/insight-regular.svg')}}" /> -->
                                                 </td><td style="width: 0px;"></td>
                                                 <td><h2 style="{{ $revclassh2 }}">insight</h2></td>
                                             </tr>
@@ -395,7 +395,7 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                     </tr>
                 </table>
             </td>
-            <td style="width: 25%; border: 2px solid #fff; padding: 20px 20px 0 20px; {{ $advclass }} background-size: contain;  background-repeat: no-repeat; background-position: bottom left; background-image: url({{asset('public/icons/shape-4.png')}});">
+            <td style="width: 25%; border: 2px solid #fff; padding: 20px 20px 0 20px; {{ $advclass }} background-size: contain;  background-repeat: no-repeat; background-position: bottom left; background-image: url({{asset('/icons/shape-4.png')}});">
                 <table cellpadding="0" cellpadding="0" align="top">
                     <tr>
                         <td style="padding: 0;">
@@ -407,9 +407,9 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                                                 <td class="lefticon" style="width: 30px; padding: 0;">
                                                     
                                                     <?php if($advstatus == 1){?>
-                                                        <img src="{{ asset('public/icons/foresight-active.svg')}}" />
+                                                        <img src="{{ asset('/icons/foresight-active.svg')}}" />
                                                     <?php } else { ?>
-                                                        <img src="{{ asset('public/icons/foresight.svg')}}" />
+                                                        <img src="{{ asset('/icons/foresight.svg')}}" />
                                                     <?php } ?>
                                                 </td><td style="width: 0px;"></td>
                                                 <td><h2 style="{{ $advclassh2 }}">foresight</h2></td>
@@ -455,7 +455,7 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                                     <div class="title-box">
                                         <table cellpadding="0" cellpadding="0">
                                             <tr>
-                                                <td class="imgbox" style="width: 18%; text-align: left; padding: 0 5px 0 0;"><img style="width: 45px;" src="{{ asset('public/icons/data.svg')}}" /></td>
+                                                <td class="imgbox" style="width: 18%; text-align: left; padding: 0 5px 0 0;"><img style="width: 45px;" src="{{ asset('/icons/data.svg')}}" /></td>
                                                 <td style="padding: 0; padding-left: 0px; width: 85%;" class="carttitle"><h2 style="font-size: 38px !important; font-weight: 900; ">Data</h2></td>
                                             </tr>
                                         </table>            
@@ -507,7 +507,7 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                                     <div class="title-box">
                                         <table cellpadding="0" cellpadding="0">
                                             <tr>
-                                                <td class="imgbox" style="width: 15%; text-align: left; padding: 0;"><img style="width: 45px;" src="{{ asset('public/icons/workflow.svg')}}" /></td>
+                                                <td class="imgbox" style="width: 15%; text-align: left; padding: 0;"><img style="width: 45px;" src="{{ asset('/icons/workflow.svg')}}" /></td>
                                                 <td style="padding: 0; padding-left: 2px; width: 75%" class="carttitle"><h2 style="font-size: 38px !important; font-weight: 900;">Workflow</h2></td>
                                             </tr>
                                         </table>            
@@ -541,7 +541,7 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                                     <div class="title-box">
                                         <table cellpadding="0" cellpadding="0">
                                             <tr>
-                                                <td class="imgbox" style="width: 15%; text-align: left; padding: 0;"><img style="width: 45px;" src="{{ asset('public/icons/review_ic.svg')}}" /></td>
+                                                <td class="imgbox" style="width: 15%; text-align: left; padding: 0;"><img style="width: 45px;" src="{{ asset('/icons/review_ic.svg')}}" /></td>
                                                 <td style="padding: 0; padding-left: 0px; width: 75%;" class="carttitle"><h2 style="font-size: 38px !important; font-weight: 900; ">Review</h2></td>
                                             </tr>
                                         </table>            
@@ -593,7 +593,7 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                                     <div class="title-box">
                                         <table cellpadding="0" cellpadding="0">
                                             <tr>
-                                                <td class="imgbox" style="width: 15%; text-align: left; padding:0;"><img style="width: 100%;" src="{{ asset('public/icons/advisory_ic.svg')}}" /></td>
+                                                <td class="imgbox" style="width: 15%; text-align: left; padding:0;"><img style="width: 100%;" src="{{ asset('/icons/advisory_ic.svg')}}" /></td>
                                                 <td style="padding: 0; padding-left: 10px; width: 85%" class="carttitle"><h2 style="font-size: 38px !important; font-weight: 900; ">Adviesverlening</h2></td>
                                             </tr>
                                         </table>            
@@ -662,7 +662,7 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
         </tr>
     </table>
 </div>
-<div class="full-width" style="background-color: #01355c; background-repeat: repeat; background-position: left bottom; text-align: center; padding: 0; margin: 0;  background-image: url({{asset('public/icons/book-bg-image2.jpg')}}); ">
+<div class="full-width" style="background-color: #01355c; background-repeat: repeat; background-position: left bottom; text-align: center; padding: 0; margin: 0;  background-image: url({{asset('/icons/book-bg-image2.jpg')}}); ">
     <table cellpadding="0" cellpadding="0" style="padding-left: 66px; padding-right: 66px; margin-top: 20px;">
         <tr>
             <td style="padding-top: 239px; padding-bottom: 239px; text-align: center;">
@@ -672,9 +672,9 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                             <div class="chart-title">
                                 <h2 style="color: #fff; padding-top: 0px; margin-top: 20px; font-size: 46px; line-height: 55px; text-align: center;"> <strong style="color: #fff; margin-top: 20px; letter-spacing: 0.5px !important; margin-bottom: 20px; font-weight: 900;">
                                 <?php if ( $total > 47 ) {
-                                    echo "Boek een gratis connected accounting workshop <br>en identificeer nieuwe kansen om te profiteren van je investering in technologie";
+                                    echo "Identificeer nieuwe kansen om te profiteren van je investering in technologie";
                                 } else {
-                                    echo "Boek een gratis connected accounting workshop <br>en bouw vandaag nog je eigen plan voor verandering";
+                                    echo "Bouw vandaag nog je eigen plan voor verandering";
                                 }?>
                                 </strong></h2>
                             </div>
@@ -709,7 +709,7 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                 <table  cellpadding="0" cellpadding="0" style="width: 80px; text-align: center; border-right: 1px solid #304150; border-left: 1px solid #304150;">
                     <tr>
                         <td style="padding: 15px 0;">
-                            <a style="padding: 15px 10px; width: 80px; display:block;" href="https://www.linkedin.com/company/silverfin/" target="_blank"><img style="width: 34px;" src="{{ asset('public/icons/linkedin-icon.svg')}}"/></a>
+                            <a style="padding: 15px 10px; width: 80px; display:block;" href="https://www.linkedin.com/company/silverfin/" target="_blank"><img style="width: 34px;" src="{{ asset('/icons/linkedin-icon.svg')}}"/></a>
                         </td>
                     </tr>
                 </table>
@@ -718,7 +718,7 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                 <table  cellpadding="0" cellpadding="0" style="width: 80px; text-align: center; border-right: 1px solid #304150;">
                     <tr>
                         <td style="padding: 15px 0;">
-                            <a style="padding: 15px 10px; width: 80px; display:block;"  href="https://twitter.com/getsilverfin" target="_blank"><img style="width: 34px;" src="{{ asset('public/icons/twitter-icon.svg')}}"/></a>
+                            <a style="padding: 15px 10px; width: 80px; display:block;"  href="https://twitter.com/getsilverfin" target="_blank"><img style="width: 34px;" src="{{ asset('/icons/twitter-icon.svg')}}"/></a>
                         </td>
                     </tr>
                 </table>
@@ -727,7 +727,7 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                 <table  cellpadding="0" cellpadding="0" style="width: 80px; text-align: center;  border-right: 1px solid #304150;">
                     <tr>
                         <td style="padding: 15px 0;">
-                            <a style="padding: 15px 10px; width: 80px; display:block;"  href="https://www.facebook.com/getsilverfin/" target="_blank"><img style="width: 34px;" src="{{ asset('public/icons/facebook-icon.svg')}}"/></a>
+                            <a style="padding: 15px 10px; width: 80px; display:block;"  href="https://www.facebook.com/getsilverfin/" target="_blank"><img style="width: 34px;" src="{{ asset('/icons/facebook-icon.svg')}}"/></a>
                         </td>
                     </tr>
                 </table>

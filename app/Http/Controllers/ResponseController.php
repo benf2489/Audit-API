@@ -173,7 +173,7 @@ class ResponseController extends Controller
         
         $filename= "chartjs";
 
-        if($lang == 'nl'){
+        if($lang == 'nl-nl'){
           $filename= "chartjs-nl-nl";
         } else if ($lang == 'nl-be'){
           $filename = "chartjs-nl-be";
@@ -196,17 +196,17 @@ class ResponseController extends Controller
         ->setOption('margin-bottom',1)
         ->setOption('margin-left', 0)
         ->setOption('margin-right',0);
-        // return $pdf->inline();
+        return $pdf->inline();
 
-        if($lang == 'nl-nl'){
-          return view('chartjs-nl-nl',$res_data);
-        } else if ($lang == 'nl-be'){
-          return view('chartjs-nl-be',$res_data);
-        } else if ($lang == 'fr'){
-          return view('chartjs-fr',$res_data);
-        } else{
-          return view('chartjs',$res_data);
-        }
+        // if($lang == 'nl-nl'){
+        //   return view('chartjs-nl-nl',$res_data);
+        // } else if ($lang == 'nl-be'){
+        //   return view('chartjs-nl-be',$res_data);
+        // } else if ($lang == 'fr'){
+        //   return view('chartjs-fr',$res_data);
+        // } else{
+        //   return view('chartjs',$res_data);
+        // }
 
       }
       
