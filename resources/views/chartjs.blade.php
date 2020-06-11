@@ -132,18 +132,18 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                     <h1 style="color: #ffffff; font-size: 24px; line-height: 40px; padding-bottom: 15px; font-family: 'Cera Pro'; letter-spacing: -0.5px; letter-spacing: 0; font-weight: normal;">Your connected accountant result</h1>
                     <h2 style="color: #ffffff; font-family: 'Cera Pro';  font-weight: 900; font-size: 48px; letter-spacing: 0.5px; line-height: 52px;">
                     <?php if ( $total > 47 ) {
-                        echo "Congratulations <br>you’re connected";
+                        echo "Congratulations you’re connected";
                     } elseif ( $total < 21 ) {
                         echo "Time to make a change";
                     } else {
-                        echo "You’re on the <br>right track";
+                        echo "You’re on the right track";
                     }?>
                     </h2>
                 </td>
             </tr>           
         </table>
 </div>
-<div class="chart-title left-right-space" style="padding-top: 50px; padding-bottom: 15px; margin: 0;">
+<div class="chart-title left-right-space" style="padding-top: 50px; padding-bottom: 15px; margin: 0;height:350px;">
     <table cellpadding="0" cellpadding="0">
         <tr>
             <td>
@@ -179,8 +179,8 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
         </tr>
     </table>    
 </div>
-<div>
-<table style="padding-left: 66px; padding-right: 66px; padding-top: 15px;">
+<div style="height:450px;">
+    <table style="padding-left: 66px; padding-right: 66px; padding-top: 15px;">
         <tr>
             <td style="width: 25%;">
                 <table  <?php if($fullstatus == 1) { echo 'style="display: table;"';} else { echo 'style="display: none;"';}?>>
@@ -435,17 +435,17 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
         </tr>
     </table>
 </div>  
-<div class="chart-section  left-right-space" style="padding-top: 140px; margin-top: 0;">
+<div class="chart-section  left-right-space" style="padding-top: 170px; margin-top: 0;">
     <div class="chart-title" style="padding-top: 0; margin-top: 0; padding-bottom: 10px; text-align: left;">
         <h2 style="padding-top:0; font-size: 28px; margin-top: 0; padding-bottom: 25px; font-weight: 900; ">Your results in detail – and how you compare with your peers</h2>
         <p style="padding-top: 5px; line-height: 28px; font-size: 19px; padding-bottom: 30px; padding-right: 15px;">We’ve mapped your answers against the average scores supplied during our technology trends in accounting survey, so you can compare your capabilities against your competitors.</p>
     </div>
 
-    <div class="chart-box">
+    <div class="chart-box" style="height:550px;">
         <div class="full-width">
             <table cellpadding="0" cellpadding="0">
                 <tr>
-                    <td style="padding: 0; padding-bottom: 15px; width: 45%; padding-right: 20px;">
+                    <td style="padding: 0; padding-bottom: 15px; width: 55%; padding-right: 20px;">
                         <table cellpadding="0" cellpadding="0" style="width: 100%;">
                             <tr>
                                 <td style="padding: 0;">
@@ -471,11 +471,11 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                             </tr>
                         </table>
                     </td>
-                    <td style="padding: 0; width: 55%;">                         
+                    <td style="padding: 0; width: 45%;">                         
                         <table cellpadding="0" cellpadding="0">
                             <tr>
                                 <td style="padding: 10px; background: #f0f3f8; padding-top: 50px; padding-bottom: 50px;">                                    
-                                    <canvas id="chart1" width="480" height="380"></canvas>
+                                    <canvas id="chart1" width="420" height="380"></canvas>
                                 </td>
                             </tr>
                         </table>
@@ -484,20 +484,20 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
             </table>
         </div>
     </div>
-    <div class="chart-box" style="padding-top: 28px;">
+    <div class="chart-box" style="padding-top: 28px;height:550px;">
         <div class="full-width">
             <table cellpadding="0" cellpadding="0" style="padding: 0; margin: 0; padding-bottom: 70px;">
                 <tr>
-                    <td style="padding: 0; width: 55%; background: #f0f3f8; padding-top: 20px; padding-bottom: 0px;">
+                    <td style="padding: 0; width: 45%;">        
                         <table cellpadding="0" cellpadding="0">
                             <tr>
-                                <td style="padding: 0">
-                                    <canvas id="chart2" width="500" height="450"></canvas>
+                                <td style="padding: 10px; background: #f0f3f8; padding-top: 50px; padding-bottom: 50px;">
+                                    <canvas id="chart2" width="420" height="380"></canvas>
                                 </td>
                             </tr>
                         </table>
                     </td>
-                    <td style="padding: 0; padding-bottom: 15px; width: 45%; padding-left: 20px;">
+                    <td style="padding: 0; padding-bottom: 15px; width: 55%; padding-left: 20px;">
                         <table cellpadding="0" cellpadding="0" style="width: 100%;">
                             <tr>
                                 <td>
@@ -527,11 +527,11 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
             </table>
         </div>
     </div>
-    <div class="chart-box" style="padding-bottom: 0; padding-top: 40px;">
+    <div class="chart-box" style="padding-bottom: 0; padding-top: 40px;height:650px;">
         <div class="full-width">
             <table cellpadding="0" cellpadding="0">
                 <tr>
-                    <td style="padding: 0; padding-bottom: 15px; width: 45%; padding-right: 20px;">
+                    <td style="padding: 0; padding-bottom: 15px; width: 55%; padding-right: 20px;">
                         <table cellpadding="0" cellpadding="0" style="width: 100%;">
                             <tr>
                                 <td style="padding: 0;">
@@ -557,11 +557,11 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                             </tr>
                         </table>
                     </td>
-                    <td style="padding: 0; width: 55%;">                         
+                    <td style="padding: 0; width: 45%;">                         
                         <table cellpadding="0" cellpadding="0">
                             <tr>
-                                <td style="padding: 0; background: #f0f3f8; padding-top: 100px; padding-bottom: 60px; padding-right: 15px;">
-                                    <canvas id="chart3" width="485" height="450"></canvas>
+                                <td style="padding: 10px; background: #f0f3f8; padding-top: 50px; padding-bottom: 50px;">
+                                    <canvas id="chart3" width="420" height="380"></canvas>
                                 </td>
                             </tr>
                         </table>
@@ -570,20 +570,20 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
             </table>
         </div>
     </div>
-    <div class="chart-box" style="padding-top: 0;">
+    <div class="chart-box" style="padding-top: 28px;height:650px;">
         <div class="full-width">
             <table cellpadding="0" cellpadding="0" style="padding: 0; margin: 0; padding-bottom: 0px;">
                 <tr>
-                    <td style="padding: 0; width: 55%;">
+                    <td style="padding: 0; width: 45%;">
                         <table cellpadding="0" cellpadding="0">
                             <tr>
-                                <td style="padding: 0; background: #f0f3f8; padding-top: 100px; padding-bottom: 76px">
-                                    <canvas id="chart4" width="500" height="450"></canvas>
+                                <td style="padding: 10px; background: #f0f3f8; padding-top: 50px; padding-bottom: 50px;">
+                                    <canvas id="chart4" width="420" height="380"></canvas>
                                 </td>
                             </tr>
                         </table>
                     </td>
-                    <td style="padding: 0; padding-bottom: 15px; width: 45%; padding-left: 20px;">
+                    <td style="padding: 0; padding-bottom: 15px; width: 55%; padding-left: 20px;">
                         <table cellpadding="0" cellpadding="0" style="width: 100%;">
                             <tr>
                                 <td>
@@ -617,11 +617,11 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
 <div class="full-width" style="background-color: #ffffff; padding-top: 0; margin-top: 0;">
     <table cellpadding="0" cellpadding="0" style="padding-left: 66px; padding-right: 66px; padding-top: 0; margin-top: 0px;">
         <tr>
-            <td style="padding-top: 50px; padding-bottom: 40px; text-align: left;">
+            <td style="padding-top: 50px; padding-bottom: 30px; text-align: left;">
                 <table  cellpadding="0" cellpadding="0" style="padding: 0; margin: 0;">
                     <tr>
                         <td>
-                            <h2 style="color: #012e44; padding-top: 0; margin-top: 0; padding-bottom: 30px;  font-size: 36px; margin-bottom: 0px; line-height: 40px; font-weight: 900;">What should I do now?</h2>
+                            <h2 style="color: #012e44; padding-top: 0; margin-top: 0; padding-bottom: 28px;  font-size: 34px; margin-bottom: 0px; line-height: 36px; font-weight: 900;">What should I do now?</h2>
                         </td>
                     </tr>
                     <tr>
@@ -630,24 +630,24 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                                 <tr>
                                 <?php if( $total > 47 ) : ?>
                                     <td style="width: 48%; padding-right: 4%;">
-                                        <p style="color: #012e44; padding-bottom: 19px; font-size: 20px; line-height: 28px; font-weight: 500;">You’ve reached this high level of digital maturity by being smart about your technology strategy, adoption and investments.</p>
-                                        <p style="color: #708ea8; padding-bottom: 10px; font-size: 18px; line-height: 28px; font-weight: normal;">It’s allowed you to stay ahead of your competition and unlock revenue from the advisory services that so many firms are seeking.</p></td>
+                                        <p style="color: #012e44; padding-bottom: 19px; font-size: 19px; line-height: 26px; font-weight: 500;">You’ve reached this high level of digital maturity by being smart about your technology strategy, adoption and investments.</p>
+                                        <p style="color: #708ea8; padding-bottom: 10px; font-size: 16px; line-height: 26px; font-weight: normal;">It’s allowed you to stay ahead of your competition and unlock revenue from the advisory services that so many firms are seeking.</p></td>
                                     <td style="width: 48%;">
-                                        <p style="color: #708ea8; padding-bottom: 0px; font-size: 18px; line-height: 28px; padding-left: 10px; font-weight: normal;">So why stand still now and let the rest catch you up? That’s where Silverfin can help. Our award-winning cloud platform powers connected accounting at some of the world’s leading firms. And our powerful analytics and reporting tools give you the data and insight you need to be your clients’ most trusted advisor.</p>
+                                        <p style="color: #708ea8; padding-bottom: 0px; font-size: 16px; line-height: 26px; padding-left: 10px; font-weight: normal;">So why stand still now and let the rest catch you up? That’s where Silverfin can help. Our award-winning cloud platform powers connected accounting at some of the world’s leading firms. And our powerful analytics and reporting tools give you the data and insight you need to be your clients’ most trusted advisor.</p>
                                     </td>
                                 <?php elseif( $total < 21 ) : ?>
                                     <td style="width: 48%; padding-right: 4%;">
-                                        <p style="color: #012e44; padding-bottom: 19px; font-size: 20px; line-height: 28px; font-weight: 500;">Being a connected accountant gives you access to the data, tools and people you need to work quickly, efficiently, and accurately – and to transform your compliance work.</p>
-                                        <p style="color: #708ea8; padding-bottom: 10px; font-size: 18px; line-height: 28px; font-weight: normal;">That means no more financial data stored in silos or inconsistent processes across your firm. Your success as a connected accountant depends on the technology you use.</p></td>
+                                        <p style="color: #012e44; padding-bottom: 19px; font-size: 19px; line-height: 26px; font-weight: 500;">Being a connected accountant gives you access to the data, tools and people you need to work quickly, efficiently, and accurately – and to transform your compliance work.</p>
+                                        <p style="color: #708ea8; padding-bottom: 10px; font-size: 16px; line-height: 26px; font-weight: normal;">That means no more financial data stored in silos or inconsistent processes across your firm. Your success as a connected accountant depends on the technology you use.</p></td>
                                     <td style="width: 48%;">
-                                        <p style="color: #708ea8; padding-bottom: 0px; font-size: 18px; line-height: 28px; padding-left: 10px; font-weight: normal;">Silverfin’s cloud platform integrates with all your clients’ accounting and finance systems to pull in critical data, no matter what the source. With Silverfin you’re always working from a single version of the truth, sharing real-time data with clients and colleagues. Once you standardise your data and processes you can automate reporting and workflows, and begin your journey to becoming a connected accountant.</p>
+                                        <p style="color: #708ea8; padding-bottom: 0px; font-size: 16px; line-height: 26px; padding-left: 10px; font-weight: normal;">Silverfin’s cloud platform integrates with all your clients’ accounting and finance systems to pull in critical data, no matter what the source. With Silverfin you’re always working from a single version of the truth, sharing real-time data with clients and colleagues. Once you standardise your data and processes you can automate reporting and workflows, and begin your journey to becoming a connected accountant.</p>
                                     </td>
                                 <?php else : ?>
                                     <td style="width: 48%; padding-right: 4%;">
-                                        <p style="color: #012e44; padding-bottom: 19px; font-size: 20px; line-height: 28px; font-weight: 500;">Your clients’ demands are changing. Offering just compliance services isn’t enough.</p>
-                                        <p style="color: #708ea8; padding-bottom: 10px; font-size: 18px; line-height: 28px; font-weight: normal;"> Increasingly, your clients are demanding value-added advisory services. While you demonstrate a reasonable degree of digital maturity, the bad news is that your competitors are currently better placed to serve your clients’ evolving requirements.</p></td>
+                                        <p style="color: #012e44; padding-bottom: 19px; font-size: 19px; line-height: 26px; font-weight: 500;">Your clients’ demands are changing. Offering just compliance services isn’t enough.</p>
+                                        <p style="color: #708ea8; padding-bottom: 10px; font-size: 16px; line-height: 26px; font-weight: normal;"> Increasingly, your clients are demanding value-added advisory services. While you demonstrate a reasonable degree of digital maturity, the bad news is that your competitors are currently better placed to serve your clients’ evolving requirements.</p></td>
                                     <td style="width: 48%;">
-                                        <p style="color: #708ea8; padding-bottom: 0px; font-size: 18px; line-height: 28px; padding-left: 10px; font-weight: normal;">Silverfin’s cloud-based platform connects with your clients’ bookkeeping and financial systems to bring you all the data you need – whatever the source. We automate your compliance accounting workflows, improving your speed, accuracy and profitability. Then our powerful analytics and reporting tools give you the data and insight you need to be your clients’ most trusted advisor.</p>
+                                        <p style="color: #708ea8; padding-bottom: 0px; font-size: 16px; line-height: 26px; padding-left: 10px; font-weight: normal;">Silverfin’s cloud-based platform connects with your clients’ bookkeeping and financial systems to bring you all the data you need – whatever the source. We automate your compliance accounting workflows, improving your speed, accuracy and profitability. Then our powerful analytics and reporting tools give you the data and insight you need to be your clients’ most trusted advisor.</p>
                                     </td>
                                 <?php endif; ?>
                                 </tr>

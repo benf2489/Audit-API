@@ -192,7 +192,7 @@ class ResponseController extends Controller
         $pdf->setOption('no-stop-slow-scripts', true)                  
         ->setOption('footer-spacing', 20 )
         ->setPaper('a4')
-        ->setOption('margin-top', 2)
+        ->setOption('margin-top', 0)
         ->setOption('margin-bottom',1)
         ->setOption('margin-left', 0)
         ->setOption('margin-right',0);

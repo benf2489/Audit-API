@@ -110,7 +110,7 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
 @page {margin: 0cm 0cm;}
 .service-box h2 {  font-family: 'Cera Pro'; font-weight: bold; }
 .service-box p {  font-family: 'Cera Pro'; font-weight: 500; font-size: 15px !important; line-height: 20px !important; }
-.chart-box p { font-size: 15px !important; line-height: 24px !important; }
+.chart-box p { font-size: 14px !important; line-height: 22px !important; }
 </style>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
 </head>
@@ -132,18 +132,18 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                     <h1 style="color: #ffffff; font-size: 24px; line-height: 40px; padding-bottom: 15px; font-family: 'Cera Pro'; letter-spacing: -0.5px; letter-spacing: 0; font-weight: normal;">Les résultats de votre comptable connecté</h1>
                     <h2 style="color: #ffffff; font-family: 'Cera Pro';  font-weight: 900; font-size: 48px; letter-spacing: 0.5px; line-height: 52px;">
                     <?php if ( $total > 47 ) {
-                        echo "Félicitations, <br>vous êtes connecté";
+                        echo "Félicitations, vous êtes connecté";
                     } elseif ( $total < 21 ) {
                         echo "Il est temps de changer";
                     } else {
-                        echo "Vous êtes sur la <br>bonne voie";
+                        echo "Vous êtes sur la bonne voie";
                     }?>
                     </h2>
                 </td>
             </tr>           
         </table>
 </div>
-<div class="chart-title left-right-space" style="padding-top: 50px; padding-bottom: 15px; margin: 0;">
+<div class="chart-title left-right-space" style="padding-top: 50px; padding-bottom: 15px; margin: 0;height:350px;">
     <table cellpadding="0" cellpadding="0">
         <tr>
             <td>
@@ -153,34 +153,34 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
         <tr>
             <?php if( $total > 47 ) : ?>
                 <td style="padding: 0; margin: 0; width: 48%; padding-right: 4%;">
-                    <p style="padding-bottom: 0; color: #012e44; padding-top: 10px; margin-top: 0; font-size: 19px; line-height: 28px; margin-bottom: 0; font-weight: 500;">Félicitations, nos recherches montrent que vous avez une avance sur vos concurrents lorsqu'il s'agit d'utiliser la technologie cloud.</p>
-                    <p style="padding-bottom: 0; padding-top: 20px; margin-top: 0; font-size: 18px; line-height: 28px; margin-bottom: 0;">Le fait d'être un comptable connecté vous permet, à vous et à vos clients, d'accéder à une version de la vérité, quand vous en avez besoin, à partir de n'importe quel appareil connecté.</p>
+                    <p style="padding-bottom: 0; color: #012e44; padding-top: 10px; margin-top: 0; font-size: 17px; line-height: 27px; margin-bottom: 0; font-weight: 500;">Félicitations, nos recherches montrent que vous avez une avance sur vos concurrents lorsqu'il s'agit d'utiliser la technologie cloud.</p>
+                    <p style="padding-bottom: 0; padding-top: 20px; margin-top: 0; font-size: 16px; line-height: 26px; margin-bottom: 0;">Le fait d'être un comptable connecté vous permet, à vous et à vos clients, d'accéder à une version de la vérité, quand vous en avez besoin, à partir de n'importe quel appareil connecté.</p>
                 </td>
                 <td style="padding: 0; margin: 0; width: 48%;">
-                    <p style="padding-bottom: 0; padding-top: 10px; margin-top: 0; font-size: 18px; line-height: 28px; margin-bottom: 0; padding-right: 10px;">En automatisant le travail de conformité, vous êtes dans une position idéale pour récupérer du temps et utiliser vos données pour fournir des services de conseil à valeur ajoutée et assurer la pérennité de votre entreprise. Mais avec l'évolution rapide de la technologie, l'immobilisme n'est pas une option. Vous devez rester au courant des dernières innovations pour garder une avance.</p>
+                    <p style="padding-bottom: 0; padding-top: 10px; margin-top: 0; font-size: 16px; line-height: 26px; margin-bottom: 0; padding-right: 10px;">En automatisant le travail de conformité, vous êtes dans une position idéale pour récupérer du temps et utiliser vos données pour fournir des services de conseil à valeur ajoutée et assurer la pérennité de votre entreprise. Mais avec l'évolution rapide de la technologie, l'immobilisme n'est pas une option. Vous devez rester au courant des dernières innovations pour garder une avance.</p>
                 </td>
             <?php elseif( $total < 21 ) : ?>
                 <td style="padding: 0; margin: 0; width: 48%; padding-right: 4%;">
-                    <p style="padding-bottom: 0; color: #012e44; padding-top: 10px; margin-top: 0; font-size: 19px; line-height: 28px; margin-bottom: 0; font-weight: 500;">Vous risquez d'être laissé pour compte par vos clients et vos concurrents.</p>
-                    <p style="padding-bottom: 0; padding-top: 20px; margin-top: 0; font-size: 18px; line-height: 28px; margin-bottom: 0;">Vous n'avez pas accès en temps réel à toutes les données financières dont vous avez besoin pour faire votre travail, vous vous appuyez sur un trop grand nombre de processus et de systèmes manuels, et les tâches essentielles de reporting et de conformité prennent du temps. Le manque d'uniformité au sein de</p>
+                    <p style="padding-bottom: 0; color: #012e44; padding-top: 10px; margin-top: 0; font-size: 17px; line-height: 27px; margin-bottom: 0; font-weight: 500;">Vous risquez d'être laissé pour compte par vos clients et vos concurrents.</p>
+                    <p style="padding-bottom: 0; padding-top: 20px; margin-top: 0; font-size: 16px; line-height: 26px; margin-bottom: 0;">Vous n'avez pas accès en temps réel à toutes les données financières dont vous avez besoin pour faire votre travail, vous vous appuyez sur un trop grand nombre de processus et de systèmes manuels, et les tâches essentielles de reporting et de conformité prennent du temps. Le manque d'uniformité au sein de</p>
                 </td>
                 <td style="padding: 0; margin: 0; width: 48%;">
-                    <p style="padding-bottom: 0; padding-top: 10px; margin-top: 0; font-size: 18px; line-height: 28px; margin-bottom: 0; padding-right: 10px;">l'entreprise peut également augmenter le risque que des erreurs soient commises. L'avenir est la comptabilité connectée, mais à de nombreux points de vue, vous devez avoir l'impression de travailler de façon autonome. Vous avez du mal à collaborer avec vos collègues, la communication avec vos clients est inefficace et difficile, et il n'y a pas (ou peu) de processus de travail standardisés au sein de votre entreprise que vous pouvez suivre.</p>
+                    <p style="padding-bottom: 0; padding-top: 10px; margin-top: 0; font-size: 16px; line-height: 26px; margin-bottom: 0; padding-right: 10px;">l'entreprise peut également augmenter le risque que des erreurs soient commises. L'avenir est la comptabilité connectée, mais à de nombreux points de vue, vous devez avoir l'impression de travailler de façon autonome. Vous avez du mal à collaborer avec vos collègues, la communication avec vos clients est inefficace et difficile, et il n'y a pas (ou peu) de processus de travail standardisés au sein de votre entreprise que vous pouvez suivre.</p>
                 </td>
             <?php else : ?>
                 <td style="padding: 0; margin: 0; width: 48%; padding-right: 4%;">
-                    <p style="padding-bottom: 0; color: #012e44; padding-top: 10px; margin-top: 0; font-size: 19px; line-height: 28px; margin-bottom: 0; font-weight: 500;">Votre utilisation de la technologie vous aide à rationaliser une grande partie de votre travail quotidien.</p>
-                    <p style="padding-bottom: 0; padding-top: 20px; margin-top: 0; font-size: 18px; line-height: 28px; margin-bottom: 0;">Par exemple, vous avez accès à certaines données en temps réel, mais probablement pas à l'ensemble de votre portefeuille de clients ; ou vous pouvez intégrer un certain nombre de solutions comptables, mais pas toutes. Par conséquent, il peut y avoir des incohérences dans la prestation des services entre les </p>
+                    <p style="padding-bottom: 0; color: #012e44; padding-top: 10px; margin-top: 0; font-size: 17px; line-height: 27px; margin-bottom: 0; font-weight: 500;">Votre utilisation de la technologie vous aide à rationaliser une grande partie de votre travail quotidien.</p>
+                    <p style="padding-bottom: 0; padding-top: 20px; margin-top: 0; font-size: 16px; line-height: 26px; margin-bottom: 0;">Par exemple, vous avez accès à certaines données en temps réel, mais probablement pas à l'ensemble de votre portefeuille de clients ; ou vous pouvez intégrer un certain nombre de solutions comptables, mais pas toutes. Par conséquent, il peut y avoir des </p>
                 </td>
                 <td style="padding: 0; margin: 0; width: 48%;">
-                    <p style="padding-bottom: 0; padding-top: 10px; margin-top: 0; font-size: 18px; line-height: 28px; margin-bottom: 0; padding-right: 10px;">clients, ce qui rend la normalisation et l'automatisation des processus difficiles à réaliser. Et sans données consolidées et cohérentes à l'échelle de l'entreprise, vous êtes incapable d'identifier les tendances dans votre portefeuille de clients ou de voir où les services de conseil sont nécessaires. Il vous reste encore quelques étapes à franchir pour passer du statut de rapporteur de conformité à celui de conseiller de confiance.</p>
+                    <p style="padding-bottom: 0; padding-top: 10px; margin-top: 0; font-size: 16px; line-height: 26px; margin-bottom: 0; padding-right: 10px;">incohérences dans la prestation des services entre les clients, ce qui rend la normalisation et l'automatisation des processus difficiles à réaliser. Et sans données consolidées et cohérentes à l'échelle de l'entreprise, vous êtes incapable d'identifier les tendances dans votre portefeuille de clients ou de voir où les services de conseil sont nécessaires. Il vous reste encore quelques étapes à franchir pour passer du statut de rapporteur de conformité à celui de conseiller de confiance.</p>
                 </td>
             <?php endif; ?>
         </tr>
     </table>    
 </div>
-<div>
-<table style="padding-left: 66px; padding-right: 66px; padding-top: 15px;">
+<div style="height:450px;">
+    <table style="padding-left: 66px; padding-right: 66px; padding-top: 15px;">
         <tr>
             <td style="width: 25%;">
                 <table  <?php if($fullstatus == 1) { echo 'style="display: table;"';} else { echo 'style="display: none;"';}?>>
@@ -189,7 +189,7 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                             <table cellpadding="0" cellpadding="0">
                                 <tr>
                                     <td style="width: 100%; text-align: center; padding-top: 15px;">
-                                        <h3 style="font-size: 18px;  font-family: 'Cera Pro'; font-weight: bold; color: #01355c;">Voilà où vous vous trouvez.</h3>
+                                        <h3 style="font-size: 14px;  font-family: 'Cera Pro'; font-weight: bold; color: #01355c;">Voilà où vous vous trouvez.</h3>
                                     </td>
                                 </tr>
                             </table>
@@ -213,7 +213,7 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                             <table cellpadding="0" cellpadding="0">
                                 <tr>
                                     <td style="width: 100%; text-align: center; padding-top: 15px;">
-                                        <h3 style="font-size: 18px; color: #01355c; font-family: 'Cera Pro'; font-weight: bold;">Voilà où vous vous trouvez.</h3>
+                                        <h3 style="font-size: 14px; color: #01355c; font-family: 'Cera Pro'; font-weight: bold;">Voilà où vous vous trouvez.</h3>
                                     </td>
                                 </tr>
                             </table>
@@ -238,7 +238,7 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                             <table cellpadding="0" cellpadding="0">
                                 <tr>
                                     <td style="width: 100%; text-align: center; padding-top: 15px;">
-                                        <h3 style="font-size: 18px; color: #01355c; font-family: 'Cera Pro'; font-weight: bold;">Voilà où vous vous trouvez.</h3>
+                                        <h3 style="font-size: 14px; color: #01355c; font-family: 'Cera Pro'; font-weight: bold;">Voilà où vous vous trouvez.</h3>
                                     </td>
                                 </tr>
                             </table>
@@ -262,7 +262,7 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                             <table cellpadding="0" cellpadding="0">
                                 <tr>
                                     <td style="width: 100%; text-align: center; padding-top: 15px;">
-                                        <h3 style="font-size: 18px; color: #01355c; font-family: 'Cera Pro'; font-weight: bold;">Voilà où vous vous trouvez.</h3>
+                                        <h3 style="font-size: 14px; color: #01355c; font-family: 'Cera Pro'; font-weight: bold;">Voilà où vous vous trouvez.</h3>
                                     </td>
                                 </tr>
                             </table>
@@ -438,17 +438,17 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
         </tr>
     </table>
 </div>  
-<div class="chart-section  left-right-space" style="padding-top: 140px; margin-top: 0;">
-    <div class="chart-title" style="padding-top: 0; margin-top: 0; padding-bottom: 10px; text-align: left;">
-        <h2 style="padding-top:0; font-size: 28px; margin-top: 0; padding-bottom: 25px; font-weight: 900; ">Vos résultats en détail - et comment vous vous comparez à vos pairs</h2>
-        <p style="padding-top: 5px; line-height: 28px; font-size: 19px; padding-bottom: 30px; padding-right: 15px;">Nous avons comparé vos réponses aux notes moyennes fournies lors de notre enquête sur les tendances technologiques en comptabilité, afin que vous puissiez comparer vos capacités à celles de vos concurrents.</p>
+<div class="chart-section  left-right-space" style="padding-top: 170px; margin-top: 0;">
+    <div class="chart-title" style="padding-top: 0; margin-top: 0; padding-bottom: 5px; text-align: left;">
+        <h2 style="padding-top:0; font-size: 28px; margin-top: 0; padding-bottom: 20px; font-weight: 900; ">Vos résultats en détail - et comment vous vous comparez à vos pairs</h2>
+        <p style="padding-top: 5px; line-height: 28px; font-size: 19px; padding-bottom: 20px; padding-right: 15px;">Nous avons comparé vos réponses aux notes moyennes fournies lors de notre enquête sur les tendances technologiques en comptabilité, afin que vous puissiez comparer vos capacités à celles de vos concurrents.</p>
     </div>
 
-    <div class="chart-box">
+    <div class="chart-box" style="height:520px;">
         <div class="full-width">
             <table cellpadding="0" cellpadding="0">
                 <tr>
-                    <td style="padding: 0; padding-bottom: 15px; width: 45%; padding-right: 20px;">
+                    <td style="padding: 0; padding-bottom: 15px; width: 55%; padding-right: 20px;">
                         <table cellpadding="0" cellpadding="0" style="width: 100%;">
                             <tr>
                                 <td style="padding: 0;">
@@ -474,33 +474,33 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                             </tr>
                         </table>
                     </td>
-                    <td style="padding: 0; width: 55%;">                         
+                    <td style="padding: 0; width: 45%;">                         
                         <table cellpadding="0" cellpadding="0">
                             <tr>
                                 <td style="padding: 10px; background: #f0f3f8; padding-top: 50px; padding-bottom: 50px;">                                    
-                                    <canvas id="chart1" width="480" height="380"></canvas>
+                                    <canvas id="chart1" width="420" height="380"></canvas>
                                 </td>
                             </tr>
                         </table>
-                    </td>                   
+                    </td>                    
                 </tr>
             </table>
         </div>
     </div>
-    <div class="chart-box" style="padding-top: 28px;">
+    <div class="chart-box" style="padding-top: 28px;height:550px;">
         <div class="full-width">
             <table cellpadding="0" cellpadding="0" style="padding: 0; margin: 0; padding-bottom: 70px;">
                 <tr>
-                    <td style="padding: 0; width: 55%; background: #f0f3f8; padding-top: 20px; padding-bottom: 0px;">
+                    <td style="padding: 0; width: 45%;">        
                         <table cellpadding="0" cellpadding="0">
                             <tr>
-                                <td style="padding: 0">
-                                    <canvas id="chart2" width="500" height="450"></canvas>
+                                <td style="padding: 10px; background: #f0f3f8; padding-top: 50px; padding-bottom: 50px;">
+                                    <canvas id="chart2" width="420" height="380"></canvas>
                                 </td>
                             </tr>
                         </table>
                     </td>
-                    <td style="padding: 0; padding-bottom: 15px; width: 45%; padding-left: 20px;">
+                    <td style="padding: 0; padding-bottom: 15px; width: 55%; padding-left: 20px;">
                         <table cellpadding="0" cellpadding="0" style="width: 100%;">
                             <tr>
                                 <td>
@@ -530,11 +530,11 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
             </table>
         </div>
     </div>
-    <div class="chart-box" style="padding-bottom: 0; padding-top: 40px;">
+    <div class="chart-box" style="padding-bottom: 0; padding-top: 40px;height:630px;">
         <div class="full-width">
             <table cellpadding="0" cellpadding="0">
                 <tr>
-                    <td style="padding: 0; padding-bottom: 15px; width: 45%; padding-right: 20px;">
+                    <td style="padding: 0; padding-bottom: 15px; width: 55%; padding-right: 20px;">
                         <table cellpadding="0" cellpadding="0" style="width: 100%;">
                             <tr>
                                 <td style="padding: 0;">
@@ -560,33 +560,33 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                             </tr>
                         </table>
                     </td>
-                    <td style="padding: 0; width: 55%;">                         
+                    <td style="padding: 0; width: 45%;">                         
                         <table cellpadding="0" cellpadding="0">
                             <tr>
-                                <td style="padding: 0; background: #f0f3f8; padding-top: 100px; padding-bottom: 60px; padding-right: 15px;">
-                                    <canvas id="chart3" width="485" height="450"></canvas>
+                                <td style="padding: 10px; background: #f0f3f8; padding-top: 50px; padding-bottom: 50px;">
+                                    <canvas id="chart3" width="420" height="380"></canvas>
                                 </td>
                             </tr>
                         </table>
-                    </td>                   
+                    </td>                 
                 </tr>
             </table>
         </div>
     </div>
-    <div class="chart-box" style="padding-top: 0;">
+    <div class="chart-box" style="padding-top: 0;height:650px;">
         <div class="full-width">
             <table cellpadding="0" cellpadding="0" style="padding: 0; margin: 0; padding-bottom: 0px;">
                 <tr>
-                    <td style="padding: 0; width: 55%;">
+                    <td style="padding: 0; width: 45%;">
                         <table cellpadding="0" cellpadding="0">
                             <tr>
-                                <td style="padding: 0; background: #f0f3f8; padding-top: 100px; padding-bottom: 76px">
-                                    <canvas id="chart4" width="500" height="450"></canvas>
+                                <td style="padding: 10px; background: #f0f3f8; padding-top: 50px; padding-bottom: 50px;">
+                                    <canvas id="chart4" width="420" height="380"></canvas>
                                 </td>
                             </tr>
                         </table>
                     </td>
-                    <td style="padding: 0; padding-bottom: 15px; width: 45%; padding-left: 20px;">
+                    <td style="padding: 0; padding-bottom: 15px; width: 55%; padding-left: 20px;">
                         <table cellpadding="0" cellpadding="0" style="width: 100%;">
                             <tr>
                                 <td>
@@ -633,24 +633,24 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                                 <tr>
                                 <?php if( $total > 47 ) : ?>
                                     <td style="width: 48%; padding-right: 4%;">
-                                        <p style="color: #012e44; padding-bottom: 19px; font-size: 20px; line-height: 28px; font-weight: 500;">Vous avez atteint ce haut niveau de maturité numérique en faisant preuve d'intelligence dans votre stratégie technologique, votre adoption et vos investissements.</p>
-                                        <p style="color: #708ea8; padding-bottom: 10px; font-size: 18px; line-height: 28px; font-weight: normal;">Cela vous a permis de garder une longueur d'avance sur vos concurrents et de tirer des revenus des services-conseils que tant d'entreprises recherchent.</p></td>
+                                        <p style="color: #012e44; padding-bottom: 19px; font-size: 19px; line-height: 27px; font-weight: 500;">Vous avez atteint ce haut niveau de maturité numérique en faisant preuve d'intelligence dans votre stratégie technologique, votre adoption et vos investissements.</p>
+                                        <p style="color: #708ea8; padding-bottom: 10px; font-size: 17px; line-height: 27px; font-weight: normal;">Cela vous a permis de garder une longueur d'avance sur vos concurrents et de tirer des revenus des services-conseils que tant d'entreprises recherchent.</p></td>
                                     <td style="width: 48%;">
-                                        <p style="color: #708ea8; padding-bottom: 0px; font-size: 18px; line-height: 28px; padding-left: 10px; font-weight: normal;">Alors pourquoi ne pas bouger maintenant et laisser les autres vous rattraper ? C'est là que Silverfin peut vous aider. Notre plateforme de cloud computing primée alimente la comptabilité connectée dans certaines des plus grandes entreprises du monde. Et nos puissants outils d'analyse et de reporting vous fournissent les données et les informations dont vous avez besoin pour devenir le conseiller le plus fiable de vos clients.</p>
+                                        <p style="color: #708ea8; padding-bottom: 0px; font-size: 17px; line-height: 27px; padding-left: 10px; font-weight: normal;">Alors pourquoi ne pas bouger maintenant et laisser les autres vous rattraper ? C'est là que Silverfin peut vous aider. Notre plateforme de cloud computing primée alimente la comptabilité connectée dans certaines des plus grandes entreprises du monde. Et nos puissants outils d'analyse et de reporting vous fournissent les données et les informations dont vous avez besoin pour devenir le conseiller le plus fiable de vos clients.</p>
                                     </td>
                                 <?php elseif( $total < 21 ) : ?>
                                     <td style="width: 48%; padding-right: 4%;">
-                                        <p style="color: #012e44; padding-bottom: 19px; font-size: 20px; line-height: 28px; font-weight: 500;">En tant que comptable connecté, vous avez accès aux données, aux outils et aux personnes dont vous avez besoin pour travailler rapidement, efficacement et avec précision - et pour transformer votre travail de conformité. Cela signifie qu'il n'y a plus de données financières stockées en silos ou de processus incohérents au sein de votre entreprise.</p>
-                                        <p style="color: #708ea8; padding-bottom: 10px; font-size: 18px; line-height: 28px; font-weight: normal;">Votre succès en tant que comptable connecté dépend de la technologie que vous utilisez.</p></td>
+                                        <p style="color: #012e44; padding-bottom: 19px; font-size: 19px; line-height: 27px; font-weight: 500;">En tant que comptable connecté, vous avez accès aux données, aux outils et aux personnes dont vous avez besoin pour travailler rapidement, efficacement et avec précision - et pour transformer votre travail de conformité. Cela signifie qu'il n'y a plus de données financières stockées en silos ou de processus incohérents au sein de votre entreprise.</p>
+                                        <p style="color: #708ea8; padding-bottom: 10px; font-size: 17px; line-height: 27px; font-weight: normal;">Votre succès en tant que comptable connecté dépend de la technologie que vous utilisez.</p></td>
                                     <td style="width: 48%;">
-                                        <p style="color: #708ea8; padding-bottom: 0px; font-size: 18px; line-height: 28px; padding-left: 10px; font-weight: normal;">La plateforme cloud de Silverfin s'intègre à tous les systèmes comptables et financiers de vos clients pour extraire les données critiques, quelle que soit leur source. Avec Silverfin, vous travaillez toujours à partir d'une seule version de la réalité, partageant des données en temps réel avec vos clients et collègues. Une fois que vous avez normalisé vos données et vos processus, vous pouvez automatiser le reporting et les workflows, et commencer votre parcours pour devenir un comptable connecté.</p>
+                                        <p style="color: #708ea8; padding-bottom: 0px; font-size: 17px; line-height: 27px; padding-left: 10px; font-weight: normal;">La plateforme cloud de Silverfin s'intègre à tous les systèmes comptables et financiers de vos clients pour extraire les données critiques, quelle que soit leur source. Avec Silverfin, vous travaillez toujours à partir d'une seule version de la réalité, partageant des données en temps réel avec vos clients et collègues. Une fois que vous avez normalisé vos données et vos processus, vous pouvez automatiser le reporting et les workflows, et commencer votre parcours pour devenir un comptable connecté.</p>
                                     </td>
                                 <?php else : ?>
                                     <td style="width: 48%; padding-right: 4%;">
-                                        <p style="color: #012e44; padding-bottom: 19px; font-size: 20px; line-height: 28px; font-weight: 500;">Les besoins de vos clients changent. Il ne suffit pas d'offrir des services de conformité.</p>
-                                        <p style="color: #708ea8; padding-bottom: 10px; font-size: 18px; line-height: 28px; font-weight: normal;">De plus en plus, vos clients exigent des services de conseil à valeur ajoutée. Bien que vous démontriez un degré raisonnable de maturité numérique, la mauvaise nouvelle est que vos concurrents sont actuellement mieux placés pour répondre aux besoins changeants de vos clients.</p></td>
+                                        <p style="color: #012e44; padding-bottom: 19px; font-size: 19px; line-height: 27px; font-weight: 500;">Les besoins de vos clients changent. Il ne suffit pas d'offrir des services de conformité.</p>
+                                        <p style="color: #708ea8; padding-bottom: 10px; font-size: 17px; line-height: 27px; font-weight: normal;">De plus en plus, vos clients exigent des services de conseil à valeur ajoutée. Bien que vous démontriez un degré raisonnable de maturité numérique, la mauvaise nouvelle est que vos concurrents sont actuellement mieux placés pour répondre aux besoins changeants de vos clients.</p></td>
                                     <td style="width: 48%;">
-                                        <p style="color: #708ea8; padding-bottom: 0px; font-size: 18px; line-height: 28px; padding-left: 10px; font-weight: normal;">La plateforme cloud de Silverfin se connecte aux systèmes comptables et financiers de vos clients pour vous apporter toutes les données dont vous avez besoin, quelle que soit leur source. Nous automatisons vos workflows de comptabilité de conformité, améliorant ainsi votre rapidité, votre précision et votre rentabilité. Ensuite, nos puissants outils d'analyse et de reporting vous fournissent les données et les informations dont vous avez besoin pour devenir le conseiller le plus fiable de vos clients.</p>
+                                        <p style="color: #708ea8; padding-bottom: 0px; font-size: 17px; line-height: 27px; padding-left: 10px; font-weight: normal;">La plateforme cloud de Silverfin se connecte aux systèmes comptables et financiers de vos clients pour vous apporter toutes les données dont vous avez besoin, quelle que soit leur source. Nous automatisons vos workflows de comptabilité de conformité, améliorant ainsi votre rapidité, votre précision et votre rentabilité. Ensuite, nos puissants outils d'analyse et de reporting vous fournissent les données et les informations dont vous avez besoin pour devenir le conseiller le plus fiable de vos clients.</p>
                                     </td>
                                 <?php endif; ?>
                                 </tr>

@@ -110,7 +110,7 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
 @page {margin: 0cm 0cm;}
 .service-box h2 {  font-family: 'Cera Pro'; font-weight: bold; }
 .service-box p {  font-family: 'Cera Pro'; font-weight: 500; font-size: 15px !important; line-height: 20px !important; }
-.chart-box p { font-size: 15px !important; line-height: 24px !important; }
+.chart-box p { font-size: 14px !important; line-height: 22px !important; }
 </style>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
 </head>
@@ -132,18 +132,18 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                     <h1 style="color: #ffffff; font-size: 24px; line-height: 40px; padding-bottom: 15px; font-family: 'Cera Pro'; letter-spacing: -0.5px; letter-spacing: 0; font-weight: normal;">Jouw connected accountant resultaten</h1>
                     <h2 style="color: #ffffff; font-family: 'Cera Pro';  font-weight: 900; font-size: 48px; letter-spacing: 0.5px; line-height: 52px;">
                     <?php if ( $total > 47 ) {
-                        echo "Proficiat, <br>jij bent connected";
+                        echo "Proficiat, jij bent connected";
                     } elseif ( $total < 21 ) {
                         echo "Tijd voor verandering";
                     } else {
-                        echo "Je bent op <br>goede weg";
+                        echo "Je bent op goede weg";
                     }?>
                     </h2>
                 </td>
             </tr>           
         </table>
 </div>
-<div class="chart-title left-right-space" style="padding-top: 50px; padding-bottom: 15px; margin: 0;">
+<div class="chart-title left-right-space" style="padding-top: 50px; padding-bottom: 15px; margin: 0;height:350px;">
     <table cellpadding="0" cellpadding="0">
         <tr>
             <td>
@@ -153,34 +153,34 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
         <tr>
             <?php if( $total > 47 ) : ?>
                 <td style="padding: 0; margin: 0; width: 48%; padding-right: 4%;">
-                    <p style="padding-bottom: 0; color: #012e44; padding-top: 10px; margin-top: 0; font-size: 19px; line-height: 28px; margin-bottom: 0; font-weight: 500;">Proficiat, ons onderzoek toont aan dat je de concurrentie voor bent als het gaat om je gebruik van cloud technologie.</p>
-                    <p style="padding-bottom: 0; padding-top: 20px; margin-top: 0; font-size: 18px; line-height: 28px; margin-bottom: 0;">Als connected accountant hebben jij en je klanten toegang tot één versie van de waarheid, op ieder moment, vanaf elk apparaat. Door het automatiseren van compliance-werkzaamheden</p>
+                    <p style="padding-bottom: 0; color: #012e44; padding-top: 10px; margin-top: 0; font-size: 17px; line-height: 27px; margin-bottom: 0; font-weight: 500;">Proficiat, ons onderzoek toont aan dat je de concurrentie voor bent als het gaat om je gebruik van cloud technologie.</p>
+                    <p style="padding-bottom: 0; padding-top: 20px; margin-top: 0; font-size: 16px; line-height: 26px; margin-bottom: 0;">Als connected accountant hebben jij en je klanten toegang tot één versie van de waarheid, op ieder moment, vanaf elk apparaat. Door het automatiseren van compliance-werkzaamheden</p>
                 </td>
                 <td style="padding: 0; margin: 0; width: 48%;">
-                    <p style="padding-bottom: 0; padding-top: 10px; margin-top: 0; font-size: 18px; line-height: 28px; margin-bottom: 0; padding-right: 10px;">sta je in de perfecte positie om tijd te winnen en je data te gebruiken om waardevolle adviesverlening te leveren en je bedrijf toekomstbestendig te maken. Maar nu de technologie aan een razend tempo verandert, is stilstaan geen optie. Je moet steeds op de hoogte blijven van de laatste ontwikkelingen om deze voorsprong te blijven uitbouwen.</p>
+                    <p style="padding-bottom: 0; padding-top: 10px; margin-top: 0; font-size: 16px; line-height: 26px; margin-bottom: 0; padding-right: 10px;">sta je in de perfecte positie om tijd te winnen en je data te gebruiken om waardevolle adviesverlening te leveren en je bedrijf toekomstbestendig te maken. Maar nu de technologie aan een razend tempo verandert, is stilstaan geen optie. Je moet steeds op de hoogte blijven van de laatste ontwikkelingen om deze voorsprong te blijven uitbouwen.</p>
                 </td>
             <?php elseif( $total < 21 ) : ?>
                 <td style="padding: 0; margin: 0; width: 48%; padding-right: 4%;">
-                    <p style="padding-bottom: 0; color: #012e44; padding-top: 10px; margin-top: 0; font-size: 19px; line-height: 28px; margin-bottom: 0; font-weight: 500;">Je loopt het risico ingehaald te worden door jouw klanten en concurrenten.</p>
-                    <p style="padding-bottom: 0; padding-top: 20px; margin-top: 0; font-size: 18px; line-height: 28px; margin-bottom: 0;">Je hebt geen realtime toegang tot al de financiële gegevens die je nodig hebt om je werk te doen, je vertrouwt op te veel handmatige processen en systemen, en de belangrijkste reporting en compliance taken zijn nog steeds tijdrovend.</p>
+                    <p style="padding-bottom: 0; color: #012e44; padding-top: 10px; margin-top: 0; font-size: 17px; line-height: 27px; margin-bottom: 0; font-weight: 500;">Je loopt het risico ingehaald te worden door jouw klanten en concurrenten.</p>
+                    <p style="padding-bottom: 0; padding-top: 20px; margin-top: 0; font-size: 16px; line-height: 26px; margin-bottom: 0;">Je hebt geen realtime toegang tot al de financiële gegevens die je nodig hebt om je werk te doen, je vertrouwt op te veel handmatige processen en systemen, en de belangrijkste reporting en compliance taken zijn nog steeds tijdrovend.</p>
                 </td>
                 <td style="padding: 0; margin: 0; width: 48%;">
-                    <p style="padding-bottom: 0; padding-top: 10px; margin-top: 0; font-size: 18px; line-height: 28px; margin-bottom: 0; padding-right: 10px;">Inconsistentie binnen het bedrijf kan ook de kans op fouten vergroten. De toekomst is connected accounting, maar in veel opzichten moet je nu wellicht nog het gevoel hebben dat je op je zelf werkt en niet connected. Het is moeilijk om samen te werken met collega’s, communicatie met de klant is ondoeltreffend en weinig tot geen van je processen zijn gestandaardiseerd.</p>
+                    <p style="padding-bottom: 0; padding-top: 10px; margin-top: 0; font-size: 16px; line-height: 26px; margin-bottom: 0; padding-right: 10px;">Inconsistentie binnen het bedrijf kan ook de kans op fouten vergroten. De toekomst is connected accounting, maar in veel opzichten moet je nu wellicht nog het gevoel hebben dat je op je zelf werkt en niet connected. Het is moeilijk om samen te werken met collega’s, communicatie met de klant is ondoeltreffend en weinig tot geen van je processen zijn gestandaardiseerd.</p>
                 </td>
             <?php else : ?>
                 <td style="padding: 0; margin: 0; width: 48%; padding-right: 4%;">
-                    <p style="padding-bottom: 0; color: #012e44; padding-top: 10px; margin-top: 0; font-size: 19px; line-height: 28px; margin-bottom: 0; font-weight: 500;">Het gebruik van technologie helpt je bij het stroomlijnen van heel wat van je dagelijks werk.</p>
-                    <p style="padding-bottom: 0; padding-top: 20px; margin-top: 0; font-size: 18px; line-height: 28px; margin-bottom: 0;">Je hebt bijvoorbeeld toegang tot enkele realtime gegevens, maar waarschijnlijk nog niet over het hele portfolio heen. Of je kan integreren met een aantal boekhoudoplossingen, maar nog niet met allemaal.Dit zorgt ervoor dat je niet elke klant op dezelfde manier kan behandelen, </p>
+                    <p style="padding-bottom: 0; color: #012e44; padding-top: 10px; margin-top: 0; font-size: 17px; line-height: 27px; margin-bottom: 0; font-weight: 500;">Het gebruik van technologie helpt je bij het stroomlijnen van heel wat van je dagelijks werk.</p>
+                    <p style="padding-bottom: 0; padding-top: 20px; margin-top: 0; font-size: 16px; line-height: 26px; margin-bottom: 0;">Je hebt bijvoorbeeld toegang tot enkele realtime gegevens, maar waarschijnlijk nog niet over het hele portfolio heen. Of je kan integreren met een aantal boekhoudoplossingen, maar nog niet met allemaal.Dit zorgt ervoor dat je niet elke klant op dezelfde manier kan behandelen, </p>
                 </td>
                 <td style="padding: 0; margin: 0; width: 48%;">
-                    <p style="padding-bottom: 0; padding-top: 10px; margin-top: 0; font-size: 18px; line-height: 28px; margin-bottom: 0; padding-right: 10px;">waardoor het moeilijk is om processen te standaardiseren en automatiseren. En zonder geconsolideerde data, en consistentie over het kantoor heen, is het niet mogelijk om trends te identificeren in je klantenportefeuille of te zien waar adviesverlening nodig is. Je zal nog enkele stappen moeten ondernemen om de volledige overgang te maken van “compliance reporter” naar “trusted advisor”.</p>
+                    <p style="padding-bottom: 0; padding-top: 10px; margin-top: 0; font-size: 16px; line-height: 26px; margin-bottom: 0; padding-right: 10px;">waardoor het moeilijk is om processen te standaardiseren en automatiseren. En zonder geconsolideerde data, en consistentie over het kantoor heen, is het niet mogelijk om trends te identificeren in je klantenportefeuille of te zien waar adviesverlening nodig is. Je zal nog enkele stappen moeten ondernemen om de volledige overgang te maken van “compliance reporter” naar “trusted advisor”.</p>
                 </td>
             <?php endif; ?>
         </tr>
     </table>    
 </div>
-<div>
-<table style="padding-left: 66px; padding-right: 66px; padding-top: 15px;">
+<div style="height:450px;">
+    <table style="padding-left: 66px; padding-right: 66px; padding-top: 15px;">
         <tr>
             <td style="width: 25%;">
                 <table  <?php if($fullstatus == 1) { echo 'style="display: table;"';} else { echo 'style="display: none;"';}?>>
@@ -189,7 +189,7 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                             <table cellpadding="0" cellpadding="0">
                                 <tr>
                                     <td style="width: 100%; text-align: center; padding-top: 15px;">
-                                        <h3 style="font-size: 18px;  font-family: 'Cera Pro'; font-weight: bold; color: #01355c;">Hier is waar je je nu bevindt.</h3>
+                                        <h3 style="font-size: 16px;  font-family: 'Cera Pro'; font-weight: bold; color: #01355c;">Hier is waar je je nu bevindt.</h3>
                                     </td>
                                 </tr>
                             </table>
@@ -213,7 +213,7 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                             <table cellpadding="0" cellpadding="0">
                                 <tr>
                                     <td style="width: 100%; text-align: center; padding-top: 15px;">
-                                        <h3 style="font-size: 18px; color: #01355c; font-family: 'Cera Pro'; font-weight: bold;">Hier is waar je je nu bevindt.</h3>
+                                        <h3 style="font-size: 16px; color: #01355c; font-family: 'Cera Pro'; font-weight: bold;">Hier is waar je je nu bevindt.</h3>
                                     </td>
                                 </tr>
                             </table>
@@ -238,7 +238,7 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                             <table cellpadding="0" cellpadding="0">
                                 <tr>
                                     <td style="width: 100%; text-align: center; padding-top: 15px;">
-                                        <h3 style="font-size: 18px; color: #01355c; font-family: 'Cera Pro'; font-weight: bold;">Hier is waar je je nu bevindt.</h3>
+                                        <h3 style="font-size: 16px; color: #01355c; font-family: 'Cera Pro'; font-weight: bold;">Hier is waar je je nu bevindt.</h3>
                                     </td>
                                 </tr>
                             </table>
@@ -262,7 +262,7 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                             <table cellpadding="0" cellpadding="0">
                                 <tr>
                                     <td style="width: 100%; text-align: center; padding-top: 15px;">
-                                        <h3 style="font-size: 18px; color: #01355c; font-family: 'Cera Pro'; font-weight: bold;">Hier is waar je je nu bevindt.</h3>
+                                        <h3 style="font-size: 16px; color: #01355c; font-family: 'Cera Pro'; font-weight: bold;">Hier is waar je je nu bevindt.</h3>
                                     </td>
                                 </tr>
                             </table>
@@ -435,17 +435,17 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
         </tr>
     </table>
 </div>  
-<div class="chart-section  left-right-space" style="padding-top: 140px; margin-top: 0;">
+<div class="chart-section  left-right-space" style="padding-top: 170px; margin-top: 0;">
     <div class="chart-title" style="padding-top: 0; margin-top: 0; padding-bottom: 10px; text-align: left;">
         <h2 style="padding-top:0; font-size: 28px; margin-top: 0; padding-bottom: 25px; font-weight: 900; ">Uw resultaten in detail - en hoe u zich verhoudt ten opzichte van uw collega's</h2>
         <p style="padding-top: 5px; line-height: 28px; font-size: 19px; padding-bottom: 30px; padding-right: 15px;">We hebben uw antwoorden vergeleken met de gemiddelde scores die we tijdens onze technologische trends in het boekhoudkundig onderzoek hebben meegedeeld, zodat u uw capaciteiten kunt vergelijken met die van uw concurrenten.</p>
     </div>
 
-    <div class="chart-box">
+    <div class="chart-box" style="height:550px;">
         <div class="full-width">
             <table cellpadding="0" cellpadding="0">
                 <tr>
-                    <td style="padding: 0; padding-bottom: 15px; width: 45%; padding-right: 20px;">
+                    <td style="padding: 0; padding-bottom: 15px; width: 55%; padding-right: 20px;">
                         <table cellpadding="0" cellpadding="0" style="width: 100%;">
                             <tr>
                                 <td style="padding: 0;">
@@ -471,33 +471,33 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                             </tr>
                         </table>
                     </td>
-                    <td style="padding: 0; width: 55%;">                         
+                    <td style="padding: 0; width: 45%;">                         
                         <table cellpadding="0" cellpadding="0">
                             <tr>
                                 <td style="padding: 10px; background: #f0f3f8; padding-top: 50px; padding-bottom: 50px;">                                    
-                                    <canvas id="chart1" width="480" height="380"></canvas>
+                                    <canvas id="chart1" width="420" height="380"></canvas>
                                 </td>
                             </tr>
                         </table>
-                    </td>                   
+                    </td>                 
                 </tr>
             </table>
         </div>
     </div>
-    <div class="chart-box" style="padding-top: 28px;">
+    <div class="chart-box" style="padding-top: 28px;height:550px;">
         <div class="full-width">
             <table cellpadding="0" cellpadding="0" style="padding: 0; margin: 0; padding-bottom: 70px;">
                 <tr>
-                    <td style="padding: 0; width: 55%; background: #f0f3f8; padding-top: 20px; padding-bottom: 0px;">
+                    <td style="padding: 0; width: 45%;">        
                         <table cellpadding="0" cellpadding="0">
                             <tr>
-                                <td style="padding: 0">
-                                    <canvas id="chart2" width="500" height="450"></canvas>
+                                <td style="padding: 10px; background: #f0f3f8; padding-top: 50px; padding-bottom: 50px;">
+                                    <canvas id="chart2" width="420" height="380"></canvas>
                                 </td>
                             </tr>
                         </table>
                     </td>
-                    <td style="padding: 0; padding-bottom: 15px; width: 45%; padding-left: 20px;">
+                    <td style="padding: 0; padding-bottom: 15px; width: 55%; padding-left: 20px;">
                         <table cellpadding="0" cellpadding="0" style="width: 100%;">
                             <tr>
                                 <td>
@@ -527,11 +527,11 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
             </table>
         </div>
     </div>
-    <div class="chart-box" style="padding-bottom: 0; padding-top: 40px;">
+    <div class="chart-box" style="padding-bottom: 0; padding-top: 40px;height:650px;">
         <div class="full-width">
             <table cellpadding="0" cellpadding="0">
                 <tr>
-                    <td style="padding: 0; padding-bottom: 15px; width: 45%; padding-right: 20px;">
+                    <td style="padding: 0; padding-bottom: 15px; width: 55%; padding-right: 20px;">
                         <table cellpadding="0" cellpadding="0" style="width: 100%;">
                             <tr>
                                 <td style="padding: 0;">
@@ -557,33 +557,33 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                             </tr>
                         </table>
                     </td>
-                    <td style="padding: 0; width: 55%;">                         
+                    <td style="padding: 0; width: 45%;">                         
                         <table cellpadding="0" cellpadding="0">
                             <tr>
-                                <td style="padding: 0; background: #f0f3f8; padding-top: 100px; padding-bottom: 60px; padding-right: 15px;">
-                                    <canvas id="chart3" width="485" height="450"></canvas>
+                                <td style="padding: 10px; background: #f0f3f8; padding-top: 50px; padding-bottom: 50px;">
+                                    <canvas id="chart3" width="420" height="380"></canvas>
                                 </td>
                             </tr>
                         </table>
-                    </td>                   
+                    </td>                
                 </tr>
             </table>
         </div>
     </div>
-    <div class="chart-box" style="padding-top: 0;">
+    <div class="chart-box" style="padding-top: 0;height:650px;">
         <div class="full-width">
             <table cellpadding="0" cellpadding="0" style="padding: 0; margin: 0; padding-bottom: 0px;">
                 <tr>
-                    <td style="padding: 0; width: 55%;">
+                    <td style="padding: 0; width: 45%;">
                         <table cellpadding="0" cellpadding="0">
                             <tr>
-                                <td style="padding: 0; background: #f0f3f8; padding-top: 100px; padding-bottom: 76px">
-                                    <canvas id="chart4" width="500" height="450"></canvas>
+                                <td style="padding: 10px; background: #f0f3f8; padding-top: 50px; padding-bottom: 50px;">
+                                    <canvas id="chart4" width="420" height="380"></canvas>
                                 </td>
                             </tr>
                         </table>
                     </td>
-                    <td style="padding: 0; padding-bottom: 15px; width: 45%; padding-left: 20px;">
+                    <td style="padding: 0; padding-bottom: 15px; width: 55%; padding-left: 20px;">
                         <table cellpadding="0" cellpadding="0" style="width: 100%;">
                             <tr>
                                 <td>
@@ -617,11 +617,11 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
 <div class="full-width" style="background-color: #ffffff; padding-top: 0; margin-top: 0;">
     <table cellpadding="0" cellpadding="0" style="padding-left: 66px; padding-right: 66px; padding-top: 0; margin-top: 0px;">
         <tr>
-            <td style="padding-top: 50px; padding-bottom: 40px; text-align: left;">
+            <td style="padding-top: 50px; padding-bottom: 30px; text-align: left;">
                 <table  cellpadding="0" cellpadding="0" style="padding: 0; margin: 0;">
                     <tr>
                         <td>
-                            <h2 style="color: #012e44; padding-top: 0; margin-top: 0; padding-bottom: 30px;  font-size: 36px; margin-bottom: 0px; line-height: 40px; font-weight: 900;">Wat moet ik nu doen?</h2>
+                            <h2 style="color: #012e44; padding-top: 0; margin-top: 0; padding-bottom: 28px;  font-size: 34px; margin-bottom: 0px; line-height: 36px; font-weight: 900;">Wat moet ik nu doen?</h2>
                         </td>
                     </tr>
                     <tr>
@@ -630,24 +630,24 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                                 <tr>
                                 <?php if( $total > 47 ) : ?>
                                     <td style="width: 48%; padding-right: 4%;">
-                                        <p style="color: #012e44; padding-bottom: 19px; font-size: 20px; line-height: 28px; font-weight: 500;">Je hebt deze hoge mate van digitale maturiteit bereikt door slim te zijn in je technologie strategie, adoptie en investeringen.</p>
-                                        <p style="color: #708ea8; padding-bottom: 10px; font-size: 18px; line-height: 28px; font-weight: normal;">Het stelt je in staat je concurrentie voor te blijven en inkomsten te genereren uit de adviesdiensten die veel bedrijven zoeken.</p></td>
+                                        <p style="color: #012e44; padding-bottom: 19px; font-size: 18px; line-height: 26px; font-weight: 500;">Je hebt deze hoge mate van digitale maturiteit bereikt door slim te zijn in je technologie strategie, adoptie en investeringen.</p>
+                                        <p style="color: #708ea8; padding-bottom: 10px; font-size: 16px; line-height: 26px; font-weight: normal;">Het stelt je in staat je concurrentie voor te blijven en inkomsten te genereren uit de adviesdiensten die veel bedrijven zoeken.</p></td>
                                     <td style="width: 48%;">
-                                        <p style="color: #708ea8; padding-bottom: 0px; font-size: 18px; line-height: 28px; padding-left: 10px; font-weight: normal;">Dus waarom zou je nu stilstaan en de rest jouw achterstand laten inhalen? Silverfin kan je helpen. Ons cloud-platform is de drijvende kracht achter connected accounting bij een aantal van 's werelds toonaangevende kantoren. En onze krachtige analyse- en reporting tools geven je de data en het inzicht dat je nodig hebt om de meest betrouwbare adviseur van je klanten te zijn.</p>
+                                        <p style="color: #708ea8; padding-bottom: 0px; font-size: 16px; line-height: 26px; padding-left: 10px; font-weight: normal;">Dus waarom zou je nu stilstaan en de rest jouw achterstand laten inhalen? Silverfin kan je helpen. Ons cloud-platform is de drijvende kracht achter connected accounting bij een aantal van 's werelds toonaangevende kantoren. En onze krachtige analyse- en reporting tools geven je de data en het inzicht dat je nodig hebt om de meest betrouwbare adviseur van je klanten te zijn.</p>
                                     </td>
                                 <?php elseif( $total < 21 ) : ?>
                                     <td style="width: 48%; padding-right: 4%;">
-                                        <p style="color: #012e44; padding-bottom: 19px; font-size: 20px; line-height: 28px; font-weight: 500;">Als een connected accountant heb je toegang tot de gegevens, tools en mensen die je nodig hebt om snel, efficiënt en accuraat te werken - bovendien kan je ook eenvoudig compliance werk transformeren.</p>
-                                        <p style="color: #708ea8; padding-bottom: 10px; font-size: 18px; line-height: 28px; font-weight: normal;">Het betekent dat er geen financiële gegevens meer worden opgeslagen in silo’s of inconsistente processen binnen je kantoor. Jouw succes als connected account hangt af van de technologie die je gebruikt.</p></td>
+                                        <p style="color: #012e44; padding-bottom: 19px; font-size: 18px; line-height: 26px; font-weight: 500;">Als een connected accountant heb je toegang tot de gegevens, tools en mensen die je nodig hebt om snel, efficiënt en accuraat te werken - bovendien kan je ook eenvoudig compliance werk transformeren.</p>
+                                        <p style="color: #708ea8; padding-bottom: 10px; font-size: 16px; line-height: 26px; font-weight: normal;">Het betekent dat er geen financiële gegevens meer worden opgeslagen in silo’s of inconsistente processen binnen je kantoor. Jouw succes als connected account hangt af van de technologie die je gebruikt.</p></td>
                                     <td style="width: 48%;">
-                                        <p style="color: #708ea8; padding-bottom: 0px; font-size: 18px; line-height: 28px; padding-left: 10px; font-weight: normal;">Het cloud platform van Silverfin maakt een connectie met alle boekhoud- en financiële systemen van je klanten en brengt de belangrijkste data automatisch binnen, ongeacht de bron. Met Silverfin werk je altijd vanuit een “single version of the truth” en kun je realtime data delen met klanten en collega’s. Zodra je data en processen gestandaardiseerd zijn, kan je ook jouw reporting en workflows automatiseren en aan je reis beginnen om een connected accountant te worden.</p>
+                                        <p style="color: #708ea8; padding-bottom: 0px; font-size: 16px; line-height: 26px; padding-left: 10px; font-weight: normal;">Het cloud platform van Silverfin maakt een connectie met alle boekhoud- en financiële systemen van je klanten en brengt de belangrijkste data automatisch binnen, ongeacht de bron. Met Silverfin werk je altijd vanuit een “single version of the truth” en kun je realtime data delen met klanten en collega’s. Zodra je data en processen gestandaardiseerd zijn, kan je ook jouw reporting en workflows automatiseren en aan je reis beginnen om een connected accountant te worden.</p>
                                     </td>
                                 <?php else : ?>
                                     <td style="width: 48%; padding-right: 4%;">
-                                        <p style="color: #012e44; padding-bottom: 19px; font-size: 20px; line-height: 28px; font-weight: 500;">De eisen van je klanten veranderen. Enkel en alleen compliance diensten aanbieden is niet langer voldoende.</p>
-                                        <p style="color: #708ea8; padding-bottom: 10px; font-size: 18px; line-height: 28px; font-weight: normal;">Je klanten vragen steeds vaker naar diensten met toegevoegde waarde, zoals advies. Hoewel je al een redelijke mate van digitale maturiteit vertoont, is het minder goede nieuws dat je concurrenten momenteel beter in staat zijn om aan de veranderende eisen van de klant te voldoen.</p></td>
+                                        <p style="color: #012e44; padding-bottom: 19px; font-size: 18px; line-height: 26px; font-weight: 500;">De eisen van je klanten veranderen. Enkel en alleen compliance diensten aanbieden is niet langer voldoende.</p>
+                                        <p style="color: #708ea8; padding-bottom: 10px; font-size: 16px; line-height: 26px; font-weight: normal;">Je klanten vragen steeds vaker naar diensten met toegevoegde waarde, zoals advies. Hoewel je al een redelijke mate van digitale maturiteit vertoont, is het minder goede nieuws dat je concurrenten momenteel beter in staat zijn om aan de veranderende eisen van de klant te voldoen.</p></td>
                                     <td style="width: 48%;">
-                                        <p style="color: #708ea8; padding-bottom: 0px; font-size: 18px; line-height: 28px; padding-left: 10px; font-weight: normal;">Het cloud platform van Silverfin maakt een connectie met de boekhoudkundige en financiële systemen van je klanten om alle gegevens te leveren die je nodig hebt - ongeacht de oorsprong. We automatiseren je compliance accounting workflows waardoor je snelheid, nauwkeurigheid en winstgevendheid toenemen. Vervolgens geven onze krachtige analyse- en reporting tools je de gegevens en het inzicht dat je nodig hebt om de meest betrouwbare adviseur van je klant te zijn.</p>
+                                        <p style="color: #708ea8; padding-bottom: 0px; font-size: 16px; line-height: 26px; padding-left: 10px; font-weight: normal;">Het cloud platform van Silverfin maakt een connectie met de boekhoudkundige en financiële systemen van je klanten om alle gegevens te leveren die je nodig hebt - ongeacht de oorsprong. We automatiseren je compliance accounting workflows waardoor je snelheid, nauwkeurigheid en winstgevendheid toenemen. Vervolgens geven onze krachtige analyse- en reporting tools je de gegevens en het inzicht dat je nodig hebt om de meest betrouwbare adviseur van je klant te zijn.</p>
                                     </td>
                                 <?php endif; ?>
                                 </tr>
