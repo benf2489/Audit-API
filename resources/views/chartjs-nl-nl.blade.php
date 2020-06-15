@@ -292,7 +292,7 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                                     <td class="min-wrapper" align="top" style="padding: 0;" >
                                         <table  cellpadding="0" cellpadding="0" class="left-side-icon">
                                             <tr>
-                                                <td class="lefticon" style="width: 30px; padding: 0;">
+                                                <td class="lefticon" style="width: 30px;height:30px; padding: 0;">
                                                     <?php if($fullstatus ==1){ ?>
                                                         <img src="{{ asset('/icons/fullsight-active.svg')}}" />
                                                     <?php } else { ?>
@@ -329,7 +329,7 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                                     <td class="min-wrapper" align="top"  style="padding: 0;">
                                         <table  cellpadding="0" cellpadding="0" class="left-side-icon">
                                             <tr>
-                                                <td class="lefticon" style="width: 30px; padding: 0;">
+                                                <td class="lefticon" style="width: 30px;height:30px; padding: 0;">
                                                     <?php if($wfstatus == 1){?>
                                                         <img src="{{ asset('/icons/hindsight-active.svg')}}" />
                                                     <?php } else { ?>
@@ -366,7 +366,7 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                                     <td class="min-wrapper" align="top" >
                                         <table  cellpadding="0" cellpadding="0" class="left-side-icon">
                                             <tr>
-                                                <td class="lefticon" style="width: 30px; padding: 0;">
+                                                <td class="lefticon" style="width: 30px;height:30px; padding: 0;">
                                                     <?php if($revstatus == 1){?>
                                                         <img src="{{ asset('/icons/insight-active.svg')}}" />
                                                     <?php } else { ?>
@@ -404,7 +404,7 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                                     <td class="min-wrapper" align="top" >
                                         <table  cellpadding="0" cellpadding="0" class="left-side-icon">
                                             <tr>
-                                                <td class="lefticon" style="width: 30px; padding: 0;">
+                                                <td class="lefticon" style="width: 30px;height:30px; padding: 0;">
                                                     
                                                     <?php if($advstatus == 1){?>
                                                         <img src="{{ asset('/icons/foresight-active.svg')}}" />
