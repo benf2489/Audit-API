@@ -193,7 +193,7 @@ class ResponseController extends Controller
         ->setOption('footer-spacing', 20 )
         ->setPaper('a4')
         ->setOption('margin-top', 0)
-        ->setOption('margin-bottom',1)
+        ->setOption('margin-bottom',0)
         ->setOption('margin-left', 0)
         ->setOption('margin-right',0);
         return $pdf->inline();

@@ -42,6 +42,7 @@ else if ( $full > 9 && $wf > 9 && $rev > 9 && $adv > 9) {
 <html>
 <head>
 <meta charset="UTF-8">
+<title>Jouw ‘Connected Accountant’ resultaten</title>
 <style type="text/css">
 @font-face {font-family: 'Cera Pro'; src: url('{{asset('/fonts/CeraPro-Light.ttf')}}') format('truetype'); font-weight: 300; font-style: normal; }
 @font-face {font-family: 'Cera Pro'; src: url('{{asset('/fonts/CeraPro-Regular.ttf')}}') format('truetype'); font-weight: normal; font-style: normal; }
@@ -617,7 +618,7 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
         </div>
     </div>
 </div>
-<div class="full-width" style="background-color: #ffffff; padding-top: 0; margin-top: 0;">
+<div class="full-width" style="background-color: #ffffff; padding-top: 0; margin-top: 0;height:446px;">
     <table cellpadding="0" cellpadding="0" style="padding-left: 66px; padding-right: 66px; padding-top: 0; margin-top: 0px;">
         <tr>
             <td style="padding-top: 50px; padding-bottom: 30px; text-align: left;">
@@ -665,11 +666,11 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
 <div class="full-width" style="background-color: #01355c; background-repeat: repeat; background-position: left bottom; text-align: center; padding: 0; margin: 0;  background-image: url({{asset('/icons/book-bg-image2.jpg')}}); ">
     <table cellpadding="0" cellpadding="0" style="padding-left: 66px; padding-right: 66px; margin-top: 20px;">
         <tr>
-            <td style="padding-top: 239px; padding-bottom: 239px; text-align: center;">
+            <td style="padding-top: 230px; padding-bottom: 230px; text-align: center;">
                 <table  cellpadding="0" cellpadding="0" style="padding: 0; margin: 0;">
                     <tr>
                         <td>
-                            <div class="chart-title">
+                            <div class="chart-title" style="height:165px;">
                                 <h2 style="color: #fff; padding-top: 0px; margin-top: 20px; font-size: 46px; line-height: 55px; text-align: center;"> <strong style="color: #fff; margin-top: 20px; letter-spacing: 0.5px !important; margin-bottom: 20px; font-weight: 900;">
                                 <?php if ( $total > 47 ) {
                                     echo "Identificeer nieuwe kansen om te profiteren van je investering in technologie";
