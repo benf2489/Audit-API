@@ -116,7 +116,7 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
 </head>
 <body>
-<div class="banner-box" style="background-color: #01355c; background-size: contain; background-repeat: repeat; background-position: bottom right; margin: 0; padding: 0; position: relative; margin-top: -10px; background-image: url({{asset('/icons/bookbg-image.jpg')}});">
+<div class="banner-box" style="background-color: #01355c; background-size: cover; background-repeat: repeat; background-position: bottom right; margin: 0; padding: 0; position: relative; margin-top: -10px; background-image: url({{asset('/icons/bookbg-image.jpg')}});">
     <!-- Top Banner Background image size width:1340px and height:650px -->
      <div class="header left-right-space" style="padding-top: 50px; padding-bottom: 0; margin: 0;">
         <table  cellpadding="0" cellpadding="0" style="padding-top: 30px; padding-bottom: 20px; margin: 0;">
@@ -660,7 +660,7 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
         </tr>
     </table>
 </div>
-<div class="full-width" style="background-color: #01355c; background-repeat: repeat; background-position: left bottom; text-align: center; padding: 0; margin: 0;  background-image: url({{asset('/icons/book-bg-image2.jpg')}}); ">
+<div class="full-width" style="background-size: cover;background-color: #01355c; background-repeat: repeat; background-position: left bottom; text-align: center; padding: 0; margin: 0;  background-image: url({{asset('/icons/book-bg-image2.jpg')}}); ">
     <table cellpadding="0" cellpadding="0" style="padding-left: 66px; padding-right: 66px; margin-top: 20px;">
         <tr>
             <td style="padding-top: 233px; padding-bottom: 234px; text-align: center;">
