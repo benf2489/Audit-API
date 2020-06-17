@@ -179,6 +179,10 @@ class ResponseController extends Controller
           $filename = "chartjs-nl-be";
         } else if ($lang == 'fr'){
           $filename = "chartjs-fr";
+        } else if ($lang == 'da'){
+          $filename = "chartjs-dk";
+        } else if ($lang == 'dk'){
+          $filename = "chartjs-dk";
         }  else if ($lang == 'en'){
             $filename = "chartjs";
         } else{

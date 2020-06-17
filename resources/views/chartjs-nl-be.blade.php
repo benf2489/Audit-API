@@ -45,24 +45,24 @@ else if ( $full > 9 && $wf > 9 && $rev > 9 && $adv > 9) {
 <title>Jouw connected accountant resultaten</title>
 <style type="text/css">
 @font-face {font-family: 'Cera Pro'; src: url('{{asset('/fonts/CeraPro-Light.ttf')}}') format('truetype'); font-weight: 300; font-style: normal; }
-@font-face {font-family: 'Cera Pro'; src: url('{{asset('/fonts/CeraPro-Regular.ttf')}}') format('truetype'); font-weight: normal; font-style: normal; }
+@font-face {font-family: 'Cera Pro'; src: url('{{asset('/fonts/CeraPro-Regular.ttf')}}') format('truetype'); font-weight: 400; font-style: normal; }
 @font-face {font-family: 'Cera Pro'; src: url('{{asset('/fonts/CeraPro-Medium.ttf')}}') format('truetype'); font-weight: 500; font-style: normal; }
 @font-face {font-family: 'Cera Pro'; src: url('{{asset('/fonts/CeraPro-Black.ttf')}}') format('truetype'); font-weight: 900; font-style: normal; }
-@font-face {font-family: 'Cera Pro'; src: url('{{asset('/fonts/CeraPro-Bold.ttf')}}') format('truetype'); font-weight: bold; font-style: normal; }
-body { font-family: 'Cera Pro'; font-weight: normal; }
-@page {padding: 0; margin: 0; padding-top: 0px; padding-bottom: 0px; border: none; border-collapse: collapse; font-family: 'Cera Pro'; font-weight: normal;  page-break-after: always;
+@font-face {font-family: 'Cera Pro'; src: url('{{asset('/fonts/CeraPro-Bold.ttf')}}') format('truetype'); font-weight: 700; font-style: normal; }
+body { font-family: 'Cera Pro'; font-weight: 400; }
+@page {padding: 0; margin: 0; padding-top: 0px; padding-bottom: 0px; border: none; border-collapse: collapse; font-family: 'Cera Pro'; font-weight: 400;  page-break-after: always;
         page-break-inside: avoid; }
 div.page {page-break-after: always; page-break-inside: avoid; margin: 0; }
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent; }
 * { border: 0; box-sizing: content-box; color: inherit;  line-height: inherit; list-style: none; margin: 0; padding: 0; text-decoration: none; vertical-align: top; letter-spacing: 0; }
-html { font-family: 'Cera Pro'; font-weight: normal; font-size: 16px; line-height: 22px; overflow: auto; background: #fff; cursor: default; padding: 0; margin: 0; }
-body { box-sizing: border-box; margin:0; padding: 0; background: #FFF; font-family: 'Cera Pro'; font-weight: normal;}
-h1 { font-family: 'Cera Pro'; font-weight: 500; }
+html { font-family: 'Cera Pro'; font-weight: 400; font-size: 16px; line-height: 22px; overflow: auto; background: #fff; cursor: default; padding: 0; margin: 0; }
+body { box-sizing: border-box; margin:0; padding: 0; background: #FFF; font-family: 'Cera Pro'; font-weight: 400;}
+h1 { font-family: 'Cera Pro'; font-weight: 400; }
 h2 span,
-h2 {font-size: 33px; line-height: 35px; font-family: 'Cera Pro'; font-weight: bold; color: #012e44; }
-h2 strong {font-family: 'Cera Pro'; color: #012e44; font-weight: bold; } 
-h3, h3 span {font-size: 22px; font-family: 'Cera Pro'; font-weight: bold;}
-p {font-family: 'Cera Pro'; font-weight: 500; color: #708ea8; font-size: 16px; line-height: 24px; padding-bottom: 10px; }
+h2 {font-size: 33px; line-height: 35px; font-family: 'Cera Pro'; font-weight: 700; color: #012e44; }
+h2 strong {font-family: 'Cera Pro'; color: #012e44; font-weight: 700; } 
+h3, h3 span {font-size: 22px; font-family: 'Cera Pro'; font-weight: 700;}
+p {font-family: 'Cera Pro'; font-weight: 400; color: #708ea8; font-size: 16px; line-height: 24px; padding-bottom: 10px; }
 .chart-box { text-align: center; padding-bottom: 20px; padding-top: 20px; }
 .full-width {width: 100%; display: block; }
 .iconimage { width: 50px; display: inline-block; vertical-align: middle; }
@@ -87,7 +87,7 @@ table { width: 100%; }
 .carttitle { width: 55%; }
 .services-box { padding: 30px 0; }
 .services-box h2{ color: #012e44; }
-.services-box p {font-family: 'Cera Pro'; font-weight: normal;  color: #012e44; font-size: 18px; }
+.services-box p {font-family: 'Cera Pro'; font-weight: 400;  color: #012e44; font-size: 18px; }
 .services-box td.min-wrapper { border: 2px solid #fff; padding: 10px 15px;  background-color: #ebeff0; width: 50%;  }
 .services-box .left-side-icon, .services-box .left-side-icon * { vertical-align: middle; }
 .title-box *{ vertical-align: middle; }
@@ -99,39 +99,39 @@ table { width: 100%; }
 .services-box .left-side-icon h2 { padding-left: 10px; font-size: 26px !important; }
 .min-wrapper.hightlight-box h2, .min-wrapper.hightlight-box p { color: #ffffff !important; }
 .here-where-text { width: 50%; padding-top: 10px; }
-.here-where-text h3 { display: block; width: 100%; text-align: center; font-family: 'Cera Pro'; font-weight: 500;  color: #01355c; padding-top: 10px; padding-bottom: 8px; }
+.here-where-text h3 { display: block; width: 100%; text-align: center; font-family: 'Cera Pro'; font-weight: 400;  color: #01355c; padding-top: 10px; padding-bottom: 8px; }
 .here-where-text .down-arrow { display: block; width: 100%; text-align: center; margin: 0 auto; padding-bottom: 5px; }
 .here-where-text .down-arrow img { display: block; text-align: center; margin: 0 auto; }
 .chart-section { padding: 25px 0; padding-top: 0; }
 header .logo img { width: 145px; }
-header .right p { font-size: 20px;  font-family: 'Cera Pro'; font-weight: 500;  color: #012e44; width: 100%; text-align: right; }
+header .right p { font-size: 20px;  font-family: 'Cera Pro'; font-weight: 400;  color: #012e44; width: 100%; text-align: right; }
 .left-right-space { padding-left: 66px; padding-right: 66px; }
 img { max-width: 100%; }
 html{width: 100%; height: 100%; padding: 0; margin: 0; }
 @page {margin: 0cm 0cm;}
-.service-box h2 {  font-family: 'Cera Pro'; font-weight: bold; }
-.service-box p {  font-family: 'Cera Pro'; font-weight: 500; font-size: 15px !important; line-height: 20px !important; }
+.service-box h2 {  font-family: 'Cera Pro'; font-weight: 700; }
+.service-box p {  font-family: 'Cera Pro'; font-weight: 400; font-size: 15px !important; line-height: 20px !important; }
 .chart-box p { font-size: 14px !important; line-height: 22px !important; }
 </style>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
 </head>
 <body>
-<div class="banner-box" style="background-color: #01355c; background-size: cover; background-repeat: repeat; background-position: bottom right; margin: 0; padding: 0; position: relative; margin-top: -10px; background-image: url({{asset('/icons/bookbg-image.jpg')}});">
+<div class="banner-box" style="background-color: #01355c; background-size: cover; background-repeat: repeat; background-position: bottom right; margin: 0; padding: 0; position: relative; margin-top: -10px; background-image: url({{asset('/icons/header-image.jpg')}});">
     <!-- Top Banner Background image size width:1340px and height:650px -->
      <div class="header left-right-space" style="padding-top: 50px; padding-bottom: 0; margin: 0;">
-        <table  cellpadding="0" cellpadding="0" style="padding-top: 30px; padding-bottom: 20px; margin: 0;">
+        <table  cellpadding="0" cellpadding="0" style="padding-top: 30px; padding-bottom: 0; margin: 0;">
             <tr>
                 <td class="logo" style="width: 100%; padding-top: 0; margin-top: 0; ">
-                    <img style="width: 190px; display: block;" src="{{asset('/icons/white-logo.svg')}}" />
+                    <img style="width: 190px; height:100px;display: block;" src="{{asset('/icons/colour-logo.svg')}}" />
                 </td>
             </tr>
         </table>
     </div>
         <table cellpadding="0" cellpadding="0">
             <tr>
-                <td class="left-right-space" style="padding-top: 80px; padding-bottom: 100px; text-align: left;">
-                    <h1 style="color: #ffffff; font-size: 24px; line-height: 40px; padding-bottom: 15px; font-family: 'Cera Pro'; letter-spacing: -0.5px; letter-spacing: 0; font-weight: normal;">Jouw connected accountant resultaten</h1>
-                    <h2 style="color: #ffffff; font-family: 'Cera Pro';  font-weight: 900; font-size: 48px; letter-spacing: 0.5px; line-height: 52px;">
+                <td class="left-right-space" style="padding-top: 80px; padding-bottom: 80px; text-align: left;">
+                    <h1 style="color: #012e44; font-size: 24px; line-height: 40px; padding-bottom: 15px; font-family: 'Cera Pro'; letter-spacing: -0.5px; letter-spacing: 0; font-weight: 400;">Jouw connected accountant resultaten</h1>
+                    <h2 style="color: #012e44; font-family: 'Cera Pro';  font-weight: 700; font-size: 48px; letter-spacing: 0.5px; line-height: 52px;">
                     <?php if ( $total > 47 ) {
                         echo "Proficiat, jij bent connected";
                     } elseif ( $total < 21 ) {
@@ -148,13 +148,13 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
     <table cellpadding="0" cellpadding="0">
         <tr>
             <td>
-                <h2 style="padding: 0; margin: 0; padding-bottom: 20px; font-size: 36px;  font-family: 'Cera Pro'; font-weight: 900; letter-spacing: 0.5px;">Jouw resultaten toegelicht</h2>
+                <h2 style="padding: 0; margin: 0; padding-bottom: 20px; font-size: 36px;  font-family: 'Cera Pro'; font-weight: 700; letter-spacing: 0.5px;">Jouw resultaten toegelicht</h2>
             </td>
         </tr>
         <tr>
             <?php if( $total > 47 ) : ?>
                 <td style="padding: 0; margin: 0; width: 48%; padding-right: 4%;">
-                    <p style="padding-bottom: 0; color: #012e44; padding-top: 10px; margin-top: 0; font-size: 17px; line-height: 27px; margin-bottom: 0; font-weight: 500;">Proficiat, ons onderzoek toont aan dat je de concurrentie voor bent als het gaat om je gebruik van cloud technologie.</p>
+                    <p style="padding-bottom: 0; color: #012e44; padding-top: 10px; margin-top: 0; font-size: 17px; line-height: 27px; margin-bottom: 0; font-weight: 400;">Proficiat, ons onderzoek toont aan dat je de concurrentie voor bent als het gaat om je gebruik van cloud technologie.</p>
                     <p style="padding-bottom: 0; padding-top: 20px; margin-top: 0; font-size: 16px; line-height: 26px; margin-bottom: 0;">Als connected accountant hebben jij en je klanten toegang tot één versie van de waarheid, op ieder moment, vanaf elk apparaat. Door het automatiseren van compliance-werkzaamheden</p>
                 </td>
                 <td style="padding: 0; margin: 0; width: 48%;">
@@ -162,7 +162,7 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                 </td>
             <?php elseif( $total < 21 ) : ?>
                 <td style="padding: 0; margin: 0; width: 48%; padding-right: 4%;">
-                    <p style="padding-bottom: 0; color: #012e44; padding-top: 10px; margin-top: 0; font-size: 17px; line-height: 27px; margin-bottom: 0; font-weight: 500;">Je loopt het risico ingehaald te worden door jouw klanten en concurrenten.</p>
+                    <p style="padding-bottom: 0; color: #012e44; padding-top: 10px; margin-top: 0; font-size: 17px; line-height: 27px; margin-bottom: 0; font-weight: 400;">Je loopt het risico ingehaald te worden door jouw klanten en concurrenten.</p>
                     <p style="padding-bottom: 0; padding-top: 20px; margin-top: 0; font-size: 16px; line-height: 26px; margin-bottom: 0;">Je hebt geen realtime toegang tot al de financiële gegevens die je nodig hebt om je werk te doen, je vertrouwt op te veel handmatige processen en systemen, en de belangrijkste reporting en compliance taken zijn nog steeds tijdrovend.</p>
                 </td>
                 <td style="padding: 0; margin: 0; width: 48%;">
@@ -170,7 +170,7 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                 </td>
             <?php else : ?>
                 <td style="padding: 0; margin: 0; width: 48%; padding-right: 4%;">
-                    <p style="padding-bottom: 0; color: #012e44; padding-top: 10px; margin-top: 0; font-size: 17px; line-height: 27px; margin-bottom: 0; font-weight: 500;">Het gebruik van technologie helpt je bij het stroomlijnen van heel wat van je dagelijks werk.</p>
+                    <p style="padding-bottom: 0; color: #012e44; padding-top: 10px; margin-top: 0; font-size: 17px; line-height: 27px; margin-bottom: 0; font-weight: 400;">Het gebruik van technologie helpt je bij het stroomlijnen van heel wat van je dagelijks werk.</p>
                     <p style="padding-bottom: 0; padding-top: 20px; margin-top: 0; font-size: 16px; line-height: 26px; margin-bottom: 0;">Je hebt bijvoorbeeld toegang tot enkele realtime gegevens, maar waarschijnlijk nog niet over het hele portfolio heen. Of je kan integreren met een aantal boekhoudoplossingen, maar nog niet met allemaal.Dit zorgt ervoor dat je niet elke klant op dezelfde manier kan behandelen, </p>
                 </td>
                 <td style="padding: 0; margin: 0; width: 48%;">
@@ -190,7 +190,7 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                             <table cellpadding="0" cellpadding="0">
                                 <tr>
                                     <td style="width: 100%; text-align: center; padding-top: 15px;">
-                                        <h3 style="font-size: 16px;  font-family: 'Cera Pro'; font-weight: bold; color: #01355c;">Hier is waar je je nu bevindt.</h3>
+                                        <h3 style="font-size: 16px;  font-family: 'Cera Pro'; font-weight: 700; color: #01355c;">Hier is waar je je nu bevindt.</h3>
                                     </td>
                                 </tr>
                             </table>
@@ -214,7 +214,7 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                             <table cellpadding="0" cellpadding="0">
                                 <tr>
                                     <td style="width: 100%; text-align: center; padding-top: 15px;">
-                                        <h3 style="font-size: 16px; color: #01355c; font-family: 'Cera Pro'; font-weight: bold;">Hier is waar je je nu bevindt.</h3>
+                                        <h3 style="font-size: 16px; color: #01355c; font-family: 'Cera Pro'; font-weight: 700;">Hier is waar je je nu bevindt.</h3>
                                     </td>
                                 </tr>
                             </table>
@@ -239,7 +239,7 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                             <table cellpadding="0" cellpadding="0">
                                 <tr>
                                     <td style="width: 100%; text-align: center; padding-top: 15px;">
-                                        <h3 style="font-size: 16px; color: #01355c; font-family: 'Cera Pro'; font-weight: bold;">Hier is waar je je nu bevindt.</h3>
+                                        <h3 style="font-size: 16px; color: #01355c; font-family: 'Cera Pro'; font-weight: 700;">Hier is waar je je nu bevindt.</h3>
                                     </td>
                                 </tr>
                             </table>
@@ -263,7 +263,7 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                             <table cellpadding="0" cellpadding="0">
                                 <tr>
                                     <td style="width: 100%; text-align: center; padding-top: 15px;">
-                                        <h3 style="font-size: 16px; color: #01355c; font-family: 'Cera Pro'; font-weight: bold;">Hier is waar je je nu bevindt.</h3>
+                                        <h3 style="font-size: 16px; color: #01355c; font-family: 'Cera Pro'; font-weight: 700;">Hier is waar je je nu bevindt.</h3>
                                     </td>
                                 </tr>
                             </table>
@@ -437,12 +437,12 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
     </table>
 </div>  
 <div class="chart-section  left-right-space" style="padding-top: 170px; margin-top: 0;">
-    <div class="chart-title" style="padding-top: 0; margin-top: 0; padding-bottom: 10px; text-align: left;">
-        <h2 style="padding-top:0; font-size: 28px; margin-top: 0; padding-bottom: 25px; font-weight: 900; ">Uw resultaten in detail - en hoe u zich verhoudt ten opzichte van uw collega's</h2>
-        <p style="padding-top: 5px; line-height: 28px; font-size: 19px; padding-bottom: 30px; padding-right: 15px;">We hebben uw antwoorden vergeleken met de gemiddelde scores die we tijdens onze technologische trends in het boekhoudkundig onderzoek hebben meegedeeld, zodat u uw capaciteiten kunt vergelijken met die van uw concurrenten.</p>
+    <div class="chart-title" style="padding-top: 0; margin-top: 0; padding-bottom: 5px; text-align: left;">
+        <h2 style="padding-top:0; font-size: 28px; margin-top: 0; padding-bottom: 25px; font-weight: 700; ">Uw resultaten in detail - en hoe u zich verhoudt ten opzichte van uw collega's</h2>
+        <p style="padding-top: 5px; line-height: 28px; font-size: 19px; padding-bottom: 20px; padding-right: 15px;">We hebben uw antwoorden vergeleken met de gemiddelde scores die we tijdens onze technologische trends in het boekhoudkundig onderzoek hebben meegedeeld, zodat u uw capaciteiten kunt vergelijken met die van uw concurrenten.</p>
     </div>
 
-    <div class="chart-box" style="height:550px;">
+    <div class="chart-box" style="height:530px;">
         <div class="full-width">
             <table cellpadding="0" cellpadding="0">
                 <tr>
@@ -454,7 +454,7 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                                         <table cellpadding="0" cellpadding="0">
                                             <tr>
                                                 <td class="imgbox" style="width: 18%; text-align: left; padding: 0 5px 0 0;"><img style="width: 45px;" src="{{ asset('/icons/data.svg')}}" /></td>
-                                                <td style="padding: 0; padding-left: 0px; width: 85%;" class="carttitle"><h2 style="font-size: 38px !important; font-weight: 900; ">Data</h2></td>
+                                                <td style="padding: 0; padding-left: 0px; width: 85%;" class="carttitle"><h2 style="font-size: 38px !important; font-weight: 700; ">Data</h2></td>
                                             </tr>
                                         </table>            
                                     </div>
@@ -506,7 +506,7 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                                         <table cellpadding="0" cellpadding="0">
                                             <tr>
                                                 <td class="imgbox" style="width: 15%; text-align: left; padding: 0;"><img style="width: 45px;" src="{{ asset('/icons/workflow.svg')}}" /></td>
-                                                <td style="padding: 0; padding-left: 2px; width: 75%" class="carttitle"><h2 style="font-size: 38px !important; font-weight: 900;">Workflow</h2></td>
+                                                <td style="padding: 0; padding-left: 2px; width: 75%" class="carttitle"><h2 style="font-size: 38px !important; font-weight: 700;">Workflow</h2></td>
                                             </tr>
                                         </table>            
                                     </div>
@@ -528,7 +528,7 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
             </table>
         </div>
     </div>
-    <div class="chart-box" style="padding-bottom: 0; padding-top: 40px;height:650px;">
+    <div class="chart-box" style="padding-bottom: 0; padding-top: 80px;height:610px;">
         <div class="full-width">
             <table cellpadding="0" cellpadding="0">
                 <tr>
@@ -540,7 +540,7 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                                         <table cellpadding="0" cellpadding="0">
                                             <tr>
                                                 <td class="imgbox" style="width: 15%; text-align: left; padding: 0;"><img style="width: 45px;" src="{{ asset('/icons/review_ic.svg')}}" /></td>
-                                                <td style="padding: 0; padding-left: 0px; width: 75%;" class="carttitle"><h2 style="font-size: 38px !important; font-weight: 900; ">Review</h2></td>
+                                                <td style="padding: 0; padding-left: 0px; width: 75%;" class="carttitle"><h2 style="font-size: 38px !important; font-weight: 700; ">Review</h2></td>
                                             </tr>
                                         </table>            
                                     </div>
@@ -592,7 +592,7 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                                         <table cellpadding="0" cellpadding="0">
                                             <tr>
                                                 <td class="imgbox" style="width: 15%; text-align: left; padding:0;"><img style="width: 100%;" src="{{ asset('/icons/advisory_ic.svg')}}" /></td>
-                                                <td style="padding: 0; padding-left: 10px; width: 85%" class="carttitle"><h2 style="font-size: 38px !important; font-weight: 900; ">Advisering</h2></td>
+                                                <td style="padding: 0; padding-left: 10px; width: 85%" class="carttitle"><h2 style="font-size: 38px !important; font-weight: 700; ">Advisering</h2></td>
                                             </tr>
                                         </table>            
                                     </div>
@@ -615,14 +615,14 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
         </div>
     </div>
 </div>
-<div class="full-width" style="background-color: #ffffff; padding-top: 0; margin-top: 0;height:445px;">
+<div class="full-width" style="background-color: #ffffff; padding-top: 0; margin-top: 0;height:465px;">
     <table cellpadding="0" cellpadding="0" style="padding-left: 66px; padding-right: 66px; padding-top: 0; margin-top: 0px;">
         <tr>
             <td style="padding-top: 50px; padding-bottom: 30px; text-align: left;">
                 <table  cellpadding="0" cellpadding="0" style="padding: 0; margin: 0;">
                     <tr>
                         <td>
-                            <h2 style="color: #012e44; padding-top: 0; margin-top: 0; padding-bottom: 28px;  font-size: 34px; margin-bottom: 0px; line-height: 36px; font-weight: 900;">Wat moet ik nu doen?</h2>
+                            <h2 style="color: #012e44; padding-top: 0; margin-top: 0; padding-bottom: 28px;  font-size: 34px; margin-bottom: 0px; line-height: 36px; font-weight: 700;">Wat moet ik nu doen?</h2>
                         </td>
                     </tr>
                     <tr>
@@ -631,24 +631,24 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                                 <tr>
                                 <?php if( $total > 47 ) : ?>
                                     <td style="width: 48%; padding-right: 4%;">
-                                        <p style="color: #012e44; padding-bottom: 19px; font-size: 18px; line-height: 26px; font-weight: 500;">Je hebt deze hoge mate van digitale maturiteit bereikt door slim te zijn in je technologie strategie, adoptie en investeringen.</p>
-                                        <p style="color: #708ea8; padding-bottom: 10px; font-size: 16px; line-height: 26px; font-weight: normal;">Het stelt je in staat je concurrentie voor te blijven en inkomsten te genereren uit de adviesdiensten die veel bedrijven zoeken.</p></td>
+                                        <p style="color: #012e44; padding-bottom: 19px; font-size: 18px; line-height: 26px; font-weight: 400;">Je hebt deze hoge mate van digitale maturiteit bereikt door slim te zijn in je technologie strategie, adoptie en investeringen.</p>
+                                        <p style="color: #708ea8; padding-bottom: 10px; font-size: 16px; line-height: 26px; font-weight: 400;">Het stelt je in staat je concurrentie voor te blijven en inkomsten te genereren uit de adviesdiensten die veel bedrijven zoeken.</p></td>
                                     <td style="width: 48%;">
-                                        <p style="color: #708ea8; padding-bottom: 0px; font-size: 16px; line-height: 26px; padding-left: 10px; font-weight: normal;">Dus waarom zou je nu stilstaan en de rest jouw achterstand laten inhalen? Silverfin kan je helpen. Ons cloud-platform is de drijvende kracht achter connected accounting bij een aantal van 's werelds toonaangevende kantoren. En onze krachtige analyse- en reporting tools geven je de data en het inzicht dat je nodig hebt om de meest betrouwbare adviseur van je klanten te zijn.</p>
+                                        <p style="color: #708ea8; padding-bottom: 0px; font-size: 16px; line-height: 26px; padding-left: 10px; font-weight: 400;">Dus waarom zou je nu stilstaan en de rest jouw achterstand laten inhalen? Silverfin kan je helpen. Ons cloud-platform is de drijvende kracht achter connected accounting bij een aantal van 's werelds toonaangevende kantoren. En onze krachtige analyse- en reporting tools geven je de data en het inzicht dat je nodig hebt om de meest betrouwbare adviseur van je klanten te zijn.</p>
                                     </td>
                                 <?php elseif( $total < 21 ) : ?>
                                     <td style="width: 48%; padding-right: 4%;">
-                                        <p style="color: #012e44; padding-bottom: 19px; font-size: 18px; line-height: 26px; font-weight: 500;">Als een connected accountant heb je toegang tot de gegevens, tools en mensen die je nodig hebt om snel, efficiënt en accuraat te werken - bovendien kan je ook eenvoudig compliance werk transformeren.</p>
-                                        <p style="color: #708ea8; padding-bottom: 10px; font-size: 16px; line-height: 26px; font-weight: normal;">Het betekent dat er geen financiële gegevens meer worden opgeslagen in silo’s of inconsistente processen binnen je kantoor. Jouw succes als connected account hangt af van de technologie die je gebruikt.</p></td>
+                                        <p style="color: #012e44; padding-bottom: 19px; font-size: 18px; line-height: 26px; font-weight: 400;">Als een connected accountant heb je toegang tot de gegevens, tools en mensen die je nodig hebt om snel, efficiënt en accuraat te werken - bovendien kan je ook eenvoudig compliance werk transformeren.</p>
+                                        <p style="color: #708ea8; padding-bottom: 10px; font-size: 16px; line-height: 26px; font-weight: 400;">Het betekent dat er geen financiële gegevens meer worden opgeslagen in silo’s of inconsistente processen binnen je kantoor. Jouw succes als connected account hangt af van de technologie die je gebruikt.</p></td>
                                     <td style="width: 48%;">
-                                        <p style="color: #708ea8; padding-bottom: 0px; font-size: 16px; line-height: 26px; padding-left: 10px; font-weight: normal;">Het cloud platform van Silverfin maakt een connectie met alle boekhoud- en financiële systemen van je klanten en brengt de belangrijkste data automatisch binnen, ongeacht de bron. Met Silverfin werk je altijd vanuit een “single version of the truth” en kun je realtime data delen met klanten en collega’s. Zodra je data en processen gestandaardiseerd zijn, kan je ook jouw reporting en workflows automatiseren en aan je reis beginnen om een connected accountant te worden.</p>
+                                        <p style="color: #708ea8; padding-bottom: 0px; font-size: 16px; line-height: 26px; padding-left: 10px; font-weight: 400;">Het cloud platform van Silverfin maakt een connectie met alle boekhoud- en financiële systemen van je klanten en brengt de belangrijkste data automatisch binnen, ongeacht de bron. Met Silverfin werk je altijd vanuit een “single version of the truth” en kun je realtime data delen met klanten en collega’s. Zodra je data en processen gestandaardiseerd zijn, kan je ook jouw reporting en workflows automatiseren en aan je reis beginnen om een connected accountant te worden.</p>
                                     </td>
                                 <?php else : ?>
                                     <td style="width: 48%; padding-right: 4%;">
-                                        <p style="color: #012e44; padding-bottom: 19px; font-size: 18px; line-height: 26px; font-weight: 500;">De eisen van je klanten veranderen. Enkel en alleen compliance diensten aanbieden is niet langer voldoende.</p>
-                                        <p style="color: #708ea8; padding-bottom: 10px; font-size: 16px; line-height: 26px; font-weight: normal;">Je klanten vragen steeds vaker naar diensten met toegevoegde waarde, zoals advies. Hoewel je al een redelijke mate van digitale maturiteit vertoont, is het minder goede nieuws dat je concurrenten momenteel beter in staat zijn om aan de veranderende eisen van de klant te voldoen.</p></td>
+                                        <p style="color: #012e44; padding-bottom: 19px; font-size: 18px; line-height: 26px; font-weight: 400;">De eisen van je klanten veranderen. Enkel en alleen compliance diensten aanbieden is niet langer voldoende.</p>
+                                        <p style="color: #708ea8; padding-bottom: 10px; font-size: 16px; line-height: 26px; font-weight: 400;">Je klanten vragen steeds vaker naar diensten met toegevoegde waarde, zoals advies. Hoewel je al een redelijke mate van digitale maturiteit vertoont, is het minder goede nieuws dat je concurrenten momenteel beter in staat zijn om aan de veranderende eisen van de klant te voldoen.</p></td>
                                     <td style="width: 48%;">
-                                        <p style="color: #708ea8; padding-bottom: 0px; font-size: 16px; line-height: 26px; padding-left: 10px; font-weight: normal;">Het cloud platform van Silverfin maakt een connectie met de boekhoudkundige en financiële systemen van je klanten om alle gegevens te leveren die je nodig hebt - ongeacht de oorsprong. We automatiseren je compliance accounting workflows waardoor je snelheid, nauwkeurigheid en winstgevendheid toenemen. Vervolgens geven onze krachtige analyse- en reporting tools je de gegevens en het inzicht dat je nodig hebt om de meest betrouwbare adviseur van je klant te zijn.</p>
+                                        <p style="color: #708ea8; padding-bottom: 0px; font-size: 16px; line-height: 26px; padding-left: 10px; font-weight: 400;">Het cloud platform van Silverfin maakt een connectie met de boekhoudkundige en financiële systemen van je klanten om alle gegevens te leveren die je nodig hebt - ongeacht de oorsprong. We automatiseren je compliance accounting workflows waardoor je snelheid, nauwkeurigheid en winstgevendheid toenemen. Vervolgens geven onze krachtige analyse- en reporting tools je de gegevens en het inzicht dat je nodig hebt om de meest betrouwbare adviseur van je klant te zijn.</p>
                                     </td>
                                 <?php endif; ?>
                                 </tr>
@@ -660,15 +660,15 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
         </tr>
     </table>
 </div>
-<div class="full-width" style="background-size: cover;background-color: #01355c; background-repeat: repeat; background-position: left bottom; text-align: center; padding: 0; margin: 0;  background-image: url({{asset('/icons/book-bg-image2.jpg')}}); ">
+<div class="full-width" style="background-size: cover;background-color: #01355c; background-repeat: repeat; background-position: left bottom; text-align: center; padding: 0; margin: 0;  background-image: url({{asset('/icons/footer-image.jpg')}}); ">
     <table cellpadding="0" cellpadding="0" style="padding-left: 66px; padding-right: 66px; margin-top: 20px;">
         <tr>
-            <td style="padding-top: 230px; padding-bottom: 230px; text-align: center;">
+            <td style="padding-top: 240px; padding-bottom: 240px; text-align: center;">
                 <table  cellpadding="0" cellpadding="0" style="padding: 0; margin: 0;">
                     <tr>
                         <td>
-                            <div class="chart-title" style="height:165px;">
-                                <h2 style="color: #fff; padding-top: 0px; margin-top: 20px; font-size: 46px; line-height: 55px; text-align: center;"> <strong style="color: #fff; margin-top: 20px; letter-spacing: 0.5px !important; margin-bottom: 20px; font-weight: 900;">
+                            <div class="chart-title" style="height:138px;max-width:640px;margin:0 auto;">
+                                <h2 style="color: #012e44; padding-top: 0px; margin-top: 20px; font-size: 38px; line-height: 46px; text-align: center;"> <strong style="color: #012e44; margin-top: 20px; letter-spacing: 0.5px !important; margin-bottom: 20px; font-weight: 700;">
                                 <?php if ( $total > 47 ) {
                                     echo "Identificeer nieuwe opportuniteiten om te profiteren van je technologie-investering";
                                 } else {
@@ -683,10 +683,10 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                             <table cellpadding="0" cellpadding="0" style="padding-left: 0px; padding-right: 0px; padding-top: 20px; text-align: center;">
                                 <tr>
                                     <td>
-                                        <table style="background: #13c5e2; padding: 0 20px; width: 400px; height: 90px; margin: 10px auto 0 auto; border-radius: 8px;"  cellpadding="0" cellpadding="0">
+                                        <table style="background: #057ee1; padding: 0 20px; width: 400px; height: 90px; margin: 10px auto 0 auto; border-radius: 8px;"  cellpadding="0" cellpadding="0">
                                             <tr>
                                                 <td>
-                                                    <a style="color: #ffffff; line-height: 90px; font-size: 28px; text-decoration: none;" href="https://www.silverfin.com/nl/demo" title="Book a free workshop" target="_blank"> <strong>Boek een gratis workshop</strong> </a>
+                                                    <a style="color: #ffffff; line-height: 90px; font-size: 28px; font-weight:400; text-decoration: none;" href="https://www.silverfin.com/nl/demo" title="Book a free workshop" target="_blank"> <strong>Boek een gratis workshop</strong> </a>
                                                 </td>
                                             </tr>
                                         </table>

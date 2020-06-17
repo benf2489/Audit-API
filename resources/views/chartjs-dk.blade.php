@@ -42,7 +42,7 @@ else if ( $full > 9 && $wf > 9 && $rev > 9 && $adv > 9) {
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Les résultats de votre comptable connecté</title>
+<title>Jeres connected accounting-resultater</title>
 <style type="text/css">
 @font-face {font-family: 'Cera Pro'; src: url('{{asset('/fonts/CeraPro-Light.ttf')}}') format('truetype'); font-weight: 300; font-style: normal; }
 @font-face {font-family: 'Cera Pro'; src: url('{{asset('/fonts/CeraPro-Regular.ttf')}}') format('truetype'); font-weight: 400; font-style: normal; }
@@ -57,7 +57,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 * { border: 0; box-sizing: content-box; color: inherit;  line-height: inherit; list-style: none; margin: 0; padding: 0; text-decoration: none; vertical-align: top; letter-spacing: 0; }
 html { font-family: 'Cera Pro'; font-weight: 400; font-size: 16px; line-height: 22px; overflow: auto; background: #fff; cursor: default; padding: 0; margin: 0; }
 body { box-sizing: border-box; margin:0; padding: 0; background: #FFF; font-family: 'Cera Pro'; font-weight: 400;}
-h1 { font-family: 'Cera Pro'; font-weight: 400; }
+h1 { font-family: 'Cera Pro'; font-weight: 500; }
 h2 span,
 h2 {font-size: 33px; line-height: 35px; font-family: 'Cera Pro'; font-weight: 700; color: #012e44; }
 h2 strong {font-family: 'Cera Pro'; color: #012e44; font-weight: 700; } 
@@ -111,7 +111,7 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
 @page {margin: 0cm 0cm;}
 .service-box h2 {  font-family: 'Cera Pro'; font-weight: 700; }
 .service-box p {  font-family: 'Cera Pro'; font-weight: 400; font-size: 15px !important; line-height: 20px !important; }
-.chart-box p { font-size: 14px !important; line-height: 22px !important; }
+.chart-box p { font-size: 15px !important; line-height: 24px !important; }
 </style>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
 </head>
@@ -130,14 +130,14 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
         <table cellpadding="0" cellpadding="0">
             <tr>
                 <td class="left-right-space" style="padding-top: 80px; padding-bottom: 80px; text-align: left;">
-                    <h1 style="color: #012e44; font-size: 24px; line-height: 40px; padding-bottom: 15px; font-family: 'Cera Pro'; letter-spacing: -0.5px; letter-spacing: 0; font-weight: 400;">Les résultats de votre comptable connecté</h1>
+                    <h1 style="color: #012e44; font-size: 24px; line-height: 40px; padding-bottom: 15px; font-family: 'Cera Pro'; letter-spacing: -0.5px; letter-spacing: 0; font-weight: 400;">Jeres connected accounting-resultater</h1>
                     <h2 style="color: #012e44; font-family: 'Cera Pro';  font-weight: 700; font-size: 48px; letter-spacing: 0.5px; line-height: 52px;">
                     <?php if ( $total > 47 ) {
-                        echo "Félicitations, vous êtes connecté";
+                        echo "Tillykke, I er »connected«";
                     } elseif ( $total < 21 ) {
-                        echo "Il est temps de changer";
+                        echo "Tid til forandring";
                     } else {
-                        echo "Vous êtes sur la bonne voie";
+                        echo "I er på rette vej";
                     }?>
                     </h2>
                 </td>
@@ -148,33 +148,34 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
     <table cellpadding="0" cellpadding="0">
         <tr>
             <td>
-                <h2 style="padding: 0; margin: 0; padding-bottom: 20px; font-size: 36px;  font-family: 'Cera Pro'; font-weight: 700; letter-spacing: 0.5px;">Vos résultats expliqués</h2>
+                <h2 style="padding: 0; margin: 0; padding-bottom: 20px; font-size: 36px;  font-family: 'Cera Pro'; font-weight: 700; letter-spacing: 0.5px;">Jeres resultater uddybet</h2>
             </td>
         </tr>
         <tr>
             <?php if( $total > 47 ) : ?>
                 <td style="padding: 0; margin: 0; width: 48%; padding-right: 4%;">
-                    <p style="padding-bottom: 0; color: #012e44; padding-top: 10px; margin-top: 0; font-size: 17px; line-height: 27px; margin-bottom: 0; font-weight: 400;">Félicitations, nos recherches montrent que vous avez une avance sur vos concurrents lorsqu'il s'agit d'utiliser la technologie cloud.</p>
-                    <p style="padding-bottom: 0; padding-top: 20px; margin-top: 0; font-size: 16px; line-height: 26px; margin-bottom: 0;">Le fait d'être un comptable connecté vous permet, à vous et à vos clients, d'accéder à une version de la vérité, quand vous en avez besoin, à partir de n'importe quel appareil connecté.</p>
+                    <p style="padding-bottom: 0; color: #012e44; padding-top: 10px; margin-top: 0; font-size: 19px; line-height: 28px; margin-bottom: 0; font-weight: 400;">Tillykke, vores research viser, at I er foran konkurrenterne, når det kommer til jeres brug af cloudteknologi.</p>
+                    <p style="padding-bottom: 0; padding-top: 20px; margin-top: 0; font-size: 18px; line-height: 28px; margin-bottom: 0;">Jeres brug af connected accounting giver jer og jeres kunder adgang til én version af sandheden, når som helst, fra en hvilken som helst forbundet enhed.</p>
                 </td>
                 <td style="padding: 0; margin: 0; width: 48%;">
-                    <p style="padding-bottom: 0; padding-top: 10px; margin-top: 0; font-size: 16px; line-height: 26px; margin-bottom: 0; padding-right: 10px;">En automatisant le travail de conformité, vous êtes dans une position idéale pour récupérer du temps et utiliser vos données pour fournir des services de conseil à valeur ajoutée et assurer la pérennité de votre entreprise. Mais avec l'évolution rapide de la technologie, l'immobilisme n'est pas une option. Vous devez rester au courant des dernières innovations pour garder une avance.</p>
+                    <p style="padding-bottom: 0; padding-top: 10px; margin-top: 0; font-size: 18px; line-height: 28px; margin-bottom: 0; padding-right: 10px;">Ved at have automatiseret compliancearbejde er I perfekt stillet til at spare tid og bruge data til at levere værdiskabende rådgivningsservices og gøre jeres firma fremtidssikret. Men med teknologiens hurtige fremgang må I ikke stå stille. I skal holde jer ajour med de nyeste fremskridt for at forblive forrest.</p>
                 </td>
             <?php elseif( $total < 21 ) : ?>
                 <td style="padding: 0; margin: 0; width: 48%; padding-right: 4%;">
-                    <p style="padding-bottom: 0; color: #012e44; padding-top: 10px; margin-top: 0; font-size: 17px; line-height: 27px; margin-bottom: 0; font-weight: 400;">Vous risquez d'être laissé pour compte par vos clients et vos concurrents.</p>
-                    <p style="padding-bottom: 0; padding-top: 20px; margin-top: 0; font-size: 16px; line-height: 26px; margin-bottom: 0;">Vous n'avez pas accès en temps réel à toutes les données financières dont vous avez besoin pour faire votre travail, vous vous appuyez sur un trop grand nombre de processus et de systèmes manuels, et les tâches essentielles de reporting et de conformité prennent du temps. Le manque d'uniformité au sein de</p>
+                    <p style="padding-bottom: 0; color: #012e44; padding-top: 10px; margin-top: 0; font-size: 19px; line-height: 28px; margin-bottom: 0; font-weight: 400;">I risikerer at blive hægtet af konkurrencen med jeres kunder og konkurrenter.</p>
+                    <p style="padding-bottom: 0; padding-top: 20px; margin-top: 0; font-size: 18px; line-height: 28px; margin-bottom: 0;">I mangler realtids-adgang til alle de finansdata, I skal bruge for at kunne lave jeres arbejde. I er afhængige af for mange manuelle processer og systemer, og nøgleopgaver inden for rapportering og compliance er tidskrævende.</p>
                 </td>
                 <td style="padding: 0; margin: 0; width: 48%;">
-                    <p style="padding-bottom: 0; padding-top: 10px; margin-top: 0; font-size: 16px; line-height: 26px; margin-bottom: 0; padding-right: 10px;">l'entreprise peut également augmenter le risque que des erreurs soient commises. L'avenir est la comptabilité connectée, mais à de nombreux points de vue, vous devez avoir l'impression de travailler de façon autonome. Vous avez du mal à collaborer avec vos collègues, la communication avec vos clients est inefficace et difficile, et il n'y a pas (ou peu) de processus de travail standardisés au sein de votre entreprise que vous pouvez suivre.</p>
+                    <p style="padding-bottom: 0; padding-top: 10px; margin-top: 0; font-size: 18px; line-height: 28px; margin-bottom: 0; padding-right: 10px;">Manglende sammenhæng på tværs af firmaet øger muligvis også risikoen for fejl. </p>
+                    <p style="padding-bottom: 0; padding-top: 20px; margin-top: 0; font-size: 18px; line-height: 28px; margin-bottom: 0; padding-right: 10px;">Fremtiden er connected accounting, men på mange måder føler I det nok, som om I arbejder alene. I finder det vanskeligt at samarbejde med kollegaer, kundekommunikation er ineffektiv og svær, og der findes ingen (eller kun få) standardiserede arbejdsprocesser på tværs af firmaet, som I kan følge.</p>
                 </td>
             <?php else : ?>
                 <td style="padding: 0; margin: 0; width: 48%; padding-right: 4%;">
-                    <p style="padding-bottom: 0; color: #012e44; padding-top: 10px; margin-top: 0; font-size: 17px; line-height: 27px; margin-bottom: 0; font-weight: 400;">Votre utilisation de la technologie vous aide à rationaliser une grande partie de votre travail quotidien.</p>
-                    <p style="padding-bottom: 0; padding-top: 20px; margin-top: 0; font-size: 16px; line-height: 26px; margin-bottom: 0;">Par exemple, vous avez accès à certaines données en temps réel, mais probablement pas à l'ensemble de votre portefeuille de clients ; ou vous pouvez intégrer un certain nombre de solutions comptables, mais pas toutes. Par conséquent, il peut y avoir des </p>
+                    <p style="padding-bottom: 0; color: #012e44; padding-top: 10px; margin-top: 0; font-size: 19px; line-height: 28px; margin-bottom: 0; font-weight: 400;">Jeres brug af teknologi er med til at strømline meget af jeres daglige arbejde.</p>
+                    <p style="padding-bottom: 0; padding-top: 20px; margin-top: 0; font-size: 18px; line-height: 28px; margin-bottom: 0;">Eksempelvis har I adgang til nogle real-time data, men nok ikke på tværs af hele jeres kundeportefølje – eller I kan integrere med mange bogføringsløsninger, men ikke alle. Det betyder måske, at der er forskel på leverancerne mellem kunderne, hvilket gør det svært</p>
                 </td>
                 <td style="padding: 0; margin: 0; width: 48%;">
-                    <p style="padding-bottom: 0; padding-top: 10px; margin-top: 0; font-size: 16px; line-height: 26px; margin-bottom: 0; padding-right: 10px;">incohérences dans la prestation des services entre les clients, ce qui rend la normalisation et l'automatisation des processus difficiles à réaliser. Et sans données consolidées et cohérentes à l'échelle de l'entreprise, vous êtes incapable d'identifier les tendances dans votre portefeuille de clients ou de voir où les services de conseil sont nécessaires. Il vous reste encore quelques étapes à franchir pour passer du statut de rapporteur de conformité à celui de conseiller de confiance.</p>
+                    <p style="padding-bottom: 0; padding-top: 10px; margin-top: 0; font-size: 18px; line-height: 28px; margin-bottom: 0; padding-right: 10px;">at standardisere og automatisere processer. Og uden datakonsolidering og konsekvens på tværs af firmaet er det umuligt at identificere trends i jeres kundeportefølje eller få øje på, hvor rådgivningsydelser kan bruges. I mangler nogle skridt for at kunne overgå helt fra at være compliance-reporter til betroet rådgiver.</p>
                 </td>
             <?php endif; ?>
         </tr>
@@ -190,7 +191,7 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                             <table cellpadding="0" cellpadding="0">
                                 <tr>
                                     <td style="width: 100%; text-align: center; padding-top: 15px;">
-                                        <h3 style="font-size: 14px;  font-family: 'Cera Pro'; font-weight: 700; color: #01355c;">Voilà où vous vous trouvez.</h3>
+                                        <h3 style="font-size: 18px;  font-family: 'Cera Pro'; font-weight: 700; color: #01355c;">I er her</h3>
                                     </td>
                                 </tr>
                             </table>
@@ -214,7 +215,7 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                             <table cellpadding="0" cellpadding="0">
                                 <tr>
                                     <td style="width: 100%; text-align: center; padding-top: 15px;">
-                                        <h3 style="font-size: 14px; color: #01355c; font-family: 'Cera Pro'; font-weight: 700;">Voilà où vous vous trouvez.</h3>
+                                        <h3 style="font-size: 18px; color: #01355c; font-family: 'Cera Pro'; font-weight: 700;">I er her</h3>
                                     </td>
                                 </tr>
                             </table>
@@ -239,7 +240,7 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                             <table cellpadding="0" cellpadding="0">
                                 <tr>
                                     <td style="width: 100%; text-align: center; padding-top: 15px;">
-                                        <h3 style="font-size: 14px; color: #01355c; font-family: 'Cera Pro'; font-weight: 700;">Voilà où vous vous trouvez.</h3>
+                                        <h3 style="font-size: 18px; color: #01355c; font-family: 'Cera Pro'; font-weight: 700;">I er her</h3>
                                     </td>
                                 </tr>
                             </table>
@@ -263,7 +264,7 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                             <table cellpadding="0" cellpadding="0">
                                 <tr>
                                     <td style="width: 100%; text-align: center; padding-top: 15px;">
-                                        <h3 style="font-size: 14px; color: #01355c; font-family: 'Cera Pro'; font-weight: 700;">Voilà où vous vous trouvez.</h3>
+                                        <h3 style="font-size: 18px; color: #01355c; font-family: 'Cera Pro'; font-weight: 700;">I er her</h3>
                                     </td>
                                 </tr>
                             </table>
@@ -299,7 +300,7 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                                                     <?php } else { ?>
                                                         <img src="{{ asset('/icons/fullsight.svg')}}" />
                                                     <?php } ?>                                                    
-                                                </td><td style="width: 0px;"></td>
+                                                </td><td style="width: 5px;"></td>
                                                 <td><h2 style="{{ $fullclassh2 }}">fullsight</h2></td>
                                             </tr>
                                         </table>
@@ -307,7 +308,7 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                                             <tr>
                                                 <td style="padding-top: 5px;"> 
                                                     <p style="{{ $fullclassp }}">
-                                                    Vous disposez de toutes vos données en un seul endroit, et elles sont standardisées pour l'ensemble de votre portefeuille. &nbsp; &nbsp; &nbsp; </p>
+                                                    I har alle jeres data på ét sted, og det er standardiseret på tværs af jeres portefølje. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </p>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -336,15 +337,14 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                                                     <?php } else { ?>
                                                         <img src="{{ asset('/icons/hindsight.svg')}}" />
                                                     <?php } ?>
-                                                </td><td style="width: 0px;"></td>
+                                                </td><td style="width: 5px;"></td>
                                                 <td><h2 style="{{ $wfclassh2 }}">hindsight</h2></td>
                                             </tr>
                                         </table>
                                         <table  cellpadding="0" cellpadding="0" class="content-info">
                                             <tr>
                                                 <td style="padding-top: 5px;"> 
-                                                    <p style="{{ $wfclassp }}">
-                                                    Vous avez tous vos rapports et documents de travail automatisés en temps réel. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
+                                                    <p style="{{ $wfclassp }}">I har alle jeres rapportering- og arbejdspapirer automatiseret i realtid. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -374,15 +374,14 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                                                         <img src="{{ asset('/icons/insight-regular.svg')}}" />
                                                     <?php } ?>
                                                     <!-- <img src="{{ asset('/icons/insight-regular.svg')}}" /> -->
-                                                </td><td style="width: 0px;"></td>
+                                                </td><td style="width: 5px;"></td>
                                                 <td><h2 style="{{ $revclassh2 }}">insight</h2></td>
                                             </tr>
                                         </table>
                                         <table  cellpadding="0" cellpadding="0" class="content-info">
                                             <tr>
                                                 <td style="padding-top: 5px;">  
-                                                    <p style="{{ $revclassp }}">
-                                                    Vous êtes en mesure de créer un aperçu approfondi de votre portefeuille et d'effectuer une analyse comparative par rapport aux meilleures pratiques.</p>
+                                                    <p style="{{ $revclassp }}">I er i stand til at skabe dybtgående indsigter på tværs af jeres portefølje og benchmarke med best practice.</p>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -412,15 +411,14 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                                                     <?php } else { ?>
                                                         <img src="{{ asset('/icons/foresight.svg')}}" />
                                                     <?php } ?>
-                                                </td><td style="width: 0px;"></td>
+                                                </td><td style="width: 5px;"></td>
                                                 <td><h2 style="{{ $advclassh2 }}">foresight</h2></td>
                                             </tr>
                                         </table>
                                         <table  cellpadding="0" cellpadding="0" class="content-info">
                                             <tr>
                                                 <td style="padding-top: 5px;"> 
-                                                    <p style="{{ $advclassp }}">
-                                                    Des actions prédictives peuvent vous être proposées pour conseiller les clients de manière proactive.  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                    <p style="{{ $advclassp }}">Med jeres forudseende handlinger kan I give jeres kunder proaktiv rådgivning. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                                                     </p>
                                                 </td>
                                             </tr>
@@ -441,11 +439,11 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
 </div>  
 <div class="chart-section  left-right-space" style="padding-top: 170px; margin-top: 0;">
     <div class="chart-title" style="padding-top: 0; margin-top: 0; padding-bottom: 5px; text-align: left;">
-        <h2 style="padding-top:0; font-size: 28px; margin-top: 0; padding-bottom: 20px; font-weight: 700; ">Vos résultats en détail - et comment vous vous comparez à vos pairs</h2>
-        <p style="padding-top: 5px; line-height: 28px; font-size: 19px; padding-bottom: 20px; padding-right: 15px;">Nous avons comparé vos réponses aux notes moyennes fournies lors de notre enquête sur les tendances technologiques en comptabilité, afin que vous puissiez comparer vos capacités à celles de vos concurrents.</p>
+        <h2 style="padding-top:0; font-size: 26px; margin-top: 0; padding-bottom: 25px; font-weight: 700; ">Jeres resultater i detaljer – og hvor I står i forhold til jeres fagfæller</h2>
+        <p style="padding-top: 5px; line-height: 26px; font-size: 18px; padding-bottom: 20px; padding-right: 15px;">Vi har kortlagt jeres svar i forhold til gennemsnittet af de svar vi indsamlede, gennem vores undersøgelse af teknologitrends i regnskab, så vi kan sammenligne jeres evner med jeres konkurrenter.</p>
     </div>
 
-    <div class="chart-box" style="height:520px;">
+    <div class="chart-box" style="height:530px;">
         <div class="full-width">
             <table cellpadding="0" cellpadding="0">
                 <tr>
@@ -457,19 +455,19 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                                         <table cellpadding="0" cellpadding="0">
                                             <tr>
                                                 <td class="imgbox" style="width: 18%; text-align: left; padding: 0 5px 0 0;"><img style="width: 45px;" src="{{ asset('/icons/data.svg')}}" /></td>
-                                                <td style="padding: 0; padding-left: 0px; width: 85%;" class="carttitle"><h2 style="font-size: 38px !important; font-weight: 700; ">Données</h2></td>
+                                                <td style="padding: 0; padding-left: 0px; width: 85%;" class="carttitle"><h2 style="font-size: 38px !important; font-weight: 700; ">Data</h2></td>
                                             </tr>
                                         </table>            
                                     </div>
                                     <?php if( $full > 11 ) : ?>
-                                        <p style="text-align: left; font-size: 16px">Félicitations, vous êtes au sommet de votre stratégie de données. Votre adoption de la technologie à des points clés signifie que vous êtes en mesure de fournir un service rapide et efficace à vos clients. Plus important encore, vous vous êtes donné toutes les chances de réussir dans le secteur concurrentiel de la comptabilité d'aujourd'hui.</p>
-                                        <p style="text-align: left; font-size: 16px; padding-top: 10px;">Dans notre recherche récente, les deux plus grandes menaces à la réussite future citées par les répondants étaient l'accès à la bonne technologie et les compétences de l'équipe. Votre défi consiste maintenant à suivre les tendances de l'industrie et à vous assurer que vous anticipez les nouvelles technologies sans y réagir. Au fur et à mesure que les activités de vos clients évoluent, vous devez évoluer avec eux et vous assurer que vous pouvez toujours leur fournir l'information opportune et pertinente dont ils ont besoin.</p>
+                                        <p style="text-align: left; font-size: 16px">Tillykke, I har styr på jeres datastrategi. Jeres implementering af teknologi til nøglefunktioner betyder, at I kan levere hurtig og effektiv service til jeres kunder. Vigtigst af alt har I givet jer selv enhver chance for succes i dagens konkurrenceprægede regnskabssektor.</p>
+                                        <p style="text-align: left; font-size: 16px; padding-top: 10px;">I vores nylige research pegede respondenterne på adgang til den rigtige teknologi og teamets færdigheder som de største trusler mod fremtidig succes. Udfordringen bliver nu at holde jer ajour med industritrends og sikre, at I kan foregribe ny teknologi, ikke bare reagere på den. Efterhånden som jeres kunders forretninger udvikler sig, er I nødt til udvikle jer i takt og sikre, at I altid kan skaffe de rettidige og indsigtsfulde oplysninger, de har brug for.</p>
                                     <?php elseif( $full < 5 ) : ?>
-                                        <p style="text-align: left; font-size: 16px">Vous faites partie des 24 % de professionnels de la comptabilité qui nous ont dit que leurs données ne sont pas encore consolidées dans un centre central. Vos informations financières ne sont pas mises à jour automatiquement, ce qui signifie que vos rapports sont souvent périmés dès qu'ils sont complets. Bien que vous ne soyez pas seul, la mauvaise nouvelle est que plus d'un tiers des répondants à notre récent sondage de recherche nous ont dit avoir accès à des données en direct. Pendant que vos concurrents progressent, vous avez encore du travail à faire.</p>
-                                        <p style="text-align: left; font-size: 16px; padding-top: 10px;">Aujourd'hui, le succès de la comptabilité repose sur une stratégie de données unifiée qui vous permet de voir en un coup d'œil l'ensemble de la performance financière de vos clients et de leur fournir des conseils éclairés en fonction de ce que vous voyez. En regroupant vos données sur une plateforme unique, vous pouvez garantir la cohérence de la livraison au sein de votre équipe et vous assurer qu'aucune information cruciale ne soit perdue de vue.</p>
+                                        <p style="text-align: left; font-size: 16px">I er en del af de 24 % af regnskabsprofessionelle, som fortalte os, at deres data endnu ikke er konsolideret på ét centralt sted. Jeres finansdata bliver ikke opdateret automatisk, hvilket betyder, at jeres rapporter tit er forældede, så snart de færdige. Selvom I ikke er alene, er den dårlige nyhed, at over en tredjedel af respondenterne i vores nylige undersøgelse svarede, at de har adgang til live data. Selvom I gør fremskridt, er der stadig noget at gøre.</p>
+                                        <p style="text-align: left; font-size: 16px; padding-top: 10px;">At have succes i regnskab i dag afhænger af en integreret datastrategi, hvor det er muligt at få et hurtigt overblik over kundernes samlede økonomiske præstation, således at man kan give indsigtsfulde råd baseret på, hvad man kan se. Ved at samle jeres data på én platform, kan I garantere ensartethed i leveringen på tværs af jeres team og sikre, at ingen kritiske oplysninger forsvinder.</p>
                                     <?php else : ?>
-                                        <p style="text-align: left; font-size: 16px">Vous avez pris des mesures pour moderniser votre stratégie de données et vous disposez d'informations cruciales en temps réel, ce qui vous permet de fournir une quantité limitée d'analyses actualisées à vos clients. Mais votre stratégie demeure incomplète, ce qui signifie que votre prestation de services demeurera incohérente et que vous n'aurez pas toujours l'information nécessaire sous la main.</p>
-                                        <p style="text-align: left; font-size: 16px; padding-top: 10px;">Dans notre récente recherche, 37 % des professionnels de la comptabilité nous ont dit que le fait de ne pas suivre l'évolution des demandes des clients constitue la principale menace à leur succès futur. Les professionnels d'aujourd'hui doivent fournir des conseils proactifs au moment où ils en ont le plus besoin pour satisfaire leurs clients. Il est essentiel de créer une stratégie de données connectées dans laquelle toutes les informations clés sont mises à jour instantanément, sans aucun effort manuel.</p>
+                                        <p style="text-align: left; font-size: 16px">I har taget nogle skridt til at modernisere jeres datastrategi og nogle kritiske oplysninger er tilgængelige i realtid, så I kan levere en begrænset mængde opdateret analyse til jeres kunder. Men jeres strategi er fortsat ufuldstændig, hvilket betyder, at jeres levering af services vil forblive inkonsekvent, og I vil ikke altid have de nødvendige oplysninger ved hånden.</p>
+                                        <p style="text-align: left; font-size: 16px; padding-top: 10px;">I vores research svarede 37 % af regnskabsprofessionelle, at den største trussel mod deres fremtidige succes var deres manglende evne til at tilpasse sig kundernes behov. Professionelle i dag skal kunne give proaktive råd, når der mest er behov for det for at holde kunderne tilfredse. Det er altafgørende at skabe en integreret datastrategi, hvori alle oplysninger automatisk bliver opdateret, uden at der er brug for en manuel indsats.</p>
                                     <?php endif; ?>
                                 </td>
                             </tr>
@@ -483,7 +481,7 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                                 </td>
                             </tr>
                         </table>
-                    </td>                    
+                    </td>                   
                 </tr>
             </table>
         </div>
@@ -509,19 +507,19 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                                         <table cellpadding="0" cellpadding="0">
                                             <tr>
                                                 <td class="imgbox" style="width: 15%; text-align: left; padding: 0;"><img style="width: 45px;" src="{{ asset('/icons/workflow.svg')}}" /></td>
-                                                <td style="padding: 0; padding-left: 2px; width: 75%" class="carttitle"><h2 style="font-size: 38px !important; font-weight: 700;">Flux de travail</h2></td>
+                                                <td style="padding: 0; padding-left: 2px; width: 75%" class="carttitle"><h2 style="font-size: 38px !important; font-weight: 700;">Workflow</h2></td>
                                             </tr>
                                         </table>            
                                     </div>
                                     <?php if( $wf > 11 ) : ?>
-                                        <p style="text-align: left; font-size: 16px">Bravo, vous avez adopté des workflows standardisés et automatisés, qui vous permettront de rationaliser vos tâches quotidiennes, de réduire considérablement la charge de travail liée aux rapports et de fournir des résultats plus précis à vos clients.</p>
-                                        <p style="padding-top: 10px; text-align: left; font-size: 16px">En adoptant une approche cohérente des flux de travail, vous vous donnez de grandes chances de succès pour l'avenir. Maintenant, vous devez continuer de progresser, en exploitant les nouvelles technologies pour continuer à optimiser ces flux de travail et à en automatiser de nouveaux.</p>
+                                        <p style="text-align: left; font-size: 16px">Flot klaret! I har implementeret standardiserede og automatiserede workflows, som allerede strømliner jeres daglige opgaver, hvilket reducerer rapporteringsbyrden og giver jeres kunder mere nøjagtige resultater.</p>
+                                        <p style="padding-top: 10px; text-align: left; font-size: 16px">Ved at implementere en konsekvent tilgang til workflows har I givet jer selv gode muligheder for fremtidig succes. Nu skal I fortsætte med at bevæge jer fremad og gøre brug af nye teknologier for at fortsætte med at forbedre disse workflows og automatisere de nye.</p>
                                     <?php elseif( $wf < 5 ) : ?>
-                                        <p style="text-align: left; font-size: 16px">Vous n'avez pas de flux de travail et de processus cohérents au sein de votre entreprise, ce qui signifie que les tâches de routine prennent trop de temps et peuvent être sujettes à des erreurs. Chaque membre de l'équipe a une façon différente de travailler, de sorte que vos clients sont susceptibles de recevoir des niveaux incohérents de prestation. Cela devrait être une préoccupation immédiate pour vous, car plus des deux tiers des répondants à notre récent sondage nous ont dit qu'ils avaient déjà une façon normalisée de travailler au sein de leur entreprise.</p>
-                                        <p style="padding-top: 10px; text-align: left; font-size: 16px">Cependant, il est important que vous continuiez à vous améliorer pour relever les défis posés par vos concurrents ainsi que par vos clients. Dans notre récent sondage auprès des professionnels de la comptabilité, 21 % d'entre eux nous ont dit qu'ils peuvent développer leurs propres flux de travail, rapports et services en utilisant leur plateforme technologique. En suivant leur exemple, vous serez en mesure d'optimiser vos services et de garantir les meilleures pratiques à tout moment.</p>
+                                        <p style="text-align: left; font-size: 16px">I mangler konsekvente workflows og processer på tværs af jeres firma, hvilket betyder, at almindelige opgaver tager for lang tid, og der er måske en tilbøjelighed til at lave fejl. Hvert teammedlem har deres egen måde at arbejde på, så det er sandsynligt, at jeres kunder får forskellige niveauer af service. Dette bør være en presserende bekymring for jer, eftersom to tredjedele af respondenterne til vores spørgeskema svarede, at de allerede havde standardiserede arbejdsgange på tværs af deres firma.</p>
+                                        <p style="padding-top: 10px; text-align: left; font-size: 16px">Standardisering af workflows gør det muligt for jer at oprette skabeloner for daglig rapportering og compliancearbejde, og på den måde kan teamet bruge tid på mere givende (for ikke at tale om indtægtsgenererende) opgaver. Efterhånden som jeres firma vokser, er det også altafgørende at sikre, at hele teamet arbejder med de samme høje standarder.</p>
                                     <?php else : ?>
-                                        <p style="text-align: left; font-size: 16px">La bonne nouvelle, c'est que vous avez pris des mesures importantes pour normaliser et automatiser vos flux de travail, ce qui ne peut qu'aider votre entreprise à croître. Vos pratiques de travail quotidiennes sont saines et vos équipes sont capables de collaborer.</p>
-                                        <p style="padding-top: 10px; text-align: left; font-size: 16px">However, it’s important you keep improving to meet the challenges posed by your competitors as well as your clients. In our recent survey of accounting professionals, 21% told us that they can develop their own workflows, reports and services using their technology platform. By following their lead, you’ll be able to optimise your services and guarantee best practice at all times.</p>
+                                        <p style="text-align: left; font-size: 16px">Den gode nyhed er, I har taget vigtige skidt til at adressere standardiseringen og automatiseringen af jeres workflows, hvilket kun kommer til at hjælpe jeres firma med at vokse. Jeres daglige arbejdsgange er solide, og jeres teams kan samarbejde.</p>
+                                        <p style="padding-top: 10px; text-align: left; font-size: 16px">Det er dog vigtigt, at I fortsætter med at forbedrede jer for at kunne imødekomme udfordringerne fra jeres konkurrenter og jeres kunder. I vores undersøgelse af regnskabsprofessionelle svarede 21 %, at de kan oprette deres egne workflows, rapporter og services gennem deres teknologiplatform. Ved at følge deres eksempel vil I kunne optimere jeres services og garantere best practice hele tiden.</p>
                                     <?php endif; ?>
                                 </td>
                             </tr>
@@ -543,19 +541,19 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                                         <table cellpadding="0" cellpadding="0">
                                             <tr>
                                                 <td class="imgbox" style="width: 15%; text-align: left; padding: 0;"><img style="width: 45px;" src="{{ asset('/icons/review_ic.svg')}}" /></td>
-                                                <td style="padding: 0; padding-left: 0px; width: 75%;" class="carttitle"><h2 style="font-size: 38px !important; font-weight: 700; ">Revue</h2></td>
+                                                <td style="padding: 0; padding-left: 0px; width: 75%;" class="carttitle"><h2 style="font-size: 38px !important; font-weight: 700; ">Gennemgang</h2></td>
                                             </tr>
                                         </table>            
                                     </div>
                                     <?php if( $rev > 11 ) : ?>
-                                        <p style="text-align: left; font-size: 16px">Vos capacités d'analyse de données et de reporting sont impressionnantes. Vous consolidez les données de manière efficace, ce qui vous permet d'extraire des informations clés et de fournir des conseils d'affaires avant-gardistes à vos clients. Les mesures que vous avez prises font de vous une minorité innovatrice - seulement 7 % de nos répondants sont tout à fait d'accord avec l'énoncé selon lequel ils peuvent obtenir un aperçu de leur clientèle en comparant les données de leur portefeuille.</p>
-                                        <p style="text-align: left; font-size: 16px; padding-top: 10px;">Au fur et à mesure de nouvelles technologies, vous serez en mesure d'améliorer sans cesse vos services et de rendre votre analyse de données encore plus puissante. Cela vous permettra de partager sans effort des données avec vos clients, de collaborer avec eux pour résoudre des problèmes clés et de les aider à prendre de meilleures décisions en fonction de ce que vous voyez derrière les chiffres - ce qui, à son tour, mènera à des clients plus heureux et de nouvelles opportunités de revenus de services de conseil.</p>
+                                        <p style="text-align: left; font-size: 16px">Jeres evner i forhold til analyse og rapportering er imponerende. I konsoliderer data på en effektiv måde, hvilket betyder, at I kan trække vigtige indsigter ud og give fremsynede forretningsråd til jeres kunder. De skridt, I har taget, gør jer til en del af det innovative mindretal – kun 7 % of vores respondenter var meget enig i påstanden om, at de får indsigt i deres kundebase ved at benchmarke data på tværs af deres portefølje.</p>
+                                        <p style="text-align: left; font-size: 16px; padding-top: 10px;">Efterhånden som ny teknologi kommer frem, vil det være muligt for jer at fortsætte med at forbedre jeres services og gøre jeres dataanalyse endnu mere brugbar. Dette muliggør nem deling af data med jeres kunder. I kan samarbejde om at løse vigtige problemer og hjælpe dem med at træffe bedre beslutninger, baseret på hvad I kan se bag tallene – hvilket til gengæld fører til gladere kunder og nye muligheder for indtægter fra rådgivningsservices.</p>
                                     <?php elseif( $rev < 5 ) : ?>
-                                        <p style="text-align: left; font-size: 16px">En ce moment, vous ne parvenez pas à maximiser la valeur des données de vos clients. Les données que vous avez ne se trouvent pas au même endroit et il n'y a pas de moyen facile d'extraire les informations cachées qui se trouvent en dessous. Vous avez beaucoup de chiffres, mais peu de valeur. La bonne nouvelle, c'est que vous n'êtes pas seul - seulement 9 % des répondants à notre sondage ont dit qu'ils peuvent utiliser leurs systèmes pour effectuer une analyse détaillée de chaque compte ou de l'ensemble de leur portefeuille client.</p>
-                                        <p style="text-align: left; font-size: 16px; padding-top: 10px;">Il est temps de commencer à améliorer les capacités analytiques de votre entreprise en rassemblant vos données sous une forme claire et facile à comprendre. Cela vous aidera à voir où vous pouvez conseiller vos clients sur les tendances de l'industrie et les aider à franchir des étapes clés.</p>
+                                        <p style="text-align: left; font-size: 16px">På nuværende tidspunkt er I ikke i stand til at maksimere værdien af jeres kunders data. De data, I har, er ikke samlet ét sted, og der findes ingen nem måde at udtrække de indsigter, som ligger skjult. I har masser af tal, men kun lidt værdi. Den gode nyhed er, at I ikke er alene – kun 9 % af vores respondenter svarede, at de kan bruge deres systemer til at foretage en detaljeret analyse af hver konto eller hele deres kundeportefølje.</p>
+                                        <p style="text-align: left; font-size: 16px; padding-top: 10px;">Det er tid til at starte med at forbedre jeres virksomheds analytiske evner ved at forbinde jeres data på en klar og letforståelig måde. Det vil hjælpe jer til at se, hvordan I kan råde kunder i forhold til industritrends og hjælpe dem med at opnå vigtige milepæle.</p>
                                     <?php else : ?>
-                                        <p style="text-align: left; font-size: 16px">Vous avez certainement fait des progrès pour améliorer les capacités analytiques de votre entreprise. En comparant les données aux meilleures pratiques et en améliorant les outils de collaboration avec les clients, vous avez établi une base solide sur laquelle l'entreprise peut se développer.</p>
-                                        <p style="text-align: left; font-size: 16px; padding-top: 10px;">Vous êtes maintenant prêt à aller de l'avant et à bâtir des services de conseil de classe mondiale fondés sur une solide analyse des données. Vous pouvez regarder au-delà des chiffres pour trouver les idées qui aident vos clients et changent fondamentalement la nature de votre relation avec eux.</p>
+                                        <p style="text-align: left; font-size: 16px">I har taget klare skridt til at forbedre jeres virksomheds analytiske evner. Ved at benchmarke data mod best practice og forbedre samarbejdsværktøjer har I bygget et solidt fundament, som firmaet kan bygge videre på.</p>
+                                        <p style="text-align: left; font-size: 16px; padding-top: 10px;">Nu er I klar til at gå videre og skabe rådgivningsydelser i verdensklasse, bygget på stærk dataanalyse. I kan se ud over tallene til Insights, som hjælper jeres kunder, og skaber markant forandring i jeres forhold med dem.</p>
                                     <?php endif; ?>
                                 </td>
                             </tr>
@@ -569,12 +567,12 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                                 </td>
                             </tr>
                         </table>
-                    </td>                 
+                    </td>                   
                 </tr>
             </table>
         </div>
     </div>
-    <div class="chart-box" style="padding-top: 0;height:650px;">
+    <div class="chart-box" style="padding-top: 28px;height:670px;">
         <div class="full-width">
             <table cellpadding="0" cellpadding="0" style="padding: 0; margin: 0; padding-bottom: 0px;">
                 <tr>
@@ -595,19 +593,19 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                                         <table cellpadding="0" cellpadding="0">
                                             <tr>
                                                 <td class="imgbox" style="width: 15%; text-align: left; padding:0;"><img style="width: 100%;" src="{{ asset('/icons/advisory_ic.svg')}}" /></td>
-                                                <td style="padding: 0; padding-left: 10px; width: 85%" class="carttitle"><h2 style="font-size: 38px !important; font-weight: 700; ">Conseil</h2></td>
+                                                <td style="padding: 0; padding-left: 10px; width: 85%" class="carttitle"><h2 style="font-size: 38px !important; font-weight: 700; ">Rådgivning</h2></td>
                                             </tr>
                                         </table>            
                                     </div>
                                     <?php if( $adv > 11 ) : ?>
-                                        <p style="text-align: left; font-size: 16px; padding-top:0;">La transformation de votre société est déjà bien engagée. Vous avez dépassé les pratiques comptables de base et adopté le rôle de partenaire de confiance, en utilisant les données de vos clients pour fournir une gamme de services à valeur ajoutée.</p>
-                                        <p style="padding-top: 10px; text-align: left; font-size: 16px">Mais le rythme de l'évolution technologique ne fait que s'accélérer, et chaque nouvelle innovation augmentera votre capacité à fournir des services consultatifs de classe mondiale. Ou augmentez la capacité de vos concurrents. Gardez donc un œil sur les nouveaux développements et assurez-vous d'y réagir.</p>
+                                        <p style="text-align: left; font-size: 16px; padding-top:0;">I er allerede godt i gang med at transformere jeres firma. I er gået videre fra regnskabets kernetjenester og har taget rollen som betroet partner på jer. I bruger kunders data til at kunne tilbyde en bred vifte af værdiskabende services.</p>
+                                        <p style="padding-top: 10px; text-align: left; font-size: 16px">Men tempoet af teknologisk forandring går kun hurtigere, og hver ny innovation øger jeres evne til at kunne tilbyde rådgivningsydelser i verdensklasse. Eller øge evnerne hos jeres konkurrenter. Så hold øje med nye udviklinger og sørg for at reagere på dem.</p>
                                     <?php elseif( $adv < 5 ) : ?>
-                                        <p style="text-align: left; font-size: 16px; padding-top:0;">Vous semblez enraciné dans les pratiques comptables traditionnelles et la prestation de services de conformité. Vous n'avez probablement pas fait de progrès significatifs dans l'établissement d'une source de revenus constante - et importante - provenant des services-conseils. Bien que vous ne soyez pas le seul à cet égard - par exemple, seulement 14 % de nos répondants ont identifié les services consultatifs comme leur principale source de revenu - le développement rapide de ces services et l'utilisation de la technologie pour aider devient rapidement une question urgente. 76 % de nos répondants considèrent les services-conseils comme leur principale source de revenus au cours des cinq prochaines années.</p>
-                                        <p style="padding-top: 10px; text-align: left; font-size: 16px">Vous pouvez rapidement améliorer la situation en faisant un meilleur usage de vos données clients. Regroupez le tout dans une seule base de données et rendez-la accessible à votre équipe. Donnez-leur ensuite les outils d'analyse qui leur permettront d'examiner votre portefeuille de clients à la recherche de tendances et d'enjeux qui suscitent une discussion consultative. Mais ce n'est pas tout. Munie de données à jour et d'outils permettant de les analyser facilement, votre équipe peut donner à vos clients des conseils et des informations qui transforment leur entreprise.</p>
+                                        <p style="text-align: left; font-size: 16px; padding-top:0;">Det virker, som om I sidder fast i traditionelle regnskabsydelser og leveringen af complianceservices. I har nok ikke gjort store fremskridt i opbygningen af en konsekvent – og markant indtægtskilde fra rådgivningsydelser. Selvom I ikke er alene på det punkt – f.eks. pegede kun 14 % af respondenterne i vores research på rådgivningsydelser som deres primære indtægtskilde – er den hurtige udvikling af disse services med hjælp af teknologi hurtigt ved at blive et presserende emne. 76 % af vores respondenter ser rådgivning som den største bidragyder til deres indtægter over de næste fem år.</p>
+                                        <p style="padding-top: 10px; text-align: left; font-size: 16px">I kan hurtigt forbedre situationen ved at gøre bedre brug af jeres kundedata. Saml dem på ét datalagringssted, og gør dem tilgængelige for jeres team. Giv dem dernæst analyseværktøjer, så de kan se på tværs af jeres kundeportefølje efter trends og problemer, som fører til en rådgivningsdiskussion. Men det er ikke det hele. Bevæbnet med opdaterede data og værktøjerne til nemt at analysere dem, kan jeres team give kunder indsigter og råd, som forandrer deres forretninger.</p>
                                     <?php else : ?>
-                                        <p style="text-align: left; font-size: 16px; padding-top:0;">Vous avez pris des mesures pour consolider les données de vos clients et même automatiser vos processus comptables. Vous êtes sur la bonne voie pour transformer vos services de conformité. Mais il reste encore du travail à faire avant de transformer ces données en nouveaux services de conseil et en revenus.</p>
-                                        <p style="padding-top: 10px; text-align: left; font-size: 16px">Grâce à des analyses, des outils de reporting et des données clients consolidées, vous serez en mesure de voir les tendances au fur et à mesure qu'elles se dessinent et de réagir avec des conseils en temps réel qui auront un impact positif sur l'activité de vos clients. Cette transformation de la prestation de services de conformité à la prestation de services de conseils est quelque chose que seulement 13 % des répondants de notre sondage disent avoir réussi à réaliser, alors tout est à jouer. Les changements que vous apportez aujourd'hui à vos investissements dans les services, les compétences et la technologie vous placeront dans la meilleure position pour étendre votre offre de services aux services de conseil avant vos concurrents.</p>
+                                        <p style="text-align: left; font-size: 16px; padding-top:0;">I har taget skridt i retning mod konsolidering af kundedata, endda automatisering af regnskabsworkflows. I er godt på vej til at transformere jeres complianceservices. Men I har stadig noget at gøre, inden I kan forvandle disse data til nye rådgivningsydelser og indtægter.</p>
+                                        <p style="padding-top: 10px; text-align: left; font-size: 16px">Bevæbnet med de rigtige analyser, rapporteringsværktøjer og konsoliderede kundedata placerer I jer selv det bedst mulige sted, så I kan se trends, efterhånden som de kommer frem, og være i stand til at respondere med råd i realtid, som har en positiv virkning på jeres kunders forretninger. Denne transformation fra for det meste at tilbyde complianceservices til at være førende inden for rådgivning er noget, som kun 13 % af respondenterne i vores research siger, at de har opnået, så det gælder bare om at slå til. Ændringer, I foretager jer i dag i forhold til jeres services, færdigheder, og teknologiske investeringer, betyder, at I er bedst stillet for at kunne udvide jeres tjenester til rådgivningsydelser før jeres konkurrenter.</p>
                                     <?php endif; ?>
                                 </td>
                             </tr>
@@ -618,14 +616,14 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
         </div>
     </div>
 </div>
-<div class="full-width" style="background-color: #ffffff; padding-top: 0; margin-top: 0;height:500px;">
+<div class="full-width" style="background-color: #ffffff; padding-top: 0; margin-top: 0;height:460px;">
     <table cellpadding="0" cellpadding="0" style="padding-left: 66px; padding-right: 66px; padding-top: 0; margin-top: 0px;">
         <tr>
-            <td style="padding-top: 50px; padding-bottom: 40px; text-align: left;">
+            <td style="padding-top: 50px; padding-bottom: 30px; text-align: left;">
                 <table  cellpadding="0" cellpadding="0" style="padding: 0; margin: 0;">
                     <tr>
                         <td>
-                            <h2 style="color: #012e44; padding-top: 0; margin-top: 0; padding-bottom: 30px;  font-size: 36px; margin-bottom: 0px; line-height: 40px; font-weight: 700;">Que dois-je faire maintenant ?</h2>
+                            <h2 style="color: #012e44; padding-top: 0; margin-top: 0; padding-bottom: 28px;  font-size: 34px; margin-bottom: 0px; line-height: 36px; font-weight: 700;">Hvad nu?</h2>
                         </td>
                     </tr>
                     <tr>
@@ -634,24 +632,24 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                                 <tr>
                                 <?php if( $total > 47 ) : ?>
                                     <td style="width: 48%; padding-right: 4%;">
-                                        <p style="color: #012e44; padding-bottom: 19px; font-size: 19px; line-height: 27px; font-weight: 400;">Vous avez atteint ce haut niveau de maturité numérique en faisant preuve d'intelligence dans votre stratégie technologique, votre adoption et vos investissements.</p>
-                                        <p style="color: #708ea8; padding-bottom: 10px; font-size: 17px; line-height: 27px; font-weight: 400;">Cela vous a permis de garder une longueur d'avance sur vos concurrents et de tirer des revenus des services-conseils que tant d'entreprises recherchent.</p></td>
+                                        <p style="color: #012e44; padding-bottom: 19px; font-size: 19px; line-height: 26px; font-weight: 400;">I har nået dette niveau af digital modenhed ved at være kloge, når det kommer til jeres teknologistrategi, implementering og investeringer.</p>
+                                        <p style="color: #708ea8; padding-bottom: 10px; font-size: 16px; line-height: 26px; font-weight: 400;">Det har gjort det muligt for jer at forblive forrest og åbne op for indtægtskilder fra de rådgivningsydelser, som så mange firmaer leder efter.</p></td>
                                     <td style="width: 48%;">
-                                        <p style="color: #708ea8; padding-bottom: 0px; font-size: 17px; line-height: 27px; padding-left: 10px; font-weight: 400;">Alors pourquoi ne pas bouger maintenant et laisser les autres vous rattraper ? C'est là que Silverfin peut vous aider. Notre plateforme de cloud computing primée alimente la comptabilité connectée dans certaines des plus grandes entreprises du monde. Et nos puissants outils d'analyse et de reporting vous fournissent les données et les informations dont vous avez besoin pour devenir le conseiller le plus fiable de vos clients.</p>
+                                        <p style="color: #708ea8; padding-bottom: 0px; font-size: 16px; line-height: 26px; padding-left: 10px; font-weight: 400;">Så hvorfor stå stille nu og lade de andre indhente jer? Det er der Silverfin kan hjælpe. Vores prisvindende cloudplatform driver connected accounting ved nogle af verdens førende firmaer. Og vores kraftige analyse- og rapporteringsværktøjer giver jer de data og indsigter, I skal bruge for at kunne være den mest betroede rådgiver for jeres kunder.</p>
                                     </td>
                                 <?php elseif( $total < 21 ) : ?>
                                     <td style="width: 48%; padding-right: 4%;">
-                                        <p style="color: #012e44; padding-bottom: 19px; font-size: 19px; line-height: 27px; font-weight: 400;">En tant que comptable connecté, vous avez accès aux données, aux outils et aux personnes dont vous avez besoin pour travailler rapidement, efficacement et avec précision - et pour transformer votre travail de conformité. Cela signifie qu'il n'y a plus de données financières stockées en silos ou de processus incohérents au sein de votre entreprise.</p>
-                                        <p style="color: #708ea8; padding-bottom: 10px; font-size: 17px; line-height: 27px; font-weight: 400;">Votre succès en tant que comptable connecté dépend de la technologie que vous utilisez.</p></td>
+                                        <p style="color: #012e44; padding-bottom: 19px; font-size: 19px; line-height: 26px; font-weight: 400;">Med connected accounting får man adgang til de data, værktøjer og folk, I skal bruge for at kunne arbejde hurtigt, effektivt og nøjagtigt – og for at kunne transformere jeres compliancearbejde.</p>
+                                        <p style="color: #708ea8; padding-bottom: 10px; font-size: 16px; line-height: 26px; font-weight: 400;">Det betyder, at finansdata ikke længere er lagret i siloer eller usammenhængende processer på tværs af firmaet. Jeres succes med connected accounting afhænger af den teknologi, I bruger.</p></td>
                                     <td style="width: 48%;">
-                                        <p style="color: #708ea8; padding-bottom: 0px; font-size: 17px; line-height: 27px; padding-left: 10px; font-weight: 400;">La plateforme cloud de Silverfin s'intègre à tous les systèmes comptables et financiers de vos clients pour extraire les données critiques, quelle que soit leur source. Avec Silverfin, vous travaillez toujours à partir d'une seule version de la réalité, partageant des données en temps réel avec vos clients et collègues. Une fois que vous avez normalisé vos données et vos processus, vous pouvez automatiser le reporting et les workflows, et commencer votre parcours pour devenir un comptable connecté.</p>
+                                        <p style="color: #708ea8; padding-bottom: 19px; font-size: 16px; line-height: 26px; padding-left: 10px; font-weight: 400;">Silverfins cloudplatform integrerer med alle jeres kunders regnskabs- og finanssystemer for at indsamle vigtige data, uanset hvad kilden er. Med Silverfin arbejder I altid med den eneste version af sandheden, og I deler real-time data med kunder og kolleger. Nar I har standardiseret jeres data og processer, kan I automatisere rapportering og workflows og være på vej til at blive connected accountants.</p>
                                     </td>
                                 <?php else : ?>
                                     <td style="width: 48%; padding-right: 4%;">
-                                        <p style="color: #012e44; padding-bottom: 19px; font-size: 19px; line-height: 27px; font-weight: 400;">Les besoins de vos clients changent. Il ne suffit pas d'offrir des services de conformité.</p>
-                                        <p style="color: #708ea8; padding-bottom: 10px; font-size: 17px; line-height: 27px; font-weight: 400;">De plus en plus, vos clients exigent des services de conseil à valeur ajoutée. Bien que vous démontriez un degré raisonnable de maturité numérique, la mauvaise nouvelle est que vos concurrents sont actuellement mieux placés pour répondre aux besoins changeants de vos clients.</p></td>
+                                        <p style="color: #012e44; padding-bottom: 19px; font-size: 19px; line-height: 26px; font-weight: 400;">Jeres kunders krav ændrer sig. Det er ikke nok blot at tilbyde compliance services.</p>
+                                        <p style="color: #708ea8; padding-bottom: 10px; font-size: 16px; line-height: 26px; font-weight: 400;">Kunderne vil i højere og højere grad have værdiskabende rådgivningsservices. Selvom I viser en fornuftig grad af digital modenhed, er den dårlige nyhed, at jeres konkurrenter i øjeblikket er bedre stillet til at imødekomme kundernes ønsker, efterhånden som de udvikler sig.</p></td>
                                     <td style="width: 48%;">
-                                        <p style="color: #708ea8; padding-bottom: 0px; font-size: 17px; line-height: 27px; padding-left: 10px; font-weight: 400;">La plateforme cloud de Silverfin se connecte aux systèmes comptables et financiers de vos clients pour vous apporter toutes les données dont vous avez besoin, quelle que soit leur source. Nous automatisons vos workflows de comptabilité de conformité, améliorant ainsi votre rapidité, votre précision et votre rentabilité. Ensuite, nos puissants outils d'analyse et de reporting vous fournissent les données et les informations dont vous avez besoin pour devenir le conseiller le plus fiable de vos clients.</p>
+                                        <p style="color: #708ea8; padding-bottom: 0px; font-size: 16px; line-height: 26px; padding-left: 10px; font-weight: 400;">Silverfins cloudbaserede platform forbinder med alle jeres kunders regnskabs- og finanssystemer for at bringe jer alle de data, I har brug for – uanset hvad kilden er. Vi automatiserer jeres complianceregnskab-workflows, hvilket forbedrer jeres hastighed, nøjagtighed og rentabilitet. Dernæst giver vores kraftige analyse- og rapporteringsværktøjer jer de data og de indsigter, I skal bruge for at kunne være den mest betroede rådgiver for jeres kunder.</p>
                                     </td>
                                 <?php endif; ?>
                                 </tr>
@@ -666,16 +664,16 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
 <div class="full-width" style="background-size: cover;background-color: #01355c; background-repeat: repeat; background-position: left bottom; text-align: center; padding: 0; margin: 0;  background-image: url({{asset('/icons/footer-image.jpg')}}); ">
     <table cellpadding="0" cellpadding="0" style="padding-left: 66px; padding-right: 66px; margin-top: 20px;">
         <tr>
-            <td style="padding-top: 240px; padding-bottom: 240px; text-align: center;">
+            <td style="padding-top: 220px; padding-bottom: 230px; text-align: center;">
                 <table  cellpadding="0" cellpadding="0" style="padding: 0; margin: 0;">
                     <tr>
                         <td>
-                            <div class="chart-title" style="height:138px;max-width:680px;margin:0 auto;">
+                            <div class="chart-title" style="height:186px;max-width:680px;margin:0 auto;">
                                 <h2 style="color: #012e44; padding-top: 0px; margin-top: 20px; font-size: 38px; line-height: 46px; text-align: center;"> <strong style="color: #012e44; margin-top: 20px; letter-spacing: 0.5px !important; margin-bottom: 20px; font-weight: 700;">
                                 <?php if ( $total > 47 ) {
-                                    echo "Identifiez de nouvelles opportunités pour capitaliser sur votre investissement technologique";
+                                    echo "Book en gratis connected accounting-workshop, og identificer nye muligheder for at kapitalisere på jeres teknologiinvestering";
                                 } else {
-                                    echo "Construisez votre propre plan pour le changement dès aujourd'hui";
+                                    echo "Book en gratis connected accounting-workshop, og lav en plan for jeres forandring i dag";
                                 }?>
                                 </strong></h2>
                             </div>
@@ -686,10 +684,10 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                             <table cellpadding="0" cellpadding="0" style="padding-left: 0px; padding-right: 0px; padding-top: 20px; text-align: center;">
                                 <tr>
                                     <td>
-                                        <table style="background: #057ee1; padding: 0 20px; width: 500px; height: 90px; margin: 10px auto 0 auto; border-radius: 8px;"  cellpadding="0" cellpadding="0">
+                                        <table style="background: #057ee1; padding: 0 20px; width: 400px; height: 90px; margin: 10px auto 0 auto; border-radius: 8px;"  cellpadding="0" cellpadding="0">
                                             <tr>
                                                 <td>
-                                                    <a style="color: #ffffff; line-height: 90px; font-size: 28px; font-weight:400; text-decoration: none;" href="https://www.silverfin.com/fr/demo" title="Réservez un workshop gratuit" target="_blank"> <strong>Réservez un workshop gratuit</strong> </a>
+                                                    <a style="color: #ffffff; line-height: 90px; font-size: 28px; font-weight:400; text-decoration: none;" href="https://www.silverfin.com/demo" title="Book a free workshop" target="_blank"> <strong>Book en gratis workshop</strong> </a>
                                                 </td>
                                             </tr>
                                         </table>
@@ -755,21 +753,20 @@ Function.prototype.bind = Function.prototype.bind || function (thisp) {
         return fn.apply(thisp, arguments);
     };
 };
-
 function drawGraphs() {
     new Chart(
         document.getElementById("chart1"), { 
          "responsive": false,           
             "type":"radar",
             "data":{
-                "labels":['Données','Consolidation','Collaboration'],
+                "labels":['Live Data','Konsolidering','Samarbejde'],
                 
                 "datasets":[
                     {
-                        'label': 'Vos résultats', 'data': [<?php echo $chart1;?>],'backgroundColor': 'rgba(77, 192, 222, 0.3)','borderColor': 'rgba(77, 192, 222, 1)'
+                        'label': 'Dine resultater', 'data': [<?php echo $chart1;?>],'backgroundColor': 'rgba(77, 192, 222, 0.3)','borderColor': 'rgba(77, 192, 222, 1)'
                     }, 
                     {
-                        'label': 'Score moyen',  'data': [3.1,2.9,4.1],'backgroundColor': 'rgba(5,125,224, 0.3)','borderColor': 'rgba(5,125,224, 1)'
+                        'label': 'Gennemsnitlig score',  'data': [3.1,2.9,4.1],'backgroundColor': 'rgba(5,125,224, 0.3)','borderColor': 'rgba(5,125,224, 1)'
                     }
                 ]
             },
@@ -810,13 +807,13 @@ function drawGraphs() {
          "responsive": false,           
             "type":"radar",
             "data":{
-                "labels":[['Flux de travail', 'automatisés'],['Communications','électroniques'],['Rapports','en temps','réel']],
+                "labels":[['Automatiserede workflows'],['Elektronisk','kommunikation'],['Realtids','rapportering']],
                 "datasets":[
                     {
-                        'label': 'Vos résultats', 'data': [<?php echo $chart2;?>],'backgroundColor': 'rgba(77, 192, 222, 0.3)','borderColor': 'rgba(77, 192, 222, 1)'
+                        'label': 'Dine resultater', 'data': [<?php echo $chart2;?>],'backgroundColor': 'rgba(77, 192, 222, 0.3)','borderColor': 'rgba(77, 192, 222, 1)'
                     }, 
                     {
-                        'label': 'Score moyen',  'data': [3.7,3.9,3.4],'backgroundColor': 'rgba(5,125,224, 0.3)','borderColor': 'rgba(5,125,224, 1)'
+                        'label': 'Gennemsnitlig score',  'data': [3.7,3.9,3.4],'backgroundColor': 'rgba(5,125,224, 0.3)','borderColor': 'rgba(5,125,224, 1)'
                     }
                 ]
             },
@@ -837,12 +834,12 @@ function drawGraphs() {
          "responsive": false,           
             "type":"radar",
             "data":{
-                "labels":[['Statut des flux', 'de travail'],['Analyse', 'comparative'],['Analyse']],
+                "labels":['Workflowstatus','Benchmarking','Analyse'],
                 "datasets":[{
-                        'label': 'Vos résultats', 'data': [<?php echo $chart3;?>],'backgroundColor': 'rgba(77, 192, 222, 0.3)','borderColor': 'rgba(77, 192, 222, 1)'
+                        'label': 'Dine resultater', 'data': [<?php echo $chart3;?>],'backgroundColor': 'rgba(77, 192, 222, 0.3)','borderColor': 'rgba(77, 192, 222, 1)'
                     }, 
                     {
-                        'label': 'Score moyen',  'data': [3.4,2.7,2.9],'backgroundColor': 'rgba(5,125,224, 0.3)','borderColor': 'rgba(5,125,224, 1)'
+                        'label': 'Gennemsnitlig score',  'data': [3.4,2.7,2.9],'backgroundColor': 'rgba(5,125,224, 0.3)','borderColor': 'rgba(5,125,224, 1)'
                     }]
             },
             "options":{
@@ -863,13 +860,13 @@ function drawGraphs() {
          "responsive": false,           
             "type":"radar",
             "data":{
-                "labels":[['Alertes', 'automatisées'],['Gestion des','affaires'],['Conseil']],
+                "labels":[['Automatiserede alarmer'],['Forretnings-', 'administration'],['Rådgivning']],
                 "datasets":[
                     {
-                        'label': 'Vos résultats', 'data': [<?php echo $chart4;?>],'backgroundColor': 'rgba(77, 192, 222, 0.3)','borderColor': 'rgba(77, 192, 222, 1)'
+                        'label': 'Dine resultater', 'data': [<?php echo $chart4;?>],'backgroundColor': 'rgba(77, 192, 222, 0.3)','borderColor': 'rgba(77, 192, 222, 1)'
                     }, 
                     {
-                        'label': 'Score moyen',  'data': [2.5,2.9,3.3],'backgroundColor': 'rgba(5,125,224, 0.3)','borderColor': 'rgba(5,125,224, 1)'
+                        'label': 'Gennemsnitlig score',  'data': [2.5,2.9,3.3],'backgroundColor': 'rgba(5,125,224, 0.3)','borderColor': 'rgba(5,125,224, 1)'
                     }
                 ]
             },
