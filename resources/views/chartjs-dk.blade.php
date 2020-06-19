@@ -45,10 +45,10 @@ else if ( $full > 9 && $wf > 9 && $rev > 9 && $adv > 9) {
 <title>Jeres connected accounting-resultater</title>
 <style type="text/css">
 @font-face {font-family: 'Cera Pro'; src: url('{{asset('/fonts/CeraPro-Light.ttf')}}') format('truetype'); font-weight: 300; font-style: normal; }
-@font-face {font-family: 'Cera Pro'; src: url('{{asset('/fonts/CeraPro-Regular.ttf')}}') format('truetype'); font-weight: 400; font-style: normal; }
+@font-face {font-family: 'Cera Pro'; src: url('{{asset('/fonts/CeraPro-Regular.otf')}}') format('truetype'); font-weight: 400; font-style: normal; }
 @font-face {font-family: 'Cera Pro'; src: url('{{asset('/fonts/CeraPro-Medium.ttf')}}') format('truetype'); font-weight: 500; font-style: normal; }
 @font-face {font-family: 'Cera Pro'; src: url('{{asset('/fonts/CeraPro-Black.ttf')}}') format('truetype'); font-weight: 900; font-style: normal; }
-@font-face {font-family: 'Cera Pro'; src: url('{{asset('/fonts/CeraPro-Bold.ttf')}}') format('truetype'); font-weight: 700; font-style: normal; }
+@font-face {font-family: 'Cera Pro'; src: url('{{asset('/fonts/CeraPro-Bold.otf')}}') format('truetype'); font-weight: 700; font-style: normal; }
 body { font-family: 'Cera Pro'; font-weight: 400; }
 @page {padding: 0; margin: 0; padding-top: 0px; padding-bottom: 0px; border: none; border-collapse: collapse; font-family: 'Cera Pro'; font-weight: 400;  page-break-after: always;
         page-break-inside: avoid; }
@@ -57,7 +57,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 * { border: 0; box-sizing: content-box; color: inherit;  line-height: inherit; list-style: none; margin: 0; padding: 0; text-decoration: none; vertical-align: top; letter-spacing: 0; }
 html { font-family: 'Cera Pro'; font-weight: 400; font-size: 16px; line-height: 22px; overflow: auto; background: #fff; cursor: default; padding: 0; margin: 0; }
 body { box-sizing: border-box; margin:0; padding: 0; background: #FFF; font-family: 'Cera Pro'; font-weight: 400;}
-h1 { font-family: 'Cera Pro'; font-weight: 500; }
+h1 { font-family: 'Cera Pro'; font-weight: 400; }
 h2 span,
 h2 {font-size: 33px; line-height: 35px; font-family: 'Cera Pro'; font-weight: 700; color: #012e44; }
 h2 strong {font-family: 'Cera Pro'; color: #012e44; font-weight: 700; } 
@@ -116,7 +116,7 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
 </head>
 <body>
-<div class="banner-box" style="background-color: #01355c; background-size: cover; background-repeat: repeat; background-position: bottom right; margin: 0; padding: 0; position: relative; margin-top: -10px; background-image: url({{asset('/icons/header-image.jpg')}});">
+<div class="banner-box" style="background-color: #01355c; background-size: cover; background-repeat: repeat; background-position: top right; margin: 0; padding: 0; position: relative; margin-top: -10px; background-image: url({{asset('/icons/header-image.jpg')}});">
     <!-- Top Banner Background image size width:1340px and height:650px -->
      <div class="header left-right-space" style="padding-top: 50px; padding-bottom: 0; margin: 0;">
         <table  cellpadding="0" cellpadding="0" style="padding-top: 30px; padding-bottom: 0; margin: 0;">
@@ -616,7 +616,7 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
         </div>
     </div>
 </div>
-<div class="full-width" style="background-color: #ffffff; padding-top: 0; margin-top: 0;height:460px;">
+<div class="full-width" style="background-color: #ffffff; padding-top: 0; margin-top: 0;height:410px;">
     <table cellpadding="0" cellpadding="0" style="padding-left: 66px; padding-right: 66px; padding-top: 0; margin-top: 0px;">
         <tr>
             <td style="padding-top: 50px; padding-bottom: 30px; text-align: left;">
@@ -664,7 +664,7 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
 <div class="full-width" style="background-size: cover;background-color: #01355c; background-repeat: repeat; background-position: left bottom; text-align: center; padding: 0; margin: 0;  background-image: url({{asset('/icons/footer-image.jpg')}}); ">
     <table cellpadding="0" cellpadding="0" style="padding-left: 66px; padding-right: 66px; margin-top: 20px;">
         <tr>
-            <td style="padding-top: 220px; padding-bottom: 230px; text-align: center;">
+            <td style="padding-top: 250px; padding-bottom: 250px; text-align: center;">
                 <table  cellpadding="0" cellpadding="0" style="padding: 0; margin: 0;">
                     <tr>
                         <td>

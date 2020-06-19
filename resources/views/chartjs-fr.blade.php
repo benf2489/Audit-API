@@ -45,10 +45,10 @@ else if ( $full > 9 && $wf > 9 && $rev > 9 && $adv > 9) {
 <title>Les résultats de votre comptable connecté</title>
 <style type="text/css">
 @font-face {font-family: 'Cera Pro'; src: url('{{asset('/fonts/CeraPro-Light.ttf')}}') format('truetype'); font-weight: 300; font-style: normal; }
-@font-face {font-family: 'Cera Pro'; src: url('{{asset('/fonts/CeraPro-Regular.ttf')}}') format('truetype'); font-weight: 400; font-style: normal; }
+@font-face {font-family: 'Cera Pro'; src: url('{{asset('/fonts/CeraPro-Regular.otf')}}') format('truetype'); font-weight: 400; font-style: normal; }
 @font-face {font-family: 'Cera Pro'; src: url('{{asset('/fonts/CeraPro-Medium.ttf')}}') format('truetype'); font-weight: 500; font-style: normal; }
 @font-face {font-family: 'Cera Pro'; src: url('{{asset('/fonts/CeraPro-Black.ttf')}}') format('truetype'); font-weight: 900; font-style: normal; }
-@font-face {font-family: 'Cera Pro'; src: url('{{asset('/fonts/CeraPro-Bold.ttf')}}') format('truetype'); font-weight: 700; font-style: normal; }
+@font-face {font-family: 'Cera Pro'; src: url('{{asset('/fonts/CeraPro-Bold.otf')}}') format('truetype'); font-weight: 700; font-style: normal; }
 body { font-family: 'Cera Pro'; font-weight: 400; }
 @page {padding: 0; margin: 0; padding-top: 0px; padding-bottom: 0px; border: none; border-collapse: collapse; font-family: 'Cera Pro'; font-weight: 400;  page-break-after: always;
         page-break-inside: avoid; }
@@ -116,7 +116,7 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
 </head>
 <body>
-<div class="banner-box" style="background-color: #01355c; background-size: cover; background-repeat: repeat; background-position: bottom right; margin: 0; padding: 0; position: relative; margin-top: -10px; background-image: url({{asset('/icons/header-image.jpg')}});">
+<div class="banner-box" style="background-color: #01355c; background-size: cover; background-repeat: repeat; background-position: top right; margin: 0; padding: 0; position: relative; margin-top: -10px; background-image: url({{asset('/icons/header-image.jpg')}});">
     <!-- Top Banner Background image size width:1340px and height:650px -->
      <div class="header left-right-space" style="padding-top: 50px; padding-bottom: 0; margin: 0;">
         <table  cellpadding="0" cellpadding="0" style="padding-top: 30px; padding-bottom: 0; margin: 0;">
@@ -129,11 +129,11 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
     </div>
         <table cellpadding="0" cellpadding="0">
             <tr>
-                <td class="left-right-space" style="padding-top: 80px; padding-bottom: 80px; text-align: left;">
-                    <h1 style="color: #012e44; font-size: 24px; line-height: 40px; padding-bottom: 15px; font-family: 'Cera Pro'; letter-spacing: -0.5px; letter-spacing: 0; font-weight: 400;">Les résultats de votre comptable connecté</h1>
-                    <h2 style="color: #012e44; font-family: 'Cera Pro';  font-weight: 700; font-size: 48px; letter-spacing: 0.5px; line-height: 52px;">
+                <td class="left-right-space" style="padding-top: 70px; padding-bottom: 48px; text-align: left;">
+                    <h1 style="color: #012e44; font-size: 22px; line-height: 40px; padding-bottom: 15px; font-family: 'Cera Pro'; letter-spacing: -0.5px; letter-spacing: 0; font-weight: 400;">Les résultats de votre comptable connecté</h1>
+                    <h2 style="color: #012e44; font-family: 'Cera Pro';  font-weight: 700; font-size: 48px; letter-spacing: 0.5px; line-height: 52px; height:104px;">
                     <?php if ( $total > 47 ) {
-                        echo "Félicitations, vous êtes connecté";
+                        echo "Félicitations,<br>vous êtes connecté";
                     } elseif ( $total < 21 ) {
                         echo "Il est temps de changer";
                     } else {
@@ -144,7 +144,7 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
             </tr>           
         </table>
 </div>
-<div class="chart-title left-right-space" style="padding-top: 50px; padding-bottom: 15px; margin: 0;height:350px;">
+<div class="chart-title left-right-space" style="padding-top: 40px; padding-bottom: 15px; margin: 0;height:350px;">
     <table cellpadding="0" cellpadding="0">
         <tr>
             <td>
@@ -618,7 +618,7 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
         </div>
     </div>
 </div>
-<div class="full-width" style="background-color: #ffffff; padding-top: 0; margin-top: 0;height:500px;">
+<div class="full-width" style="background-color: #ffffff; padding-top: 0; margin-top: 0;height:433px;">
     <table cellpadding="0" cellpadding="0" style="padding-left: 66px; padding-right: 66px; padding-top: 0; margin-top: 0px;">
         <tr>
             <td style="padding-top: 50px; padding-bottom: 40px; text-align: left;">
@@ -634,24 +634,24 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                                 <tr>
                                 <?php if( $total > 47 ) : ?>
                                     <td style="width: 48%; padding-right: 4%;">
-                                        <p style="color: #012e44; padding-bottom: 19px; font-size: 19px; line-height: 27px; font-weight: 400;">Vous avez atteint ce haut niveau de maturité numérique en faisant preuve d'intelligence dans votre stratégie technologique, votre adoption et vos investissements.</p>
-                                        <p style="color: #708ea8; padding-bottom: 10px; font-size: 17px; line-height: 27px; font-weight: 400;">Cela vous a permis de garder une longueur d'avance sur vos concurrents et de tirer des revenus des services-conseils que tant d'entreprises recherchent.</p></td>
+                                        <p style="color: #012e44; padding-bottom: 19px; font-size: 18px; line-height: 26px; font-weight: 400;">Vous avez atteint ce haut niveau de maturité numérique en faisant preuve d'intelligence dans votre stratégie technologique, votre adoption et vos investissements.</p>
+                                        <p style="color: #708ea8; padding-bottom: 10px; font-size: 17px; line-height: 26px; font-weight: 400;">Cela vous a permis de garder une longueur d'avance sur vos concurrents et de tirer des revenus des services-conseils que tant d'entreprises recherchent.</p></td>
                                     <td style="width: 48%;">
-                                        <p style="color: #708ea8; padding-bottom: 0px; font-size: 17px; line-height: 27px; padding-left: 10px; font-weight: 400;">Alors pourquoi ne pas bouger maintenant et laisser les autres vous rattraper ? C'est là que Silverfin peut vous aider. Notre plateforme de cloud computing primée alimente la comptabilité connectée dans certaines des plus grandes entreprises du monde. Et nos puissants outils d'analyse et de reporting vous fournissent les données et les informations dont vous avez besoin pour devenir le conseiller le plus fiable de vos clients.</p>
+                                        <p style="color: #708ea8; padding-bottom: 0px; font-size: 17px; line-height: 26px; padding-left: 10px; font-weight: 400;">Alors pourquoi ne pas bouger maintenant et laisser les autres vous rattraper ? C'est là que Silverfin peut vous aider. Notre plateforme de cloud computing primée alimente la comptabilité connectée dans certaines des plus grandes entreprises du monde. Et nos puissants outils d'analyse et de reporting vous fournissent les données et les informations dont vous avez besoin pour devenir le conseiller le plus fiable de vos clients.</p>
                                     </td>
                                 <?php elseif( $total < 21 ) : ?>
                                     <td style="width: 48%; padding-right: 4%;">
-                                        <p style="color: #012e44; padding-bottom: 19px; font-size: 19px; line-height: 27px; font-weight: 400;">En tant que comptable connecté, vous avez accès aux données, aux outils et aux personnes dont vous avez besoin pour travailler rapidement, efficacement et avec précision - et pour transformer votre travail de conformité. Cela signifie qu'il n'y a plus de données financières stockées en silos ou de processus incohérents au sein de votre entreprise.</p>
-                                        <p style="color: #708ea8; padding-bottom: 10px; font-size: 17px; line-height: 27px; font-weight: 400;">Votre succès en tant que comptable connecté dépend de la technologie que vous utilisez.</p></td>
+                                        <p style="color: #012e44; padding-bottom: 16px; font-size: 17px; line-height: 26px; font-weight: 400;">En tant que comptable connecté, vous avez accès aux données, aux outils et aux personnes dont vous avez besoin pour travailler rapidement, efficacement et avec précision - et pour transformer votre travail de conformité. Cela signifie qu'il n'y a plus de données financières stockées en silos ou de processus incohérents au sein de votre entreprise.</p>
+                                        <p style="color: #708ea8; padding-bottom: 8px; font-size: 17px; line-height: 26px; font-weight: 400;">Votre succès en tant que comptable connecté dépend de la technologie que vous utilisez.</p></td>
                                     <td style="width: 48%;">
-                                        <p style="color: #708ea8; padding-bottom: 0px; font-size: 17px; line-height: 27px; padding-left: 10px; font-weight: 400;">La plateforme cloud de Silverfin s'intègre à tous les systèmes comptables et financiers de vos clients pour extraire les données critiques, quelle que soit leur source. Avec Silverfin, vous travaillez toujours à partir d'une seule version de la réalité, partageant des données en temps réel avec vos clients et collègues. Une fois que vous avez normalisé vos données et vos processus, vous pouvez automatiser le reporting et les workflows, et commencer votre parcours pour devenir un comptable connecté.</p>
+                                        <p style="color: #708ea8; padding-bottom: 0px; font-size: 17px; line-height: 26px; padding-left: 10px; font-weight: 400;">La plateforme cloud de Silverfin s'intègre à tous les systèmes comptables et financiers de vos clients pour extraire les données critiques, quelle que soit leur source. Avec Silverfin, vous travaillez toujours à partir d'une seule version de la réalité, partageant des données en temps réel avec vos clients et collègues. Une fois que vous avez normalisé vos données et vos processus, vous pouvez automatiser le reporting et les workflows, et commencer votre parcours pour devenir un comptable connecté.</p>
                                     </td>
                                 <?php else : ?>
                                     <td style="width: 48%; padding-right: 4%;">
-                                        <p style="color: #012e44; padding-bottom: 19px; font-size: 19px; line-height: 27px; font-weight: 400;">Les besoins de vos clients changent. Il ne suffit pas d'offrir des services de conformité.</p>
-                                        <p style="color: #708ea8; padding-bottom: 10px; font-size: 17px; line-height: 27px; font-weight: 400;">De plus en plus, vos clients exigent des services de conseil à valeur ajoutée. Bien que vous démontriez un degré raisonnable de maturité numérique, la mauvaise nouvelle est que vos concurrents sont actuellement mieux placés pour répondre aux besoins changeants de vos clients.</p></td>
+                                        <p style="color: #012e44; padding-bottom: 19px; font-size: 18px; line-height: 26px; font-weight: 400;">Les besoins de vos clients changent. Il ne suffit pas d'offrir des services de conformité.</p>
+                                        <p style="color: #708ea8; padding-bottom: 10px; font-size: 17px; line-height: 26px; font-weight: 400;">De plus en plus, vos clients exigent des services de conseil à valeur ajoutée. Bien que vous démontriez un degré raisonnable de maturité numérique, la mauvaise nouvelle est que vos concurrents sont actuellement mieux placés pour répondre aux besoins changeants de vos clients.</p></td>
                                     <td style="width: 48%;">
-                                        <p style="color: #708ea8; padding-bottom: 0px; font-size: 17px; line-height: 27px; padding-left: 10px; font-weight: 400;">La plateforme cloud de Silverfin se connecte aux systèmes comptables et financiers de vos clients pour vous apporter toutes les données dont vous avez besoin, quelle que soit leur source. Nous automatisons vos workflows de comptabilité de conformité, améliorant ainsi votre rapidité, votre précision et votre rentabilité. Ensuite, nos puissants outils d'analyse et de reporting vous fournissent les données et les informations dont vous avez besoin pour devenir le conseiller le plus fiable de vos clients.</p>
+                                        <p style="color: #708ea8; padding-bottom: 0px; font-size: 17px; line-height: 26px; padding-left: 10px; font-weight: 400;">La plateforme cloud de Silverfin se connecte aux systèmes comptables et financiers de vos clients pour vous apporter toutes les données dont vous avez besoin, quelle que soit leur source. Nous automatisons vos workflows de comptabilité de conformité, améliorant ainsi votre rapidité, votre précision et votre rentabilité. Ensuite, nos puissants outils d'analyse et de reporting vous fournissent les données et les informations dont vous avez besoin pour devenir le conseiller le plus fiable de vos clients.</p>
                                     </td>
                                 <?php endif; ?>
                                 </tr>
@@ -666,7 +666,7 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
 <div class="full-width" style="background-size: cover;background-color: #01355c; background-repeat: repeat; background-position: left bottom; text-align: center; padding: 0; margin: 0;  background-image: url({{asset('/icons/footer-image.jpg')}}); ">
     <table cellpadding="0" cellpadding="0" style="padding-left: 66px; padding-right: 66px; margin-top: 20px;">
         <tr>
-            <td style="padding-top: 240px; padding-bottom: 240px; text-align: center;">
+            <td style="padding-top: 273px; padding-bottom: 273px; text-align: center;">
                 <table  cellpadding="0" cellpadding="0" style="padding: 0; margin: 0;">
                     <tr>
                         <td>

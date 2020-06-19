@@ -45,10 +45,10 @@ else if ( $full > 9 && $wf > 9 && $rev > 9 && $adv > 9) {
 <title>Jouw connected accountant resultaten</title>
 <style type="text/css">
 @font-face {font-family: 'Cera Pro'; src: url('{{asset('/fonts/CeraPro-Light.ttf')}}') format('truetype'); font-weight: 300; font-style: normal; }
-@font-face {font-family: 'Cera Pro'; src: url('{{asset('/fonts/CeraPro-Regular.ttf')}}') format('truetype'); font-weight: 400; font-style: normal; }
+@font-face {font-family: 'Cera Pro'; src: url('{{asset('/fonts/CeraPro-Regular.otf')}}') format('truetype'); font-weight: 400; font-style: normal; }
 @font-face {font-family: 'Cera Pro'; src: url('{{asset('/fonts/CeraPro-Medium.ttf')}}') format('truetype'); font-weight: 500; font-style: normal; }
 @font-face {font-family: 'Cera Pro'; src: url('{{asset('/fonts/CeraPro-Black.ttf')}}') format('truetype'); font-weight: 900; font-style: normal; }
-@font-face {font-family: 'Cera Pro'; src: url('{{asset('/fonts/CeraPro-Bold.ttf')}}') format('truetype'); font-weight: 700; font-style: normal; }
+@font-face {font-family: 'Cera Pro'; src: url('{{asset('/fonts/CeraPro-Bold.otf')}}') format('truetype'); font-weight: 700; font-style: normal; }
 body { font-family: 'Cera Pro'; font-weight: 400; }
 @page {padding: 0; margin: 0; padding-top: 0px; padding-bottom: 0px; border: none; border-collapse: collapse; font-family: 'Cera Pro'; font-weight: 400;  page-break-after: always;
         page-break-inside: avoid; }
@@ -116,7 +116,7 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
 </head>
 <body>
-<div class="banner-box" style="background-color: #01355c; background-size: cover; background-repeat: repeat; background-position: bottom right; margin: 0; padding: 0; position: relative; margin-top: -10px; background-image: url({{asset('/icons/header-image.jpg')}});">
+<div class="banner-box" style="background-color: #01355c; background-size: cover; background-repeat: repeat; background-position: top right; margin: 0; padding: 0; position: relative; margin-top: -10px; background-image: url({{asset('/icons/header-image.jpg')}});">
     <!-- Top Banner Background image size width:1340px and height:650px -->
      <div class="header left-right-space" style="padding-top: 50px; padding-bottom: 0; margin: 0;">
         <table  cellpadding="0" cellpadding="0" style="padding-top: 30px; padding-bottom: 0; margin: 0;">
@@ -615,10 +615,10 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
         </div>
     </div>
 </div>
-<div class="full-width" style="background-color: #ffffff; padding-top: 0; margin-top: 0;height:465px;">
+<div class="full-width" style="background-color: #ffffff; padding-top: 0; margin-top: 0;height:403px;">
     <table cellpadding="0" cellpadding="0" style="padding-left: 66px; padding-right: 66px; padding-top: 0; margin-top: 0px;">
         <tr>
-            <td style="padding-top: 50px; padding-bottom: 30px; text-align: left;">
+            <td style="padding-top: 45px; padding-bottom: 40px; text-align: left;">
                 <table  cellpadding="0" cellpadding="0" style="padding: 0; margin: 0;">
                     <tr>
                         <td>
@@ -632,23 +632,23 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                                 <?php if( $total > 47 ) : ?>
                                     <td style="width: 48%; padding-right: 4%;">
                                         <p style="color: #012e44; padding-bottom: 19px; font-size: 18px; line-height: 26px; font-weight: 400;">Je hebt deze hoge mate van digitale maturiteit bereikt door slim te zijn in je technologie strategie, adoptie en investeringen.</p>
-                                        <p style="color: #708ea8; padding-bottom: 10px; font-size: 16px; line-height: 26px; font-weight: 400;">Het stelt je in staat je concurrentie voor te blijven en inkomsten te genereren uit de adviesdiensten die veel bedrijven zoeken.</p></td>
+                                        <p style="color: #708ea8; padding-bottom: 10px; font-size: 16px; line-height: 25px; font-weight: 400;">Het stelt je in staat je concurrentie voor te blijven en inkomsten te genereren uit de adviesdiensten die veel bedrijven zoeken.</p></td>
                                     <td style="width: 48%;">
-                                        <p style="color: #708ea8; padding-bottom: 0px; font-size: 16px; line-height: 26px; padding-left: 10px; font-weight: 400;">Dus waarom zou je nu stilstaan en de rest jouw achterstand laten inhalen? Silverfin kan je helpen. Ons cloud-platform is de drijvende kracht achter connected accounting bij een aantal van 's werelds toonaangevende kantoren. En onze krachtige analyse- en reporting tools geven je de data en het inzicht dat je nodig hebt om de meest betrouwbare adviseur van je klanten te zijn.</p>
+                                        <p style="color: #708ea8; padding-bottom: 0px; font-size: 16px; line-height: 25px; padding-left: 10px; font-weight: 400;">Dus waarom zou je nu stilstaan en de rest jouw achterstand laten inhalen? Silverfin kan je helpen. Ons cloud-platform is de drijvende kracht achter connected accounting bij een aantal van 's werelds toonaangevende kantoren. En onze krachtige analyse- en reporting tools geven je de data en het inzicht dat je nodig hebt om de meest betrouwbare adviseur van je klanten te zijn.</p>
                                     </td>
                                 <?php elseif( $total < 21 ) : ?>
                                     <td style="width: 48%; padding-right: 4%;">
-                                        <p style="color: #012e44; padding-bottom: 19px; font-size: 18px; line-height: 26px; font-weight: 400;">Als een connected accountant heb je toegang tot de gegevens, tools en mensen die je nodig hebt om snel, efficiënt en accuraat te werken - bovendien kan je ook eenvoudig compliance werk transformeren.</p>
-                                        <p style="color: #708ea8; padding-bottom: 10px; font-size: 16px; line-height: 26px; font-weight: 400;">Het betekent dat er geen financiële gegevens meer worden opgeslagen in silo’s of inconsistente processen binnen je kantoor. Jouw succes als connected account hangt af van de technologie die je gebruikt.</p></td>
+                                        <p style="color: #012e44; padding-bottom: 16px; font-size: 18px; line-height: 26px; font-weight: 400;">Als een connected accountant heb je toegang tot de gegevens, tools en mensen die je nodig hebt om snel, efficiënt en accuraat te werken - bovendien kan je ook eenvoudig compliance werk transformeren.</p>
+                                        <p style="color: #708ea8; padding-bottom: 8px; font-size: 16px; line-height: 25px; font-weight: 400;">Het betekent dat er geen financiële gegevens meer worden opgeslagen in silo’s of inconsistente processen binnen je kantoor. Jouw succes als connected account hangt af van de technologie die je gebruikt.</p></td>
                                     <td style="width: 48%;">
-                                        <p style="color: #708ea8; padding-bottom: 0px; font-size: 16px; line-height: 26px; padding-left: 10px; font-weight: 400;">Het cloud platform van Silverfin maakt een connectie met alle boekhoud- en financiële systemen van je klanten en brengt de belangrijkste data automatisch binnen, ongeacht de bron. Met Silverfin werk je altijd vanuit een “single version of the truth” en kun je realtime data delen met klanten en collega’s. Zodra je data en processen gestandaardiseerd zijn, kan je ook jouw reporting en workflows automatiseren en aan je reis beginnen om een connected accountant te worden.</p>
+                                        <p style="color: #708ea8; padding-bottom: 0px; font-size: 16px; line-height: 25px; padding-left: 10px; font-weight: 400;">Het cloud platform van Silverfin maakt een connectie met alle boekhoud- en financiële systemen van je klanten en brengt de belangrijkste data automatisch binnen, ongeacht de bron. Met Silverfin werk je altijd vanuit een “single version of the truth” en kun je realtime data delen met klanten en collega’s. Zodra je data en processen gestandaardiseerd zijn, kan je ook jouw reporting en workflows automatiseren en aan je reis beginnen om een connected accountant te worden.</p>
                                     </td>
                                 <?php else : ?>
                                     <td style="width: 48%; padding-right: 4%;">
                                         <p style="color: #012e44; padding-bottom: 19px; font-size: 18px; line-height: 26px; font-weight: 400;">De eisen van je klanten veranderen. Enkel en alleen compliance diensten aanbieden is niet langer voldoende.</p>
-                                        <p style="color: #708ea8; padding-bottom: 10px; font-size: 16px; line-height: 26px; font-weight: 400;">Je klanten vragen steeds vaker naar diensten met toegevoegde waarde, zoals advies. Hoewel je al een redelijke mate van digitale maturiteit vertoont, is het minder goede nieuws dat je concurrenten momenteel beter in staat zijn om aan de veranderende eisen van de klant te voldoen.</p></td>
+                                        <p style="color: #708ea8; padding-bottom: 10px; font-size: 16px; line-height: 25px; font-weight: 400;">Je klanten vragen steeds vaker naar diensten met toegevoegde waarde, zoals advies. Hoewel je al een redelijke mate van digitale maturiteit vertoont, is het minder goede nieuws dat je concurrenten momenteel beter in staat zijn om aan de veranderende eisen van de klant te voldoen.</p></td>
                                     <td style="width: 48%;">
-                                        <p style="color: #708ea8; padding-bottom: 0px; font-size: 16px; line-height: 26px; padding-left: 10px; font-weight: 400;">Het cloud platform van Silverfin maakt een connectie met de boekhoudkundige en financiële systemen van je klanten om alle gegevens te leveren die je nodig hebt - ongeacht de oorsprong. We automatiseren je compliance accounting workflows waardoor je snelheid, nauwkeurigheid en winstgevendheid toenemen. Vervolgens geven onze krachtige analyse- en reporting tools je de gegevens en het inzicht dat je nodig hebt om de meest betrouwbare adviseur van je klant te zijn.</p>
+                                        <p style="color: #708ea8; padding-bottom: 0px; font-size: 16px; line-height: 25px; padding-left: 10px; font-weight: 400;">Het cloud platform van Silverfin maakt een connectie met de boekhoudkundige en financiële systemen van je klanten om alle gegevens te leveren die je nodig hebt - ongeacht de oorsprong. We automatiseren je compliance accounting workflows waardoor je snelheid, nauwkeurigheid en winstgevendheid toenemen. Vervolgens geven onze krachtige analyse- en reporting tools je de gegevens en het inzicht dat je nodig hebt om de meest betrouwbare adviseur van je klant te zijn.</p>
                                     </td>
                                 <?php endif; ?>
                                 </tr>
@@ -661,9 +661,9 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
     </table>
 </div>
 <div class="full-width" style="background-size: cover;background-color: #01355c; background-repeat: repeat; background-position: left bottom; text-align: center; padding: 0; margin: 0;  background-image: url({{asset('/icons/footer-image.jpg')}}); ">
-    <table cellpadding="0" cellpadding="0" style="padding-left: 66px; padding-right: 66px; margin-top: 20px;">
+    <table cellpadding="0" cellpadding="0" style="padding-left: 66px; padding-right: 66px; margin-top: 15px;">
         <tr>
-            <td style="padding-top: 240px; padding-bottom: 240px; text-align: center;">
+            <td style="padding-top: 273px; padding-bottom: 273px; text-align: center;">
                 <table  cellpadding="0" cellpadding="0" style="padding: 0; margin: 0;">
                     <tr>
                         <td>

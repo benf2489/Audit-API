@@ -45,10 +45,10 @@ else if ( $full > 9 && $wf > 9 && $rev > 9 && $adv > 9) {
 <title>Your connected accountant self assessment results</title>
 <style type="text/css">
 @font-face {font-family: 'Cera Pro'; src: url('{{asset('/fonts/CeraPro-Light.ttf')}}') format('truetype'); font-weight: 300; font-style: normal; }
-@font-face {font-family: 'Cera Pro'; src: url('{{asset('/fonts/CeraPro-Regular.ttf')}}') format('truetype'); font-weight: 400; font-style: normal; }
+@font-face {font-family: 'Cera Pro'; src: url('{{asset('/fonts/CeraPro-Regular.otf')}}') format('truetype'); font-weight: 400; font-style: normal; }
 @font-face {font-family: 'Cera Pro'; src: url('{{asset('/fonts/CeraPro-Medium.ttf')}}') format('truetype'); font-weight: 500; font-style: normal; }
 @font-face {font-family: 'Cera Pro'; src: url('{{asset('/fonts/CeraPro-Black.ttf')}}') format('truetype'); font-weight: 900; font-style: normal; }
-@font-face {font-family: 'Cera Pro'; src: url('{{asset('/fonts/CeraPro-Bold.ttf')}}') format('truetype'); font-weight: 700; font-style: normal; }
+@font-face {font-family: 'Cera Pro'; src: url('{{asset('/fonts/CeraPro-Bold.otf')}}') format('truetype'); font-weight: 700; font-style: normal; }
 body { font-family: 'Cera Pro'; font-weight: 400; }
 @page {padding: 0; margin: 0; padding-top: 0px; padding-bottom: 0px; border: none; border-collapse: collapse; font-family: 'Cera Pro'; font-weight: 400;  page-break-after: always;
         page-break-inside: avoid; }
@@ -116,7 +116,7 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
 </head>
 <body>
-<div class="banner-box" style="background-color: #01355c; background-size: cover; background-repeat: repeat; background-position: bottom right; margin: 0; padding: 0; position: relative; margin-top: -10px; background-image: url({{asset('/icons/header-image.jpg')}});">
+<div class="banner-box" style="background-color: #01355c; background-size: cover; background-repeat: repeat; background-position: top right; margin: 0; padding: 0; position: relative; margin-top: -10px; background-image: url({{asset('/icons/header-image.jpg')}});">
     <!-- Top Banner Background image size width:1340px and height:650px -->
      <div class="header left-right-space" style="padding-top: 50px; padding-bottom: 0; margin: 0;">
         <table  cellpadding="0" cellpadding="0" style="padding-top: 30px; padding-bottom: 0; margin: 0;">
@@ -129,11 +129,11 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
     </div>
         <table cellpadding="0" cellpadding="0">
             <tr>
-                <td class="left-right-space" style="padding-top: 80px; padding-bottom: 80px; text-align: left;">
+                <td class="left-right-space" style="padding-top: 60px; padding-bottom: 48px; text-align: left;">
                     <h1 style="color: #012e44; font-size: 24px; line-height: 40px; padding-bottom: 15px; font-family: 'Cera Pro'; letter-spacing: -0.5px; letter-spacing: 0; font-weight: 400;">Your connected accountant result</h1>
-                    <h2 style="color: #012e44; font-family: 'Cera Pro';  font-weight: 700; font-size: 48px; letter-spacing: 0.5px; line-height: 52px;">
+                    <h2 style="color: #012e44; font-family: 'Cera Pro';  font-weight: 700; font-size: 48px; letter-spacing: 0.5px; line-height: 52px; height:104px;">
                     <?php if ( $total > 47 ) {
-                        echo "Congratulations you’re connected";
+                        echo "Congratulations,<br>you’re connected";
                     } elseif ( $total < 21 ) {
                         echo "Time to make a change";
                     } else {
@@ -615,7 +615,7 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
         </div>
     </div>
 </div>
-<div class="full-width" style="background-color: #ffffff; padding-top: 0; margin-top: 0;height:420px;">
+<div class="full-width" style="background-color: #ffffff; padding-top: 0; margin-top: 0;height:403px;">
     <table cellpadding="0" cellpadding="0" style="padding-left: 66px; padding-right: 66px; padding-top: 0; margin-top: 0px;">
         <tr>
             <td style="padding-top: 50px; padding-bottom: 30px; text-align: left;">
@@ -663,7 +663,7 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
 <div class="full-width" style="background-size: cover;background-color: #01355c; background-repeat: repeat; background-position: left bottom; text-align: center; padding: 0; margin: 0;  background-image: url({{asset('/icons/footer-image.jpg')}}); ">
     <table cellpadding="0" cellpadding="0" style="padding-left: 66px; padding-right: 66px; margin-top: 20px;">
         <tr>
-            <td style="padding-top: 241px; padding-bottom: 242px; text-align: center;">
+            <td style="padding-top: 250px; padding-bottom: 250px; text-align: center;">
                 <table  cellpadding="0" cellpadding="0" style="padding: 0; margin: 0;">
                     <tr>
                         <td>
