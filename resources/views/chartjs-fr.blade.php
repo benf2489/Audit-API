@@ -441,8 +441,8 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
 </div>  
 <div class="chart-section  left-right-space" style="padding-top: 170px; margin-top: 0;">
     <div class="chart-title" style="padding-top: 0; margin-top: 0; padding-bottom: 5px; text-align: left;">
-        <h2 style="padding-top:0; font-size: 28px; margin-top: 0; padding-bottom: 20px; font-weight: 700; ">Vos résultats en détail - et comment vous vous comparez à vos pairs</h2>
-        <p style="padding-top: 5px; line-height: 28px; font-size: 19px; padding-bottom: 20px; padding-right: 15px;">Nous avons comparé vos réponses aux notes moyennes fournies lors de notre enquête sur les tendances technologiques en comptabilité, afin que vous puissiez comparer vos capacités à celles de vos concurrents.</p>
+        <h2 style="padding-top:0; font-size: 26px; margin-top: 0; padding-bottom: 20px; font-weight: 700; ">Vos résultats en détail - et comment vous vous comparez à vos pairs</h2>
+        <p style="padding-top: 5px; line-height: 26px; font-size: 19px; padding-bottom: 20px; padding-right: 15px;">Nous avons comparé vos réponses aux notes moyennes fournies lors de notre enquête sur les tendances technologiques en comptabilité, afin que vous puissiez comparer vos capacités à celles de vos concurrents.</p>
     </div>
 
     <div class="chart-box" style="height:520px;">
@@ -517,8 +517,8 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                                         <p style="text-align: left; font-size: 16px">Bravo, vous avez adopté des workflows standardisés et automatisés, qui vous permettront de rationaliser vos tâches quotidiennes, de réduire considérablement la charge de travail liée aux rapports et de fournir des résultats plus précis à vos clients.</p>
                                         <p style="padding-top: 10px; text-align: left; font-size: 16px">En adoptant une approche cohérente des flux de travail, vous vous donnez de grandes chances de succès pour l'avenir. Maintenant, vous devez continuer de progresser, en exploitant les nouvelles technologies pour continuer à optimiser ces flux de travail et à en automatiser de nouveaux.</p>
                                     <?php elseif( $wf < 5 ) : ?>
-                                        <p style="text-align: left; font-size: 16px">Vous n'avez pas de flux de travail et de processus cohérents au sein de votre entreprise, ce qui signifie que les tâches de routine prennent trop de temps et peuvent être sujettes à des erreurs. Chaque membre de l'équipe a une façon différente de travailler, de sorte que vos clients sont susceptibles de recevoir des niveaux incohérents de prestation. Cela devrait être une préoccupation immédiate pour vous, car plus des deux tiers des répondants à notre récent sondage nous ont dit qu'ils avaient déjà une façon normalisée de travailler au sein de leur entreprise.</p>
-                                        <p style="padding-top: 10px; text-align: left; font-size: 16px">Cependant, il est important que vous continuiez à vous améliorer pour relever les défis posés par vos concurrents ainsi que par vos clients. Dans notre récent sondage auprès des professionnels de la comptabilité, 21 % d'entre eux nous ont dit qu'ils peuvent développer leurs propres flux de travail, rapports et services en utilisant leur plateforme technologique. En suivant leur exemple, vous serez en mesure d'optimiser vos services et de garantir les meilleures pratiques à tout moment.</p>
+                                        <p style="text-align: left; font-size: 16px">Vous n’avez pas de flux de travail et de processus cohérents au sein de votre entreprise, ce qui signifie que les tâches de routine prennent trop de temps et peuvent être sujettes à des erreurs. Chaque membre de l’équipe a une façon différente de travailler, de sorte que vos clients sont susceptibles de recevoir des prestations incohérantes.</p>
+                                        <p style="padding-top: 10px; text-align: left; font-size: 16px">Cela devrait être une préoccupation immédiate pour vous, car plus des deux tiers des répondants à notre récent sondage nous ont dit qu’ils avaient déjà une façon normalisée de travailler. Il est important que vous continuiez à vous améliorer pour relever les défis posés par vos concurrents et vos clients. Dans notre récent sondage auprès des professionnels de la comptabilité, 21 % d’entre eux nous ont dit qu’ils peuvent développer leurs propres flux de travail, rapports et services en utilisant leur plateforme technologique. En suivant leur exemple, vous serez en mesure d’optimiser vos services de garantir les meilleures pratiques.</p>
                                     <?php else : ?>
                                         <p style="text-align: left; font-size: 16px">La bonne nouvelle, c'est que vous avez pris des mesures importantes pour normaliser et automatiser vos flux de travail, ce qui ne peut qu'aider votre entreprise à croître. Vos pratiques de travail quotidiennes sont saines et vos équipes sont capables de collaborer.</p>
                                         <p style="padding-top: 10px; text-align: left; font-size: 16px">However, it’s important you keep improving to meet the challenges posed by your competitors as well as your clients. In our recent survey of accounting professionals, 21% told us that they can develop their own workflows, reports and services using their technology platform. By following their lead, you’ll be able to optimise your services and guarantee best practice at all times.</p>
@@ -618,7 +618,7 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
         </div>
     </div>
 </div>
-<div class="full-width" style="background-color: #ffffff; padding-top: 0; margin-top: 0;height:433px;">
+<div class="full-width" style="background-color: #ffffff; padding-top: 20px; margin-top: 0;height:454px;">
     <table cellpadding="0" cellpadding="0" style="padding-left: 66px; padding-right: 66px; padding-top: 0; margin-top: 0px;">
         <tr>
             <td style="padding-top: 50px; padding-bottom: 40px; text-align: left;">
@@ -673,9 +673,9 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                             <div class="chart-title" style="height:138px;max-width:680px;margin:0 auto;">
                                 <h2 style="color: #012e44; padding-top: 0px; margin-top: 20px; font-size: 38px; line-height: 46px; text-align: center;"> <strong style="color: #012e44; margin-top: 20px; letter-spacing: 0.5px !important; margin-bottom: 20px; font-weight: 700;">
                                 <?php if ( $total > 47 ) {
-                                    echo "Identifiez de nouvelles opportunités pour capitaliser sur votre investissement technologique";
+                                    echo "Identifiez de nouvelles opportunités pour capitaliser sur votre investissement technologique.";
                                 } else {
-                                    echo "Construisez votre propre plan pour le changement dès aujourd'hui";
+                                    echo "Construisez votre propre plan pour le changement dès aujourd'hui.";
                                 }?>
                                 </strong></h2>
                             </div>
@@ -683,13 +683,13 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                     </tr>
                     <tr>
                         <td>
-                            <table cellpadding="0" cellpadding="0" style="padding-left: 0px; padding-right: 0px; padding-top: 20px; text-align: center;">
+                            <table cellpadding="0" cellpadding="0" style="padding-left: 0px; padding-right: 0px; padding-top: 20px;padding-bottom: 22px; text-align: center;">
                                 <tr>
                                     <td>
-                                        <table style="background: #057ee1; padding: 0 20px; width: 500px; height: 90px; margin: 10px auto 0 auto; border-radius: 8px;"  cellpadding="0" cellpadding="0">
+                                        <table style="background: #057ee1; padding: 0 20px; width: 400px; height: 68px; margin: 10px auto 0 auto; border-radius: 0;"  cellpadding="0" cellpadding="0">
                                             <tr>
                                                 <td>
-                                                    <a style="color: #ffffff; line-height: 90px; font-size: 28px; font-weight:400; text-decoration: none;" href="https://www.silverfin.com/fr/demo" title="Réservez un workshop gratuit" target="_blank"> <strong>Réservez un workshop gratuit</strong> </a>
+                                                    <a style="color: #ffffff; line-height: 68px; font-size: 20px; font-weight:400; text-decoration: none;" href="https://www.silverfin.com/fr/demo" title="Réservez un workshop gratuit" target="_blank"> <strong>Réservez un workshop gratuit</strong> </a>
                                                 </td>
                                             </tr>
                                         </table>

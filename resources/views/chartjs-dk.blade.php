@@ -671,9 +671,9 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                             <div class="chart-title" style="height:186px;max-width:680px;margin:0 auto;">
                                 <h2 style="color: #012e44; padding-top: 0px; margin-top: 20px; font-size: 38px; line-height: 46px; text-align: center;"> <strong style="color: #012e44; margin-top: 20px; letter-spacing: 0.5px !important; margin-bottom: 20px; font-weight: 700;">
                                 <?php if ( $total > 47 ) {
-                                    echo "Book en gratis connected accounting-workshop, og identificer nye muligheder for at kapitalisere på jeres teknologiinvestering";
+                                    echo "Book en gratis connected accounting-workshop, og identificer nye muligheder for at kapitalisere på jeres teknologiinvestering.";
                                 } else {
-                                    echo "Book en gratis connected accounting-workshop, og lav en plan for jeres forandring i dag";
+                                    echo "Book en gratis connected accounting-workshop, og lav en plan for jeres forandring i dag.";
                                 }?>
                                 </strong></h2>
                             </div>
@@ -681,13 +681,13 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                     </tr>
                     <tr>
                         <td>
-                            <table cellpadding="0" cellpadding="0" style="padding-left: 0px; padding-right: 0px; padding-top: 20px; text-align: center;">
+                            <table cellpadding="0" cellpadding="0" style="padding-left: 0px; padding-right: 0px; padding-top: 20px;padding-bottom: 22px; text-align: center;">
                                 <tr>
                                     <td>
-                                        <table style="background: #057ee1; padding: 0 20px; width: 400px; height: 90px; margin: 10px auto 0 auto; border-radius: 8px;"  cellpadding="0" cellpadding="0">
+                                        <table style="background: #057ee1; padding: 0 20px; width: 300px; height: 68px; margin: 10px auto 0 auto; border-radius: 0;"  cellpadding="0" cellpadding="0">
                                             <tr>
                                                 <td>
-                                                    <a style="color: #ffffff; line-height: 90px; font-size: 28px; font-weight:400; text-decoration: none;" href="https://www.silverfin.com/demo" title="Book a free workshop" target="_blank"> <strong>Book en gratis workshop</strong> </a>
+                                                    <a style="color: #ffffff; line-height: 68px; font-size: 20px; font-weight:400; text-decoration: none;" href="https://www.silverfin.com/demo" title="Book a free workshop" target="_blank"> <strong>Book en gratis workshop</strong> </a>
                                                 </td>
                                             </tr>
                                         </table>

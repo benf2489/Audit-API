@@ -174,7 +174,7 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                     <p style="padding-bottom: 0; padding-top: 20px; margin-top: 0; font-size: 18px; line-height: 28px; margin-bottom: 0;"> For example, you have access to some real-time data, but probably not across your whole client portfolio; or you can integrate with a number of bookkeeping solutions, but not all. As a result, there may be inconsistencies in service delivery between</p>
                 </td>
                 <td style="padding: 0; margin: 0; width: 48%;">
-                    <p style="padding-bottom: 0; padding-top: 10px; margin-top: 0; font-size: 18px; line-height: 28px; margin-bottom: 0; padding-right: 10px;">clients, which makes standardising and automating processes difficult to achieve. And without consolidated data, and consistency across the firm, you’re unable to identify trends in your client portfolio or see where advisory services are needed. You still have some steps to take to make the full transition from compliance reporter to trusted advisor.</p>
+                    <p style="padding-bottom: 0; padding-top: 10px; margin-top: 0; font-size: 18px; line-height: 28px; margin-bottom: 0; padding-right: 10px;">clients, which makes standardising and automating processes difficult to achieve. Without consolidated data, and consistency across the firm, you’re unable to identify trends in your client portfolio or see where advisory services are needed. You still have some steps to take to make the full transition from compliance reporter to trusted advisor.</p>
                 </td>
             <?php endif; ?>
         </tr>
@@ -465,7 +465,7 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                                         <p style="text-align: left; font-size: 16px">You’re part of the 24% of accounting professionals who told us that their data is not yet consolidated in one central hub. Your financial information doesn’t update automatically, which means that your reports are often out of date as soon as they’re complete. While you are not alone, the bad news is that over a third of respondents in our recent research survey told us they do have access to live data. While your competitors are making progress, you still have work to do.</p>
                                         <p style="text-align: left; font-size: 16px; padding-top: 10px;">Success in accounting today depends on a joined-up data strategy, allowing you to see your clients’ entire financial performance at a glance and provide insightful advice based on what you see. By bringing your data onto a single platform, you can guarantee consistency of delivery across your team and ensure no crucial information slips out of sight.</p>
                                     <?php else : ?>
-                                        <p style="text-align: left; font-size: 16px">You’ve taken steps to modernise your data strategy and you’ve got some crucial information available in real time, allowing you to provide a limited amount of up-to-date analysis to your clients. But your strategy remains incomplete, which means your service delivery will remain inconsistent and you won’t always have the necessary information to hand.</p>
+                                        <p style="text-align: left; font-size: 16px">You’ve taken steps to modernise your data strategy and you’ve got some crucial information available in real-time, allowing you to provide a limited amount of up-to-date analysis to your clients. But your strategy remains incomplete, which means your service delivery will remain inconsistent and you won’t always have the necessary information to hand.</p>
                                         <p style="text-align: left; font-size: 16px; padding-top: 10px;">In our recent research, 37% of accounting professionals told us that not keeping up with changes in client demands is the main threat to their future success. Today’s practitioners need to provide proactive advice when it’s most needed to keep clients happy. It’s vital to create a connected data strategy in which all key information updates instantly, without any manual effort required.</p>
                                     <?php endif; ?>
                                 </td>
@@ -604,7 +604,7 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                                         <p style="padding-top: 10px; text-align: left; font-size: 16px">You can quickly improve the situation by making better use of your client data. Pull it all together into one data store and make it accessible to your team. Then give them the analytics tools to look across your client portfolio for trends and issues that provoke an advisory discussion. But that’s not all. Armed with up-to-date data, and the tools to analyse it easily, your team can give clients insight and advice that transforms their businesses.</p>
                                     <?php else : ?>
                                         <p style="text-align: left; font-size: 16px; padding-top:0;">You’ve taken steps to consolidate your client data, even automate your accounting workflows. You’re well on the way to transforming your compliance services. But there’s still work to do before you turn this data into new advisory services and revenue.</p>
-                                        <p style="padding-top: 10px; text-align: left; font-size: 16px">Armed with the right analytics, reporting tools, and consolidated client data, you will put yourself in the best position to see trends as they emerge and be able to respond with real-time advice that has a positive impact on your clients’ businesses. This transformation from providing largely compliance services to leading with advisory is something that only 13% of our survey’s respondents say they’ve successfully achieved, so it is all to play for. Changes you make today to your services, skills, and technology investments, will put you in the best position to extend your service offering into advisory services before your competitors do. </p>
+                                        <p style="padding-top: 10px; text-align: left; font-size: 16px">Armed with the right analytics, reporting tools, and consolidated client data, you will put yourself in the best position to see trends as they emerge and be able to respond with real-time advice that has a positive impact on your clients’ businesses. This transformation from providing largely compliance services to leading with advisory is something that only 14% of our survey’s respondents say they’ve successfully achieved, so it is all to play for. Changes you make today to your services, skills, and technology investments, will put you in the best position to extend your service offering into advisory services before your competitors do. </p>
                                     <?php endif; ?>
                                 </td>
                             </tr>
@@ -634,7 +634,7 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                                         <p style="color: #012e44; padding-bottom: 19px; font-size: 19px; line-height: 26px; font-weight: 400;">You’ve reached this high level of digital maturity by being smart about your technology strategy, adoption and investments.</p>
                                         <p style="color: #708ea8; padding-bottom: 10px; font-size: 16px; line-height: 26px; font-weight: 400;">It’s allowed you to stay ahead of your competition and unlock revenue from the advisory services that so many firms are seeking.</p></td>
                                     <td style="width: 48%;">
-                                        <p style="color: #708ea8; padding-bottom: 0px; font-size: 16px; line-height: 26px; padding-left: 10px; font-weight: 400;">So why stand still now and let the rest catch you up? That’s where Silverfin can help. Our award-winning cloud platform powers connected accounting at some of the world’s leading firms. And our powerful analytics and reporting tools give you the data and insight you need to be your clients’ most trusted advisor.</p>
+                                        <p style="color: #708ea8; padding-bottom: 0px; font-size: 16px; line-height: 26px; padding-left: 10px; font-weight: 400;">So why stand still now and let the rest catch you up? That’s where Silverfin can help. Our award-winning cloud platform powers connected accounting at some of the world’s leading firms. Our powerful analytics and reporting tools give you the data and insight you need to be your clients’ most trusted advisor.</p>
                                     </td>
                                 <?php elseif( $total < 21 ) : ?>
                                     <td style="width: 48%; padding-right: 4%;">
@@ -670,9 +670,9 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                             <div class="chart-title" style="height:184px;max-width:680px;margin:0 auto;">
                                 <h2 style="color: #012e44; padding-top: 0px; margin-top: 20px; font-size: 38px; line-height: 46px; text-align: center;"> <strong style="color: #012e44; margin-top: 20px; letter-spacing: 0.5px !important; margin-bottom: 20px; font-weight: 700;">
                                 <?php if ( $total > 47 ) {
-                                    echo "Book a free connected accounting workshop and identify new opportunities to capitalise on your technology investment";
+                                    echo "Book a free connected accounting workshop and identify new opportunities to capitalise on your technology investment.";
                                 } else {
-                                    echo "Book a free connected accounting workshop and build your own plan for change today";
+                                    echo "Book a free connected accounting workshop and build your own plan for change today.";
                                 }?>
                                 </strong></h2>
                             </div>
@@ -680,13 +680,13 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                     </tr>
                     <tr>
                         <td>
-                            <table cellpadding="0" cellpadding="0" style="padding-left: 0px; padding-right: 0px; padding-top: 20px; text-align: center;">
+                            <table cellpadding="0" cellpadding="0" style="padding-left: 0px; padding-right: 0px; padding-top: 20px;padding-bottom: 22px; text-align: center;">
                                 <tr>
                                     <td>
-                                        <table style="background: #057ee1; padding: 0 20px; width: 400px; height: 90px; margin: 10px auto 0 auto; border-radius: 0;"  cellpadding="0" cellpadding="0">
+                                        <table style="background: #057ee1; padding: 0 20px; width: 300px; height: 68px; margin: 10px auto 0 auto; border-radius: 0;"  cellpadding="0" cellpadding="0">
                                             <tr>
                                                 <td>
-                                                    <a style="color: #ffffff; line-height: 90px; font-size: 28px; font-weight:400; text-decoration: none;" href="https://www.silverfin.com/demo" title="Book a free workshop" target="_blank"> <strong>Book a free workshop</strong> </a>
+                                                    <a style="color: #ffffff; line-height: 68px; font-size: 20px; font-weight:400; text-decoration: none;" href="https://www.silverfin.com/demo" title="Book a free workshop" target="_blank"> <strong>Book a free workshop</strong> </a>
                                                 </td>
                                             </tr>
                                         </table>
@@ -806,7 +806,7 @@ function drawGraphs() {
          "responsive": false,           
             "type":"radar",
             "data":{
-                "labels":[['Automated Workflows'],['Electronic','Comms'],['Real Time','Workflows']],
+                "labels":[['Automated Workflows'],['Electronic','Comms'],['Real-Time','Workflows']],
                 "datasets":[
                     {
                         'label': 'Your results', 'data': [<?php echo $chart2;?>],'backgroundColor': 'rgba(77, 192, 222, 0.3)','borderColor': 'rgba(77, 192, 222, 1)'
@@ -859,7 +859,7 @@ function drawGraphs() {
          "responsive": false,           
             "type":"radar",
             "data":{
-                "labels":[['Automated Alerts'],['Businesses','Management'],['Advisory']],
+                "labels":[['Automated Alerts'],['Business','Management'],['Advisory']],
                 "datasets":[
                     {
                         'label': 'Your results', 'data': [<?php echo $chart4;?>],'backgroundColor': 'rgba(77, 192, 222, 0.3)','borderColor': 'rgba(77, 192, 222, 1)'
