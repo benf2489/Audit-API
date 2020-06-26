@@ -686,7 +686,7 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                                         <table style="background: #057ee1; padding: 0 20px; width: 300px; height: 68px; margin: 10px auto 0 auto; border-radius: 0;"  cellpadding="0" cellpadding="0">
                                             <tr>
                                                 <td>
-                                                    <a style="color: #ffffff; line-height: 68px; font-size: 20px; font-weight:400; text-decoration: none;" href="https://www.silverfin.com/demo" title="Book a free workshop" target="_blank"> <strong>Book a free workshop</strong> </a>
+                                                    <a style="color: #ffffff; line-height: 68px; font-size: 20px; font-weight:400; text-decoration: none;" href="https://www.silverfin.com/workshop" title="Book a free workshop" target="_blank"> <strong>Book a free workshop</strong> </a>
                                                 </td>
                                             </tr>
                                         </table>

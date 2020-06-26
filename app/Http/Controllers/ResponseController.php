@@ -44,8 +44,8 @@ class ResponseController extends Controller
     {
 
         $response_id = $request->form_response["hidden"]["response_id"];
-        $scores = $request->form_response["calculated"]["score"];
-        $calculated = $request->form_response["calculated"];
+        // $scores = $request->form_response["calculated"]["score"];
+        // $calculated = $request->form_response["calculated"];
         $questions = $request->form_response["definition"]["fields"];
         $formId = $request->form_response["form_id"];
         $answers = $request->form_response["answers"];
@@ -191,7 +191,7 @@ class ResponseController extends Controller
 
         $pdf = \PDF::loadView($filename,$res_data);
         $pdf->setOption('enable-javascript',true);
-        $pdf->setOption('javascript-delay',20000);
+        $pdf->setOption('javascript-delay',5000);
         $pdf->setOption('enable-smart-shrinking', true);
         $pdf->setOption('no-stop-slow-scripts', true)                  
         ->setOption('footer-spacing', 20 )
