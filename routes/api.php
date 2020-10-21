@@ -35,3 +35,8 @@ Route::put('response','ResponseController@store');
 
 // Delete a response
 Route::delete('response/{response_id}','ResponseController@destroy');
+
+
+//Decibel PDF API endpoints
+Route::get('response/digitalexp/{response_id}','ResponseController@chartpdf');
+Route::get('digitalexp/storepdf/{id}','ResponseController@storePdf');

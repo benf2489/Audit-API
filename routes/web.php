@@ -20,3 +20,26 @@
 //
 //
 // Route::get('todos/{todo}', 'TodosController@show');
+
+
+Route::get('chartpdf/{response_id}','ResponseController@chartpdf');
+
+
+Route::domain("results.decibel.com")->group(function(){
+
+    Route::get('/', function () {
+        return 'Decible connect';
+    });
+
+    Route::get('digitalexp/{response_id}','ResponseController@chartpdf',function($id){
+
+        $path = public_path().'/result/'.$id.'.pdf';
+        if(file_exists($path)){
+            return response()->file($path);
+        }else{
+            abort(404);
+        }
+
+    });
+
+});
