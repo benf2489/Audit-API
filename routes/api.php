@@ -42,3 +42,9 @@ Route::put('response','ResponseController@store');
 
 // Delete a response
 Route::delete('response/{response_id}','ResponseController@destroy');
+
+//Decibel Display PDF 
+Route::get('response/digitalexp/{response_id}','ResponseController@deciblechartpdf');
+
+//Decibel Store PDF
+Route::get('digitalexp/storepdf/{id}','ResponseController@deciblestorePdf');
