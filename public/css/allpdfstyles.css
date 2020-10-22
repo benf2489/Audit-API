@@ -117,7 +117,7 @@
     left: -13%;
     position: absolute;
     height: 450px;
-    width: 200px; 
+    width: 200px;
 }
 .page-wrapper.A41 .fimg-right-top
 {
@@ -180,7 +180,7 @@
     padding: 0 95px 0px 175px;
 }
 .page-wrapper.result_page .main-contenter .content h2 {
-    
+
     font-size: 21px;
     font-weight: 400;
     color: #5a5a5a;
@@ -444,7 +444,7 @@
 }
 .page-wrapper.work_to_be_done .p-5
 {
-    padding: 
+    padding:
 }
 .page-wrapper.work_to_be_done .logo img
 {
@@ -530,7 +530,7 @@
     float: right;
 }
 
-.page-wrapper.technology_page .percentage-number 
+.page-wrapper.technology_page .percentage-number
 {
     color: #056DFF;
     font-size: 100px;
@@ -623,11 +623,11 @@
 }
 .page-wrapper.technology_page .bg-lite.right {
     float: right;
-    
-    
+
+
 }
 .page-wrapper.technology_page .bg-lite.right table {
-    margin:5px auto; 
+    margin:5px auto;
 }
 
 .page-wrapper.technology_page .bg-lite.flexis {
@@ -638,12 +638,12 @@
 .page-wrapper.technology_page .bg-lite.left,
 .page-wrapper.technology_page .bg-lite.right
 {
-    
+
 }
 
 .page-wrapper.technology_page .p-5
 {
- 
+
 }
 .page-wrapper.technology_page .stat-head {
     position: relative;
@@ -821,7 +821,7 @@
     left: 0%;
     position: absolute;
     display: none;
-    
+
 }
 .page-wrapper.conclusion .s
 {
@@ -844,7 +844,7 @@
 }
 .page-wrapper.conclusion .flogo
 {
-    top:110px;
+    top:140px;
     left: 17%;
     position: relative;
     padding: 0;
@@ -853,15 +853,34 @@
     width: auto;
 }
 .page-wrapper.conclusion .footer-head
-{   
-    top:105px;
+{
+    top:150px;
     color: white;
-    font-size: 2em;
+    font-size: 2.4em;
     font-weight: 500;
     left: 17%;
     position: relative;
-    float: none;
+    font-family: "Nunito Sans", sans-serif;
+    width: 60%;
 }
+
+.page-wrapper.conclusion .green-button
+{
+    top: 170px;
+    padding: 1%;
+    border-radius: 5px;
+    text-decoration: none;
+    color:#22335D;
+    font-size: 1.4em;
+    /*margin-top: 1%;*/
+    font-weight: 700;
+    left: 17%;
+    font-family: "Nunito Sans", sans-serif;
+    position: relative;
+    background-color: #2EE16D;
+}
+
+
 .page-wrapper.conclusion .footer-sub-head
 {
     top:95px;
@@ -886,7 +905,7 @@
 
 .page-wrapper.conclusion .phone_wrapper {
 
-    margin-top:125px; 
+    margin-top:125px;
     left: 17%;
     position: relative;
     height: 30px;
@@ -978,7 +997,7 @@
     height: 35px;
     z-index: 99;
     width: 2px;
-    border-right:1px solid #FFF; 
+    border-right:1px solid #FFF;
     margin-top: -10px;
 }
 
@@ -1010,20 +1029,6 @@
     width: 2.5%;
 }
 
-.page-wrapper.conclusion .green-button
-{
-    padding: 1%;
-    border-radius: 5px;
-    text-decoration: none;
-    color:#22335D;
-    font-size: 1.4em;
-    margin-top: 1%;
-    font-weight: 800;
-    left: 17%;
-    font-family: "Nunito Sans", sans-serif;
-    position: relative;
-    background-color: #2EE16D;
-}
 
 
 .page-wrapper.conclusion .trusted-by
@@ -1102,7 +1107,7 @@
     color: white;
     font-weight: 400;
     font-size: 2em;
-    position: absolute;  
+    position: absolute;
 }
 
 .page-wrapper.end_page .blue-ring-down
@@ -1151,7 +1156,7 @@
 .technology_page .graph-section {
     max-width: 240px;
     margin:55px auto 0;
-    width: 240px; 
+    width: 240px;
     height: 220px;
 }
 
@@ -1176,22 +1181,22 @@
 }
 .chart-group div{
     margin-right:5px;
-    
+
 }
 
 .technology_page .chart-group div{
-    
+
     margin-left:20px;
 }
 
 .graph-section .chart-group div{
-    
+
     border-radius: 7px 7px 0 0;
 
 }
 
 .technology_page .graph-section .chart-group div{
-    
+
     border-radius: 9px 9px 0 0;
 
 }
@@ -1273,7 +1278,7 @@
     margin: 0 auto;
     position: relative;
     top: 40px;
-    left:10px; 
+    left:10px;
     font-size: 12px;
 }
 
@@ -1307,4 +1312,3 @@
     background: #0DE578;
     border-radius: 4px;
 }
-
