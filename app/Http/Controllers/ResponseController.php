@@ -306,4 +306,48 @@ class ResponseController extends Controller
 
       die;
     }
+
+
+    /**
+     * Generate Decibel PDF 
+     *
+     * @param  Request $request , int  $id
+     * @return path to pdf file
+     */
+    public function deciblestorePdf(Request $request,$id)
+    {
+        // dd(json_decode($request->getContent(), true));
+
+        $pdf = \PDF::loadView('decibelchartjsstore',array("request"=>$request));
+        $pdf->setOption('enable-javascript',true);
+        $pdf->setOption('javascript-delay',500);
+        $pdf->setOption('enable-smart-shrinking', true);
+        $pdf->setOption('no-stop-slow-scripts', true)                  
+        ->setOption('footer-spacing', 20 )
+        ->setPaper('a4')
+        ->setOption('margin-top', 0)
+        ->setOption('margin-bottom',0)
+        ->setOption('margin-left', 0)
+        ->setOption('margin-right',0);
+
+        $pathToFile = public_path('result').'/'.$id.'.pdf';
+        $pdf->save($pathToFile);
+        return   $pathToFile;   
+    }
+
+    /**
+     * Display Decibel PDF 
+     *
+     * @param  int  $id
+     * @return pdffile
+     */
+    public function deciblechartpdf($id)
+    {
+        $path = public_path().'/result/'.$id.'.pdf';
+        if(file_exists($path)){
+            return response()->file($path);
+        }else{
+            abort(404);
+        }
+    }
 }
