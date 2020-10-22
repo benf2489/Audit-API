@@ -18,6 +18,7 @@ class Response extends JsonResource
         return [
           'id' => $this->response_id,
           'formId' => $this->typeform_id,
+          'lang' => $this->lang,
           'calculated' => $this->calculated,
           'scores' => $this->scores,
           'questions' => $this->questions,
