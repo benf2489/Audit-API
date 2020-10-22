@@ -32,7 +32,7 @@ else if ( $full > 9 && $wf > 9 && $rev > 9 && $adv < 10) {
     $revstatus = 1;
 }
 else if ( $full > 9 && $wf > 9 && $rev > 9 && $adv > 9) {
-    $advclass ="background-color: #024364 !important;"; 
+    $advclass ="background-color: #024364 !important;";
      $advclassh2 = "line-height: 30px; font-size: 20px;color:#fff!important";
     $advclassp = "color: #fff !important; font-size: 16px !important;";
     $advstatus = 1;
@@ -48,7 +48,7 @@ else if ( $full > 9 && $wf > 9 && $rev > 9 && $adv > 9) {
 @font-face {font-family: 'Cera Pro'; src: url('{{asset('/fonts/CeraPro-Regular.otf')}}') format('opentype'); font-weight: 400; font-style: normal; }
 @font-face {font-family: 'Cera Pro'; src: url('{{asset('/fonts/CeraPro-Medium.ttf')}}') format('truetype'); font-weight: 500; font-style: normal; }
 @font-face {font-family: 'Cera Pro'; src: url('{{asset('/fonts/CeraPro-Black.ttf')}}') format('truetype'); font-weight: 900; font-style: normal; }
-@font-face {font-family: 'Cera Pro'; src: url('{{asset('/fonts/CeraPro-Bold.otf')}}') format('opentype'); font-weight: 700; font-style: normal; }
+@font-face {font-family: 'Cera Pro'; src: url('{{asset('/fonts/CeraPro-Bold.otf')}}') format('opentype'); font-weight: 700; font-style: normal; } 
 body { font-family: 'Cera Pro'; font-weight: 400; }
 @page {padding: 0; margin: 0; padding-top: 0px; padding-bottom: 0px; border: none; border-collapse: collapse; font-family: 'Cera Pro'; font-weight: 400;  page-break-after: always;
         page-break-inside: avoid; }
@@ -60,7 +60,7 @@ body { box-sizing: border-box; margin:0; padding: 0; background: #FFF; font-fami
 h1 { font-family: 'Cera Pro'; font-weight: 400; }
 h2 span,
 h2 {font-size: 33px; line-height: 35px; font-family: 'Cera Pro'; font-weight: 700; color: #012e44; }
-h2 strong {font-family: 'Cera Pro'; color: #012e44; font-weight: 700; } 
+h2 strong {font-family: 'Cera Pro'; color: #012e44; font-weight: 700; }
 h3, h3 span {font-size: 22px; font-family: 'Cera Pro'; font-weight: 700;}
 p {font-family: 'Cera Pro'; font-weight: 400; color: #708ea8; font-size: 16px; line-height: 24px; padding-bottom: 10px; }
 .chart-box { text-align: center; padding-bottom: 20px; padding-top: 20px; }
@@ -141,7 +141,7 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                     }?>
                     </h2>
                 </td>
-            </tr>           
+            </tr>
         </table>
 </div>
 <div class="chart-title left-right-space" style="padding-top: 50px; padding-bottom: 15px; margin: 0;height:345px;">
@@ -178,7 +178,7 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                 </td>
             <?php endif; ?>
         </tr>
-    </table>    
+    </table>
 </div>
 <div style="height:450px;">
     <table style="padding-left: 66px; padding-right: 66px; padding-top: 15px;">
@@ -198,8 +198,8 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                                 <tr>
                                     <td style="width: 100%; text-align: center; padding-top: 6px; padding-bottom: 5px;">
                                         <span class="down-arrow" style="width: 100%; text-align: center; margin: 0 auto;">
-                                            <img src="{{ asset('/icons/down-arrow.svg')}}" />             
-                                        </span>                         
+                                            <img src="{{ asset('/icons/down-arrow.svg')}}" />
+                                        </span>
                                     </td>
                                 </tr>
                             </table>
@@ -222,8 +222,8 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                                 <tr>
                                     <td style="width: 100%; text-align: center; padding-top: 6px; padding-bottom: 5px;">
                                         <span class="down-arrow" style="width: 100%; text-align: center; margin: 0 auto;">
-                                            <img src="{{ asset('/icons/down-arrow.svg')}}" />             
-                                        </span>                         
+                                            <img src="{{ asset('/icons/down-arrow.svg')}}" />
+                                        </span>
                                     </td>
                                 </tr>
                             </table>
@@ -231,7 +231,7 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                     </tr>
                 </table>
             </td>
-            
+
             <td class="here-where-text" align="top" style="width: 25%;">
                 <table <?php if($revstatus == 1) { echo 'style="display: table;"';} else { echo 'style="display: none;"';}?>>
                     <tr>
@@ -271,14 +271,14 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                                 <tr>
                                     <td style="width: 100%; text-align: center; padding-top: 6px; padding-bottom: 5px;">
                                         <span class="down-arrow" style="width: 100%; text-align: center; margin: 0 auto;">
-                                            <img src="{{ asset('/icons/down-arrow.svg')}}" />             
-                                        </span>                         
+                                            <img src="{{ asset('/icons/down-arrow.svg')}}" />
+                                        </span>
                                     </td>
                                 </tr>
                             </table>
                         </td>
                     </tr>
-                </table> 
+                </table>
             </td>
         </tr>
     </table>
@@ -298,14 +298,14 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                                                         <img src="{{ asset('/icons/fullsight-active.svg')}}" />
                                                     <?php } else { ?>
                                                         <img src="{{ asset('/icons/fullsight.svg')}}" />
-                                                    <?php } ?>                                                    
+                                                    <?php } ?>
                                                 </td><td style="width: 5px;"></td>
                                                 <td><h2 style="{{ $fullclassh2 }}">fullsight</h2></td>
                                             </tr>
                                         </table>
                                         <table  cellpadding="0" cellpadding="0" class="content-info">
                                             <tr>
-                                                <td style="padding-top: 5px;"> 
+                                                <td style="padding-top: 5px;">
                                                     <p style="{{ $fullclassp }}">
                                                     You have all your data in one place, and it is standardised across your portfolio. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </p>
                                                 </td>
@@ -342,7 +342,7 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                                         </table>
                                         <table  cellpadding="0" cellpadding="0" class="content-info">
                                             <tr>
-                                                <td style="padding-top: 5px;"> 
+                                                <td style="padding-top: 5px;">
                                                     <p style="{{ $wfclassp }}">You have all your reporting and working papers automated in real-time. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
                                                 </td>
                                             </tr>
@@ -379,7 +379,7 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                                         </table>
                                         <table  cellpadding="0" cellpadding="0" class="content-info">
                                             <tr>
-                                                <td style="padding-top: 5px;">  
+                                                <td style="padding-top: 5px;">
                                                     <p style="{{ $revclassp }}">You are able to create deep insight across your portfolio and benchmark against best practice.</p>
                                                 </td>
                                             </tr>
@@ -404,7 +404,7 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                                         <table  cellpadding="0" cellpadding="0" class="left-side-icon">
                                             <tr>
                                                 <td class="lefticon" style="width: 30px;height:30px; padding: 0;">
-                                                    
+
                                                     <?php if($advstatus == 1){?>
                                                         <img src="{{ asset('/icons/foresight-active.svg')}}" />
                                                     <?php } else { ?>
@@ -416,7 +416,7 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                                         </table>
                                         <table  cellpadding="0" cellpadding="0" class="content-info">
                                             <tr>
-                                                <td style="padding-top: 5px;"> 
+                                                <td style="padding-top: 5px;">
                                                     <p style="{{ $advclassp }}">You can be prompted with predictive actions to proactively advise clients.  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                                                     </p>
                                                 </td>
@@ -424,7 +424,7 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                                             <tr>
                                                 <td style="height: 150px;"></td>
                                             </tr>
-                                             
+
                                         </table>
                                     </td>
                                 </tr>
@@ -435,7 +435,7 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
             </td>
         </tr>
     </table>
-</div>  
+</div>
 <div class="chart-section  left-right-space" style="padding-top: 170px; margin-top: 0;">
     <div class="chart-title" style="padding-top: 0; margin-top: 0; padding-bottom: 10px; text-align: left;">
         <h2 style="padding-top:0; font-size: 28px; margin-top: 0; padding-bottom: 25px; font-weight: 700; ">Your results in detail – and how you compare with your peers</h2>
@@ -456,7 +456,7 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                                                 <td class="imgbox" style="width: 18%; text-align: left; padding: 0 5px 0 0;"><img style="width: 45px;" src="{{ asset('/icons/data.svg')}}" /></td>
                                                 <td style="padding: 0; padding-left: 0px; width: 85%;" class="carttitle"><h2 style="font-size: 38px !important; font-weight: 700; ">Data</h2></td>
                                             </tr>
-                                        </table>            
+                                        </table>
                                     </div>
                                     <?php if( $full > 11 ) : ?>
                                         <p style="text-align: left; font-size: 16px">Congratulations, you’re on top of your data strategy. Your adoption of technology at key points means you’re capable of providing a fast, efficient service to your clients. Most importantly, you’ve given yourself every chance of success in today’s competitive accountancy sector.</p>
@@ -472,15 +472,15 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                             </tr>
                         </table>
                     </td>
-                    <td style="padding: 0; width: 45%;">                         
+                    <td style="padding: 0; width: 45%;">
                         <table cellpadding="0" cellpadding="0">
                             <tr>
-                                <td style="padding: 10px; background: #f0f3f8; padding-top: 50px; padding-bottom: 50px;">                                    
+                                <td style="padding: 10px; background: #f0f3f8; padding-top: 50px; padding-bottom: 50px;">
                                     <canvas id="chart1" width="420" height="380"></canvas>
                                 </td>
                             </tr>
                         </table>
-                    </td>                   
+                    </td>
                 </tr>
             </table>
         </div>
@@ -489,7 +489,7 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
         <div class="full-width">
             <table cellpadding="0" cellpadding="0" style="padding: 0; margin: 0; padding-bottom: 70px;">
                 <tr>
-                    <td style="padding: 0; width: 45%;">        
+                    <td style="padding: 0; width: 45%;">
                         <table cellpadding="0" cellpadding="0">
                             <tr>
                                 <td style="padding: 10px; background: #f0f3f8; padding-top: 50px; padding-bottom: 50px;">
@@ -508,7 +508,7 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                                                 <td class="imgbox" style="width: 15%; text-align: left; padding: 0;"><img style="width: 45px;" src="{{ asset('/icons/workflow.svg')}}" /></td>
                                                 <td style="padding: 0; padding-left: 2px; width: 75%" class="carttitle"><h2 style="font-size: 38px !important; font-weight: 700;">Workflow</h2></td>
                                             </tr>
-                                        </table>            
+                                        </table>
                                     </div>
                                     <?php if( $wf > 11 ) : ?>
                                         <p style="text-align: left; font-size: 16px">Well done, you’ve adopted standardised and automated workflows, which will already be streamlining your everyday tasks, significantly reducing the reporting burden, and providing more accurate results for your clients.</p>
@@ -542,7 +542,7 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                                                 <td class="imgbox" style="width: 15%; text-align: left; padding: 0;"><img style="width: 45px;" src="{{ asset('/icons/review_ic.svg')}}" /></td>
                                                 <td style="padding: 0; padding-left: 0px; width: 75%;" class="carttitle"><h2 style="font-size: 38px !important; font-weight: 700; ">Review</h2></td>
                                             </tr>
-                                        </table>            
+                                        </table>
                                     </div>
                                     <?php if( $rev > 11 ) : ?>
                                         <p style="text-align: left; font-size: 16px">Your data analysis and reporting capabilities are impressive. You’re consolidating data in an efficient way, enabling you to extract key insights and provide forward-thinking business advice to your clients. The steps you’ve taken make you one of the innovative minority – only 7% of our research respondents strongly agreed with the statement that they can gain insight into their client base by benchmarking data across their portfolio.</p>
@@ -558,7 +558,7 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                             </tr>
                         </table>
                     </td>
-                    <td style="padding: 0; width: 45%;">                         
+                    <td style="padding: 0; width: 45%;">
                         <table cellpadding="0" cellpadding="0">
                             <tr>
                                 <td style="padding: 10px; background: #f0f3f8; padding-top: 50px; padding-bottom: 50px;">
@@ -566,7 +566,7 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                                 </td>
                             </tr>
                         </table>
-                    </td>                   
+                    </td>
                 </tr>
             </table>
         </div>
@@ -594,7 +594,7 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                                                 <td class="imgbox" style="width: 15%; text-align: left; padding:0;"><img style="width: 100%;" src="{{ asset('/icons/advisory_ic.svg')}}" /></td>
                                                 <td style="padding: 0; padding-left: 10px; width: 85%" class="carttitle"><h2 style="font-size: 38px !important; font-weight: 700; ">Advisory</h2></td>
                                             </tr>
-                                        </table>            
+                                        </table>
                                     </div>
                                     <?php if( $adv > 11 ) : ?>
                                         <p style="text-align: left; font-size: 16px; padding-top:0;">The transformation of your business is already well underway. You’ve moved beyond core accounting practices and embraced the role of trusted partner, using your clients’ data to provide a range of value-added services.</p>
@@ -754,16 +754,16 @@ Function.prototype.bind = Function.prototype.bind || function (thisp) {
 };
 function drawGraphs() {
     new Chart(
-        document.getElementById("chart1"), { 
-         "responsive": false,           
+        document.getElementById("chart1"), {
+         "responsive": false,
             "type":"radar",
             "data":{
                 "labels":['Live Data','Consolidation','Collaboration'],
-                
+
                 "datasets":[
                     {
                         'label': 'Your results', 'data': [<?php echo $chart1;?>],'backgroundColor': 'rgba(77, 192, 222, 0.3)','borderColor': 'rgba(77, 192, 222, 1)'
-                    }, 
+                    },
                     {
                         'label': 'Average Score',  'data': [3.1,2.9,4.1],'backgroundColor': 'rgba(5,125,224, 0.3)','borderColor': 'rgba(5,125,224, 1)'
                     }
@@ -802,15 +802,15 @@ function drawGraphs() {
         }
     );
     new Chart(
-        document.getElementById("chart2"), { 
-         "responsive": false,           
+        document.getElementById("chart2"), {
+         "responsive": false,
             "type":"radar",
             "data":{
                 "labels":[['Automated Workflows'],['Electronic','Comms'],['Real-Time','Workflows']],
                 "datasets":[
                     {
                         'label': 'Your results', 'data': [<?php echo $chart2;?>],'backgroundColor': 'rgba(77, 192, 222, 0.3)','borderColor': 'rgba(77, 192, 222, 1)'
-                    }, 
+                    },
                     {
                         'label': 'Average Score',  'data': [3.7,3.9,3.4],'backgroundColor': 'rgba(5,125,224, 0.3)','borderColor': 'rgba(5,125,224, 1)'
                     }
@@ -829,14 +829,14 @@ function drawGraphs() {
         }
     );
     new Chart(
-        document.getElementById("chart3"), { 
-         "responsive": false,           
+        document.getElementById("chart3"), {
+         "responsive": false,
             "type":"radar",
             "data":{
                 "labels":['Workflows Status','Benchmarking','Analysis'],
                 "datasets":[{
                         'label': 'Your results', 'data': [<?php echo $chart3;?>],'backgroundColor': 'rgba(77, 192, 222, 0.3)','borderColor': 'rgba(77, 192, 222, 1)'
-                    }, 
+                    },
                     {
                         'label': 'Average Score',  'data': [3.4,2.7,2.9],'backgroundColor': 'rgba(5,125,224, 0.3)','borderColor': 'rgba(5,125,224, 1)'
                     }]
@@ -848,22 +848,22 @@ function drawGraphs() {
                 'maintainAspectRatio': true,
                 'scale':{
                     'ticks': {'display': false, 'maxTicksLimit': 6, 'beginAtZero':true, 'stepSize': 1, 'suggestedMax': 5
-                    }, 
+                    },
                     'pointLabels': { 'fontSize':14, },
                 }
             }
         }
     );
     new Chart(
-        document.getElementById("chart4"), { 
-         "responsive": false,           
+        document.getElementById("chart4"), {
+         "responsive": false,
             "type":"radar",
             "data":{
                 "labels":[['Automated Alerts'],['Business','Management'],['Advisory']],
                 "datasets":[
                     {
                         'label': 'Your results', 'data': [<?php echo $chart4;?>],'backgroundColor': 'rgba(77, 192, 222, 0.3)','borderColor': 'rgba(77, 192, 222, 1)'
-                    }, 
+                    },
                     {
                         'label': 'Average Score',  'data': [2.5,2.9,3.3],'backgroundColor': 'rgba(5,125,224, 0.3)','borderColor': 'rgba(5,125,224, 1)'
                     }
@@ -876,7 +876,7 @@ function drawGraphs() {
                 'maintainAspectRatio': true,
                 'scale':{
                     'ticks': {'display': false, 'maxTicksLimit': 6, 'beginAtZero':true, 'stepSize': 1, 'suggestedMax': 5
-                    }, 
+                    },
                     'pointLabels': { 'fontSize':14, },
                 }
             }

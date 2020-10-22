@@ -28,8 +28,14 @@ Route::get('response/{response_id}','ResponseController@show');
 Route::get('response/pdf/{response_id}/{lang}','ResponseController@pdf');
 
 
+
+
 // Store new response
 Route::post('response','ResponseController@store');
+
+// Store new report pdf
+Route::post('pdf','ResponseController@storePDF');
+
 
 // Update a response
 Route::put('response','ResponseController@store');

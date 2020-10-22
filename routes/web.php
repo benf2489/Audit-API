@@ -11,6 +11,34 @@
 |
 */
 
+Route::domain('connected.silverfin.com')->group(function () {
+    Route::get('/', function () {
+        return 'Silverfin domain connected.';
+    });
+
+    Route::get('/response/pdf/{form_id}/{response_id}', function ($form,$id) {
+
+        $path = public_path() . '/response/'.$form.'/'.$id.'.pdf';
+
+        if(file_exists($path)) {
+          return response()->file(public_path() . '/response/'.$form.'/'.$id.'.pdf');
+        } else {
+          abort(404);
+        }
+
+    });
+
+
+});
+
+
+Route::get('/clear-cache', function() {
+   $exitCode = Artisan::call('cache:clear');
+   return 'Cache cleared';
+});
+
+
+
 // Route::get('/', function () {
 //     return view('welcome');
 // });
