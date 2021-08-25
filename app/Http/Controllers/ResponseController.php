@@ -94,6 +94,8 @@ class ResponseController extends Controller
 
           $res = json_decode($response->answers);
 
+          $typeformId = $formId;
+
           $full = (float)$res[0]->number+(float)$res[1]->number+(float)$res[2]->number;
           $wf = (float)$res[3]->number+(float)$res[4]->number+(float)$res[5]->number;
           $rev = (float)$res[6]->number+(float)$res[7]->number+(float)$res[8]->number;
@@ -306,6 +308,66 @@ class ResponseController extends Controller
 
       die;
     }
+
+    public function s4rbPdf($response_id,$lang=null){
+      $response = Response::where('response_id','=', $response_id)->firstOrFail();
+
+      if(isset($response))
+      {
+
+      $res = json_decode($response->answers);
+      $formId = $response->typeform_id;
+
+      $accuracy = (float)$res[2]->number+(float)$res[3]->number+(float)$res[4]->number+(float)$res[5]->number+(float)$res[6]->number+(float)$res[7]->number+(float)$res[8]->number+(float)$res[9]->number;
+      $accuracyPercent = ($accuracy/80) * 100;
+      $alignment = (float)$res[10]->number+(float)$res[11]->number+(float)$res[12]->number+(float)$res[13]->number+(float)$res[14]->number+(float)$res[15]->number;
+      $alignmentPercent = ($alignment/60) * 100;
+      $activation = (float)$res[16]->number+(float)$res[17]->number+(float)$res[18]->number;
+      $activationPercent = ($activation/30) * 100;
+      $total = (float)$res[2]->number+(float)$res[3]->number+(float)$res[4]->number+(float)$res[5]->number+(float)$res[6]->number+(float)$res[7]->number+(float)$res[8]->number+(float)$res[9]->number+(float)$res[10]->number+(float)$res[11]->number+(float)$res[12]->number+(float)$res[13]->number+(float)$res[14]->number+(float)$res[15]->number+(float)$res[16]->number+(float)$res[17]->number+(float)$res[18]->number;
+
+      $res_data= [
+          'chart1' => $res[2]->number.",".$res[3]->number.",".$res[4]->number.",".$res[5]->number.",".$res[6]->number.",".$res[7]->number.",".$res[8]->number.",".$res[9]->number,
+          'chart2' => $res[10]->number.",".$res[11]->number.",".$res[12]->number.",".$res[13]->number.",".$res[14]->number.",".$res[15]->number,
+          'chart3' => $res[16]->number.",".$res[17]->number.",".$res[18]->number,
+          'accuracy'=>$accuracy,
+          'alignment'=>$alignment,
+          'activation'=>$activation,
+          'accuracyPercent'=>$accuracyPercent,
+          'alignmentPercent'=>$alignmentPercent,
+          'activationPercent'=>$activationPercent,
+          'total'=>$total
+      ];
+
+      // echo $lang;
+
+      // echo "<pre>";
+      // print_r($res_data);
+      // die;
+
+      $filename= "s4rb";
+
+      $pdf = \PDF::loadView($filename,$res_data);
+      $pdf->setOption('enable-javascript',true);
+      $pdf->setOption('javascript-delay',3000);
+      $pdf->setOption('enable-smart-shrinking', true);
+      $pdf->setOption('no-stop-slow-scripts', true)
+      ->setOption('footer-spacing', 20 )
+      ->setPaper('a4')
+      ->setOption('margin-top', 0)
+      ->setOption('margin-bottom',0)
+      ->setOption('margin-left', 0)
+      ->setOption('margin-right',0);
+
+      $filename = 'response/s4rb/'.$formId.'/'.$response_id.'.pdf';
+      $pdf->save(public_path($filename),true);
+
+      return $pdf->inline();
+
+    }
+
+    die;
+  }
 
 
     /**

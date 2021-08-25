@@ -30,7 +30,8 @@ class Response extends JsonResource
     public function with($request) {
       return [
         'version' => '1.0.0',
-        'author_url' => url('http://audit.tmrwppl.com')
+        'author_url' => url('http://audit.tmrwppl.com'),
+        'path' => public_path('response/'.$this->typeform_id.'/'.$this->response_id.'.pdf')
       ];
     }
 }
