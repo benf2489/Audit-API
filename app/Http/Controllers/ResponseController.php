@@ -44,8 +44,12 @@ class ResponseController extends Controller
     {
 
         $response_id = $request->form_response["hidden"]["response_id"];
-        // $scores = $request->form_response["hidden"]["scores"];
-        // $calculated = $request->form_response["calculated"];
+        if(isset($request->form_response["hidden"]["scores"])) {
+          $scores = $request->form_response["hidden"]["scores"];
+        };
+        if(isset($request->form_response["calculated"]["score"])) {
+          $calculated = $request->form_response["calculated"]["score"];
+        };
         $questions = $request->form_response["definition"]["fields"];
         $formId = $request->form_response["form_id"];
         $answers = $request->form_response["answers"];
@@ -55,7 +59,12 @@ class ResponseController extends Controller
 
 
 
-
+        if(isset($request->form_response["hidden"]["scores"])) {
+          $response->scores = $scores;
+        };
+        if(isset($request->form_response["calculated"]["score"])) {
+          $response->calculated = $calculated;
+        };
         $response->response_id = $response_id;
         $response->typeform_id = $formId;
         $response->questions = json_encode($questions);

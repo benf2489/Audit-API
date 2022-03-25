@@ -86,7 +86,7 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
 </head>
 <body>
-<div class="banner-box" style="background-color: #01355c; background-size: cover; background-repeat: repeat; background-position: top right; margin: 0; padding: 0; position: relative; background-image: url({{asset('/icons/s4rb/report-header.jpg')}});height:775px;">
+<div class="banner-box" style="background-color: #01355c; background-size: cover; background-repeat: repeat; background-position: top right; margin: 0; padding: 0; position: relative; background-image: url({{asset('/icons/s4rb/S4---Results-PDF-header.jpg')}});height:775px;">
     <!-- Top Banner Background image size width:1340px and height:650px -->
      <div class="header left-right-space" style="padding-top: 70px; padding-bottom: 0; margin: 0;">
         <table  cellpadding="0" cellpadding="0" style="padding-top: 30px; padding-bottom: 0; margin: 0;">
@@ -202,11 +202,11 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                             <tr>
                                 <td style="padding: 10px;padding-top: 10px; padding-bottom: 10px;">
                                     <?php if( $accuracy > 71 ) : ?>
-                                        <img style="width: 380px;height:152px; display: block;" src="{{asset('/icons/s4rb/s4rb-High.png')}}" />
+                                        <img style="width: 404px;height:212px; display: block;" src="{{asset('/icons/s4rb/RESULT_PDF_HIGH.png')}}" />
                                     <?php elseif( $accuracy < 33 ) : ?>
-                                        <img style="width: 380px;height:152px; display: block;" src="{{asset('/icons/s4rb/s4rb-Low.png')}}" />
+                                        <img style="width: 380px;height:227px; display: block;" src="{{asset('/icons/s4rb/RESULT_PDF_LOW.png')}}" />
                                     <?php else : ?>
-                                        <img style="width: 380px;height:152px; display: block;" src="{{asset('/icons/s4rb/s4rb-Medium.png')}}" />
+                                        <img style="width: 380px;height:227px; display: block;" src="{{asset('/icons/s4rb/RESULT_PDF_MED.png')}}" />
                                     <?php endif; ?>
                                 </td>
                             </tr>
@@ -322,11 +322,11 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                             <tr>
                                 <td style="padding: 10px;padding-top: 10px; padding-bottom: 10px;">
                                     <?php if( $alignment > 53 ) : ?>
-                                        <img style="width: 380px;height:152px; display: block;" src="{{asset('/icons/s4rb/s4rb-High.png')}}" />
+                                        <img style="width: 404px;height:212px; display: block;" src="{{asset('/icons/s4rb/RESULT_PDF_HIGH.png')}}" />
                                     <?php elseif( $alignment < 25 ) : ?>
-                                        <img style="width: 380px;height:152px; display: block;" src="{{asset('/icons/s4rb/s4rb-Low.png')}}" />
+                                        <img style="width: 380px;height:227px; display: block;" src="{{asset('/icons/s4rb/RESULT_PDF_LOW.png')}}" />
                                     <?php else : ?>
-                                        <img style="width: 380px;height:152px; display: block;" src="{{asset('/icons/s4rb/s4rb-Medium.png')}}" />
+                                        <img style="width: 380px;height:227px; display: block;" src="{{asset('/icons/s4rb/RESULT_PDF_MED.png')}}" />
                                     <?php endif; ?>
                                 </td>
                             </tr>
@@ -444,11 +444,11 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                             <tr>
                                 <td style="padding: 10px;padding-top: 10px; padding-bottom: 10px;">
                                     <?php if( $activation > 26 ) : ?>
-                                        <img style="width: 380px;height:152px; display: block;" src="{{asset('/icons/s4rb/s4rb-High.png')}}" />
+                                        <img style="width: 404px;height:212px; display: block;" src="{{asset('/icons/s4rb/RESULT_PDF_HIGH.png')}}" />
                                     <?php elseif( $activation < 13 ) : ?>
-                                        <img style="width: 380px;height:152px; display: block;" src="{{asset('/icons/s4rb/s4rb-Low.png')}}" />
+                                        <img style="width: 380px;height:227px; display: block;" src="{{asset('/icons/s4rb/RESULT_PDF_LOW.png')}}" />
                                     <?php else : ?>
-                                        <img style="width: 380px;height:152px; display: block;" src="{{asset('/icons/s4rb/s4rb-Medium.png')}}" />
+                                        <img style="width: 380px;height:227px; display: block;" src="{{asset('/icons/s4rb/RESULT_PDF_MED.png')}}" />
                                     <?php endif; ?>
                                 </td>
                             </tr>
@@ -512,16 +512,8 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                     <tr>
                         <td>
                             <div class="chart-title" style="max-width:680px;margin:0 auto; text-align: center;">
-                                <h2 style="color: #ffffff; font-size: 48px; line-height: 58px; text-align: center;margin-bottom:20px;"> <strong style="color: #ffffff;font-weight: 700;">
-                                <?php if( $total > 135 ) : ?>
-                                    HIGH CTA - tbc
-                                <?php elseif( $total < 69 ) : ?>
-                                    LOW CTA - tbc
-                                <?php else : ?>
-                                    MEDIUM CTA - tbc
-                                <?php endif; ?>
-                                </strong></h2>
-                                <p style="text-align: center;color: #ffffff; padding:0; margin:0; font-size: 28px!important; line-height: 34px!important; font-weight: 400;">Get in touch with us to discuss your results and how you can start putting your recommended actions into practice.</p>
+                                <h2 style="color: #ffffff; font-size: 48px; line-height: 58px; text-align: center;margin-bottom:20px;"><strong style="color: #ffffff;font-weight: 700;">Download The Complete Guide to Data-Driven, People-Centric Sustainability</strong></h2>
+                                <p style="text-align: center;color: #ffffff; padding:0; margin:0; font-size: 28px!important; line-height: 34px!important; font-weight: 400;">99 pages of free expert advice on how to establish sustainability goals, quickly collect high-quality data, and align and activate your suppliers.</p>
                             </div>
                         </td>
                     </tr>
@@ -533,7 +525,7 @@ html{width: 100%; height: 100%; padding: 0; margin: 0; }
                                         <table style="background: #ffffff; padding: 0 20px; width: 300px; height: 68px; margin: 10px auto 0 auto; border-radius: 12px;"  cellpadding="0" cellpadding="0">
                                             <tr>
                                                 <td>
-                                                    <a style="color: #0086c9; line-height: 68px; font-size: 24px; font-weight:700; text-decoration: none;" href="https://info.s4rb.com/contact-us" title="Book a free workshop" target="_blank"> <strong>Get in touch now</strong> </a>
+                                                    <a style="color: #0086c9; line-height: 68px; font-size: 24px; font-weight:700; text-decoration: none;" href="https://info.s4rb.com/white-paper-data-driven-people-centric-sustainability" title="Book a free workshop" target="_blank"><strong>Get My Guide</strong></a>
                                                 </td>
                                             </tr>
                                         </table>
@@ -581,12 +573,14 @@ function drawGraphs() {
                     {
                         'label': 'Your results', 'data': [<?php echo $accuracyPercent.",".$alignmentPercent.",".$activationPercent;?>],
                         'backgroundColor': 'rgba(0, 133, 201, 1)',
-                        'borderColor': 'rgba(0, 133, 201, 1)'
+                        'borderColor': 'rgba(0, 133, 201, 1)',
+                        'borderWidth': 0
                     },
                     {
-                        'label': 'Benchmark',  'data': [90,90,90],
-                        'backgroundColor': 'rgba(116,170,80, 1)',
-                        'borderColor': 'rgba(116,170,80, 1)'
+                        'label': 'Benchmark',  'data': [65,69,65],
+                        'backgroundColor': 'rgba(5,195,222, 1)',
+                        'borderColor': 'rgba(5,195,222, 1)',
+                        'borderWidth': 0
                     }
                 ]
             },
@@ -644,13 +638,15 @@ function drawGraphs() {
                 "datasets":[
                     {
                         'label': 'Your results', 'data': [<?php echo $chart1;?>],
-                        'backgroundColor': 'rgba(0, 133, 201, 1)',
-                        'borderColor': 'rgba(0, 133, 201, 1)'
+                        'backgroundColor': 'rgba(0, 40, 84, 0.8)',
+                        'borderColor': 'rgba(0, 40, 84, 0.8)',
+                        'borderWidth': 0
                     },
                     {
-                        'label': 'Benchmark',  'data': [9,9,9,9,9,9,9,9],
-                        'backgroundColor': 'rgba(116,170,80, 1)',
-                        'borderColor': 'rgba(116,170,80, 1)'
+                        'label': 'Benchmark',  'data': [6.6,6.15,5.7,8.25,5.4,4.5,8.85,6.45],
+                        'backgroundColor': 'rgba(5,195,222, 1)',
+                        'borderColor': 'rgba(5,195,222, 1)',
+                        'borderWidth': 0
                     }
                 ]
             },
@@ -708,13 +704,15 @@ function drawGraphs() {
                 "datasets":[
                     {
                         'label': 'Your results', 'data': [<?php echo $chart2;?>],
-                        'backgroundColor': 'rgba(0, 133, 201, 1)',
-                        'borderColor': 'rgba(0, 133, 201, 1)'
+                        'backgroundColor': 'rgba(0, 40, 84, 0.8)',
+                        'borderColor': 'rgba(0, 40, 84, 0.8)',
+                        'borderWidth': 0
                     },
                     {
-                        'label': 'Benchmark',  'data': [9,9,9,9,9,9],
-                        'backgroundColor': 'rgba(116,170,80, 1)',
-                        'borderColor': 'rgba(116,170,80, 1)'
+                        'label': 'Benchmark',  'data': [6,7.96,6.15,6.15,6.9,7.95],
+                        'backgroundColor': 'rgba(5,195,222, 1)',
+                        'borderColor': 'rgba(5,195,222, 1)',
+                        'borderWidth': 0
                     }
                 ]
             },
@@ -772,13 +770,15 @@ function drawGraphs() {
                 "datasets":[
                     {
                         'label': 'Your results', 'data': [<?php echo $chart3;?>],
-                        'backgroundColor': 'rgba(0, 133, 201, 1)',
-                        'borderColor': 'rgba(0, 133, 201, 1)'
+                        'backgroundColor': 'rgba(0, 40, 84, 0.8)',
+                        'borderColor': 'rgba(0, 40, 84, 0.8)',
+                        'borderWidth': 0
                     },
                     {
-                        'label': 'Benchmark',  'data': [9,9,9],
-                        'backgroundColor': 'rgba(116,170,80, 1)',
-                        'borderColor': 'rgba(116,170,80, 1)'
+                        'label': 'Benchmark',  'data': [4.35,8.7,6.3],
+                        'backgroundColor': 'rgba(5,195,222, 1)',
+                        'borderColor': 'rgba(5,195,222, 1)',
+                        'borderWidth': 0
                     }
                 ]
             },
