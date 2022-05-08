@@ -21,6 +21,7 @@ class Response extends JsonResource
           'lang' => $this->lang,
           'calculated' => $this->calculated,
           'scores' => $this->scores,
+          'variables' => $this->variables,
           'questions' => $this->questions,
           'answers' => $this->answers,
           'createdDate' => $this->created_at

@@ -21,6 +21,7 @@ class CreateResponsesTable extends Migration
             $table->string('response_id');
             $table->string('scores');
             $table->string('calculated');
+            $table->text('variables');
             $table->timestamps();
         });
     }
